@@ -1,2 +1,2 @@
-# Nav-Bar
-This is our bus booking page navigation bar
+# Online bus booking system
+This is our Y1S2 IWT project
