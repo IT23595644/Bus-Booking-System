@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing:border-box;
+}
+.contain{
+    width:100%;
+    min-height:100vh;
+    background-image:url('../images/777.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.navbar{
+    padding:0.3px 30%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4px 15px
+
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding:4px 0.5px
+}
+nav a:hover {
+    scale:1.2;
+    font-size:1.3;
+    background-color:transparent;
+    backdrop-filter: brightness(40%);
+    color:lightgreen;
+    border: 2px solid lightgreen;
+    box-shadow:0 0 10px 3px rgb(7,113,219);
+    border-radius: 0.6rem;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.001s;
+}
+.login a{
+    display:flex;
+    text-align: right;
+   padding-left: 8px;
+}
+
+.logo{
+    width:65px;
+    height:45px;
+    align-content: start;
+
+}
+section{
+    width:170%;
+    height:90%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+}
+.welc{
+    margin-top: 5%;
+    margin-left: 10%;
+    width:40%;
+    color:white;
+
+}
+
+.welc h1{
+    width:100%;
+    font-size: 4rem;
+    text-shadow: 0 0 7px white;
+    font-family:initial;
+    text-align: center;
+}
+strong{
+    color:black;
+    width:100%;
+    font-size: 4rem;
+    text-shadow: 0 0 7px;
+    font-family:initial;
+    text-align: center;
+}
+.welc h3{
+    color:blue;
+    width:100%;
+    font-size: 2rem;
+    text-shadow: 0 0 7px whitesmoke;
+    text-align: center;
+}
+#bkk{
+    width:30%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border:none;
+    outline: none;
+    color:white;
+    cursor: pointer;
+    font-size:1.2rem;
+    font-weight: 700;
+    transition: 0.2 linear;
+}
+#bkk:hover{
+    scale:1.1;
+    font-size:1.3;
+    background-color:transparent;
+    backdrop-filter: brightness(40%);
+    color:lightgreen;
+    border: 1px solid lightgreen;
+    box-shadow:0 0 10px 3px rgb(7,113,219);
+}
+.places{
+    overflow: hidden;
+
+}
+.location{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+.locat
+{
+    box-sizing: content-box;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+
+
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    border:1px;
+    animation: spin_words 6s infinite;
+
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+.search-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.search-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rad{
+    padding: 10px;
+    font-size: 16px;
+
+    margin-left: 40px;
+}
+
+.search-form input, .search-form select {
+    padding: 10px;
+    font-size: 16px;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: darkblue;
+}
