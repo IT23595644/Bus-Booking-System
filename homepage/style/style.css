@@ -213,7 +213,7 @@ span{
 .search-form button:hover {
     background-color: darkblue;
 }
-.view,.view1 {
+.view,.view1 ,.testimonials{
     width: 100%;
     display: flex;
     align-items: center;
@@ -339,7 +339,7 @@ span{
     margin: 20px 0;
   }
   .stars{
-    color: #6ab04c;
+    color:navy;
     margin-bottom: 20px;
   }
   
@@ -378,13 +378,25 @@ footer nav a {
     text-decoration: none;
     margin: 0 0.5rem;
 }
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
 
 footer .social-media a {
     color: #fff;
     margin: 0 1rem;
+    text-decoration: none;
 }
 
 footer p {
     margin-top: 1rem;
     font-size: 0.8rem;
+}
+#link-a{
+    text-decoration: none;
+}
+#link-a:visited{
+    color:#fff;
 }

@@ -204,3 +204,10 @@ footer p {
     margin-top: 1rem;
     font-size: 0.8rem;
 }
+#link-a{
+    text-decoration: none;
+}
+#link-a:visited{
+    color:#fff;
+}
+
