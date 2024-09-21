@@ -259,9 +259,11 @@ span{
 
   .Route-card{
     width:300px;
-    background-color: #f4f4f4;
+    background-color:white;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0,3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     overflow: hidden;
     transition: transform 0.6s ease;
 
@@ -327,6 +329,15 @@ span{
   .testimonial{
     background: #fff;
     padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+  }
+  .testimonial:hover{
+    transform:translateY(10px);
   }
   .testimonial img{
     width: 100px;
