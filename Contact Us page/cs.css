@@ -34,15 +34,30 @@ nav ul {
 }
 
 nav ul li a {
+    position: relative;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-nav ul li a:hover {
-    background-color: #333;
-    border-radius: 5px;
+a:after{
+    content:"";
+    position: absolute;
+    background-color:white;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
 }
+a:hover:after{
+    width:100%;
+}
+
+nav a:hover {
+    color:azure;
+}
+
 
 /* Contact Us Section */
 .contact-us {
@@ -189,3 +204,10 @@ footer p {
     margin-top: 1rem;
     font-size: 0.8rem;
 }
+#link-a{
+    text-decoration: none;
+}
+#link-a:visited{
+    color:#fff;
+}
+

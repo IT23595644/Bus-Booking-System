@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:after{
+    content:"";
+    position: absolute;
+    background-color:white;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width:100%;
+}
+nav a:hover {
+    color:azure;
+}
+.title{
+    background-color: #ccc;
+    margin-right: 600px;
+    margin-left: 600px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 0%;
+    color: black;
+}
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    color: black;
+}
+.main-section {
+    display: flex;
+    padding: 20px;
+    border: 5px solid white;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+  
+}
+.image-section {
+    flex: 1;
+    background-color: white;
+    height: 300px;
+    margin-right: 20px;
+    
+
+}
+.booking-form {
+    flex: 2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #f9f9f9;
+    
+}
+.tabs {
+    display: flex;
+    margin-bottom: 20px;   
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tab.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    animation: fadeEffect 3s; 
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+#id{
+    width: 100%
+}
+#from{
+    width: 100%;
+}
+#to{
+    width: 100%;
+}
+#passengers{
+    width: 100%;
+}
+#date{
+    width: 100% ;
+}
+.form-group {
+    flex: 1 1 45%;
+}
+
+.captcha-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+span{
+    color:rgb(125, 125, 220);
+}
+.actions {
+    margin-top: 20px;
+    margin-right: 10px;       
+}
+.actions button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.actions .confirm {
+    background-color: #333;
+    color: white;
+}
+.actions .back {
+    background-color: #ccc;
+}
+
+
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 89px;;
+  
+}
+

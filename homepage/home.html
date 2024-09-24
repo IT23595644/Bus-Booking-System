@@ -6,21 +6,23 @@
     <title>Bus 365</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+
 </head>
 <body>
-<div class="contain">
-
+<div class="content">
     <div class="navbar">
         <nav>
             <img src="images/logo.jpg" alt="Error 404" class="logo">
             <a href="home.html">Home</a>
             <a href="#">Schedule</a>
-            <a href="#">Booking</a>
+            <a href="../Seat Booking page/seat_booking.html">Booking</a>
             <a href="#">About Us</a>
-            <a href="contt us.html">Contact Us</a>
+            <a href="../Contact Us page/contt us.html">Contact Us</a>
 
          <div class="login">
-            <a href="#">Login/Sign Up</a>
+           <a href="#"> <i class="ri-login-circle-line"></i>Sign In</a>
          </div>
     
         </nav>
@@ -38,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <section>
         <div class="welc">
             <h1>WELCOME To <strong>BUS365</strong></h1>
@@ -46,16 +49,132 @@
         </div>
     </section>
 </div>
-<div class="search-container">
-    <input type="radio" name="bk" value="Book" checked="checked" class="rad">Book Ticket
-    <input type="radio" name="bk"value="Track"class="rad1" >Bus Tracking
-    <form class="search-form">
-        <input type="text" placeholder="From">
-        <input type="text" placeholder="To">
-        <input type="date">
-        <button type="submit">Search</button>
-    </form>
-</div>  
+<div class="testimonials">
+  <div class="view">
+      <div class="search-container">
+          <input type="radio" name="bk" value="Book" checked="checked" class="rad">Book Ticket
+          <input type="radio" name="bk"value="Track"class="rad1" >View Ticket
+          <form class="search-form">
+            <input type="text" placeholder="From">
+              <input type="text" placeholder="To">
+              <input type="date">
+              <button type="submit">Search</button>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="testimonials">
+  <div class="inner">
+    <h1>Popular Route</h1>
+    <div class="border"></div>
+    <div class="card">
+        <div class="Route-card">
+            <img src="images/bus00.png">
+            <div class="card-cont">
+                <h1>ND - 2256 </h1>
+                <p>Matara to Katharagama</p>
+                <a href="#" class="card-btn">read more</a>
+            </div>
+        </div>
+        <div class="Route-card">
+            <img src="images/xx.png">
+            <div class="card-cont">
+                <h1>NC - 0056 </h1>
+                <p>Badulla to Ampara</p>
+                <a href="#" class="card-btn">read more</a>
+            </div>
+        </div>
+        <div class="Route-card">
+            <img src="images/bus1.jpg">
+            <div class="card-cont">
+                <h1>NB - 1089 </h1>
+                <p>Tangalle to Jaffna</p>
+                <a href="#" class="card-btn">read more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="testimonials">
+    <div class="inner">
+      <h1>User Reviews</h1>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/p1.png" alt="">
+            <div class="name">Wasika</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/p2.png" alt="">
+            <div class="name">Nethmi</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/p3.png" alt="">
+            <div class="name">Supuni</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">LOGO</div>
+    <nav class="footer-nav">
+        <a href="#">Home</a> | 
+        <a href="#">Scheduling</a> | 
+        <a href="#">Booking</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Contact</a>
+    </nav>
+    <div class="social-media">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-google-fill"></i></a>
+    </div>
+    <p>Copyright © 2024 Website. All rights reserved.</p>
+    <p><a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a></p>
+</footer>
+  
 
 
 </body>
