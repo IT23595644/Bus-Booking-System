@@ -3,9 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("d.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ccc;
 }
 
 header {
@@ -73,12 +71,12 @@ p{
 .main-section {
     display: flex;
     padding: 20px;
-    border: 5px solid #ccc;
+    border: 5px solid white;
     margin-bottom: 50px;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 10px;
-    border-radius: 25px;
+  
 }
 .image-section {
     flex: 1;
@@ -94,7 +92,7 @@ p{
     padding: 20px;
     margin-right: 20px;
     background-color: #f9f9f9;
-    border-radius: 25px;
+    
 }
 .tabs {
     display: flex;
