@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
   }
   
   html {
@@ -24,13 +25,13 @@
   }
   
   .checkout-container {
-    /* background-color: red; */
     max-width: 120rem;
     height: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    /* margin-bottom: 10rem; */
+   margin-bottom: 10rem; 
+   border-radius: 8px;
   }
   
   em {
@@ -139,36 +140,24 @@
   .form-box label {
     font-size: 15px;
     font-weight: 550;
-
   }
   
   .form-box input {
-    font-family: inherit;
-    font-size: 1.2rem;
+    font-family: 'Monsterrat', sans-serif;
     padding: 0.5rem;
     width: 100%;
+    border-radius: 8px;
   }
   
   .form-box select {
     padding: 5px;
+    border-radius: 8px;
   }
   
   .form-box #cvv {
     width: 25%;
   }
-  
-  .cvv-info:link,
-  .cvv-info:visited {
-    color: inherit;
-    text-decoration: underline;
-  }
-  /*
-  .cvv-info:hover,
-  .cvv-info:active {
-    color: #5f7986;
-    text-decoration: none;
-  }*/
-  
+
   .btn {
     background-color: #4c616b;
     border: none;
@@ -177,15 +166,10 @@
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 0.5px;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
+    padding: 10px;
     cursor: pointer;
+  
   }
-  /*
-  .btn:hover {
-    background-color: #5f7986;
-    transition: ease-out 0.1s;
-  }*/
   
   .footer-text {
     font-size: 1rem;
@@ -193,8 +177,6 @@
   }
   
   .form-box *:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(139, 139, 107, 0.5);
     border-radius: 8px;
   }
-  
+

@@ -29,15 +29,13 @@
                   method="get"
                   target="_blank"
                 ><br>
+                <div class="save-card-container">
+                  <input id="save-card" name="save-card" type="submit" value="Save your card">
+                  
+                </div><br><br>
                   <div>
                     <label for="full-name">Full Name</label>
-                    <input
-                      id="full-name"
-                      name="full-name"
-                      placeholder="Satoshi Nakamoto"
-                      required
-                      type="text"
-                    />
+                    <input id="full-name" name="full-name" placeholder="Sethmi Hukapala" type="text"/>
                   </div>
                     <br><br>
                   <div>
@@ -49,20 +47,14 @@
                         <i class="card-logo fa-brands fa-cc-mastercard"></i>
                         <i class="card-logo fa-brands fa-cc-discover"></i> </span
                     ></label>
-                    <input
-                      id="credit-card-num"
-                      name="credit-card-num"
-                      placeholder="1111-2222-3333-4444"
-                      required
-                      type="text"
-                    />
+                    <input id="credit-card-num" name="credit-card-num" placeholder="1111-2222-3333-4444" type="text"/>
                   </div>
                   <br>
                   <div>
                     <p class="expires">Expires on:</p><br>
                     <div class="card-experation">
                       <label for="expiration-month">Month</label>
-                      <select id="expiration-month" name="expiration-month" required>
+                      <select id="expiration-month" name="expiration-month" >
                         <option value="">Month:</option>
                         <option value="">January</option>
                         <option value="">February</option>
@@ -79,7 +71,7 @@
                       </select>
       
                       <label class="expiration-year">Year</label>
-                      <select id="experation-year" name="experation-year" required>
+                      <select id="experation-year" name="experation-year">
                         <option value="">Year</option>
                         <option value="">2023</option>
                         <option value="">2024</option>
@@ -92,22 +84,17 @@
       
                   <div>
                     <label for="cvv">CVV</label>
-                    <input
-                      id="cvv"
-                      name="cvv"
-                      placeholder="415"
-                      type="text"
-                      required
-                    />
-                    <a class="cvv-info" href="#">What is CVV?</a>
+                    <input id="cvv" name="cvv" placeholder="415" type="text"/>
+                    
                   </div><br><br><br><br>
-      
-                  <button class="btn">
+                  
+                    <center>
+                   <button class="btn">
                     <i class="fa-solid fa-lock"></i> Book Securely
-                  </button>
+                  </button></center>
                 </form>
       
-                <p class="footer-text">
+                <p class="footer-text"><br><br><br><br><br>
                   <i class="fa-solid fa-lock"></i>
                   Your credit card infomration is encrypted
                 </p>

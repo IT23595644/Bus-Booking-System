@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus365 Payment</title>
+    <script>
+        function saveCardDetails() {
+            // Get the input values
+            var fullName = document.getElementById("fullName").value;
+            var cardNumber = document.getElementById("cardNumber").value;
+            var expiryMonth = document.getElementById("expiryMonth").value;
+            var expiryYear = document.getElementById("expiryYear").value;
+            var cvv = document.getElementById("cvv").value;
+
+            // Validate that fields are filled
+            if (!fullName || !cardNumber || !expiryMonth || !expiryYear || !cvv) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            // You can store the details in local storage (not recommended for sensitive data)
+            localStorage.setItem("fullName", fullName);
+            localStorage.setItem("cardNumber", cardNumber);
+            localStorage.setItem("expiryMonth", expiryMonth);
+            localStorage.setItem("expiryYear", expiryYear);
+            localStorage.setItem("cvv", cvv);
+
+            // Confirmation message
+            alert("Card details saved successfully!");
+        }
+    </script>
+</head>
+<body>
+    <div class="payment-form">
+        <h2>Payment Information</h2>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Sethmi Hukapala" value="Sethmi Hukapala">
+        
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="1111-2222-3333-4444" value="1111-2222-3333-4444">
+        
+        <label for="expiryMonth">Expires on</label>
+        <select id="expiryMonth">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <!-- More months here -->
+        </select>
+        <select id="expiryYear">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <!-- More years here -->
+        </select>
+        
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" placeholder="415" value="415">
+        
+        <button onclick="saveCardDetails()">Save your card</button>
+    </div>
+</body>
+</html>
