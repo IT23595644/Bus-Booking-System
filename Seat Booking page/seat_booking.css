@@ -127,6 +127,9 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+#nic{
+    width: 100%;
+}
 #id{
     width: 100%
 }
@@ -140,20 +143,12 @@ label {
     width: 100%;
 }
 #date{
-    width: 100% ;
+    width: 300px;
 }
 .form-group {
     flex: 1 1 45%;
 }
 
-.captcha-section {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-span{
-    color:rgb(125, 125, 220);
-}
 .actions {
     margin-top: 20px;
     margin-right: 10px;       

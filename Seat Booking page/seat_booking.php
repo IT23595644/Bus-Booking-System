@@ -20,7 +20,7 @@
         </nav>
     </header>
 
-    <!-- Main Section -->
+  
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
@@ -33,26 +33,30 @@
         </div>
 
         <div class="booking-form">
-            <!-- Tabs for Passenger Selection -->
+           
             <div class="tabs">
                 <div class="tab active" onclick="openTab(event,'General Passenger')">General Passenger</div>
                 <div class="tab" onclick="openTab(event,'Warrent Passenger')">Warrent Passenger</div>
             </div>
             
             <div id="General Passenger" class="tabcontent">
-                <!-- Booking Form -->
+                
                 <form>
-                    <!-- From and To Selection -->
+                    <div class="form-group">
+                        <label for="nic">NIC</label>
+                        <input type="text" id="nic" name="nic">
+                    </div>
+
                     <div class="form-group">
                         <label for="from">From</label>
                         <input type="text" id="from" name="from">
                     </div>
+
                     <div class="form-group">
                         <label for="to">To</label>
                         <input type="text" id="to" name="to">
                     </div>
 
-                    <!-- No of Passengers and Date -->
                     <div class="form-group">
                         <label for="passengers">No of passengers</label>
                         <input type="text" id="passengers" name="passengers">
@@ -63,17 +67,8 @@
                         <input type="date" id="date" value="2024-09-15">
                     </div>
                     
-                    <!-- CAPTCHA Section -->
-                    <div class="captcha-section">
-                        <div class="captcha">
-                            <span>caPtcHA</span>
-                        </div>
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                    </div>
-
-                    <!-- Confirm and Back Buttons -->
                     <div class="actions">
-                        <button onclick="location.href='../Payment_page/payment.html'" type="submit" class="confirm">Confirm</button>
+                        <button onclick="location.href='../Payment_page/payment.html'" type="button" class="confirm">Confirm</button>
                         <button onclick="location.href='../homepage/home.html'" type="button" class="back">Back</button>
                     </div>
                 </form>
@@ -81,7 +76,7 @@
 
             <div id="Warrent Passenger" class="tabcontent">
                 <form>
-                    <!-- From and To Selection -->
+                    
                     <div class="form-group">
                         <label for="id">Warrent ID</label>
                         <input type="text" id="id" name="id">
@@ -95,7 +90,6 @@
                         <input type="text" id="to" name="to">
                     </div>
 
-                    <!-- No of Passengers and Date -->
                     <div class="form-group">
                         <label for="passengers">No of passengers</label>
                         <input type="text" id="passengers" name="passengers">
@@ -106,17 +100,11 @@
                         <input type="date" id="date" value="2024-09-15" style="width:300px;">
                     </div>
                     
-                    <!-- CAPTCHA Section -->
-                    <div class="captcha-section">
-                        <div class="captcha">
-                            <span>caPtcHA</span>
-                        </div>
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                    </div>
+                    
 
-                    <!-- Confirm and Back Buttons -->
+                    
                     <div class="actions">
-                        <button onclick="location.href='../Payment_page/payment.html'" type="submit" class="confirm">Confirm</button>
+                        <button onclick="location.href='../Payment_page/payment.html'" type="button" class="confirm">Confirm</button>
                         <button onclick="location.href='../homepage/home.html'" type="button" class="back">Back</button>
                     </div>
                 </form>
@@ -124,7 +112,7 @@
             
         </div>
     </div>
-    <!-- Footer -->
+   
     <footer>
         &copy; 2024 Website. All rights reserved.
     </footer>
