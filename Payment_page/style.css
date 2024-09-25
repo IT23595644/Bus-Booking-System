@@ -48,7 +48,7 @@
   .left-side {
     background: url('bus00.png');
     background-position: center;
-    background-position: 0px 1050px ;
+    background-position: 0px 1000px ;
     background-size: cover;
     position: relative;
   }
@@ -136,10 +136,19 @@
     font-size: 15px;
   }
   
+  .form-box {
+    margin-bottom: 1rem;
+  }
   .expires,
   .form-box label {
     font-size: 15px;
     font-weight: 550;
+  }
+
+label {
+    font-size: 15px;
+    font-weight: 550;
+    margin-right: 10px;
   }
   
   .form-box input {
@@ -180,3 +189,98 @@
     border-radius: 8px;
   }
 
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Save button */
+.save-btn {
+    background-color: #ff4742;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    background-color: #ff6860;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Checkbox styling */
+.checkbox {
+    margin-bottom: 15px;
+}
+#paymentBtn {
+    background-color: #8a8a8a;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+   margin-left: 199px;
+   margin-bottom: -5px;
+   margin-top: -30px;
+}
