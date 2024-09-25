@@ -1,7 +1,7 @@
 
 function bookinsSuc()
 {
-    alert("Seats booked successfully!")
+    alert("Seats booked successfully!");
 }
 document.addEventListener('DOMContentLoaded', () => {
     const seats = document.querySelectorAll('.seat');
