@@ -1,0 +1,40 @@
+<?php
+
+include ("connection.php");
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus365</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form action="signup.php" method="POST">
+        <label>First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label>Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <label>Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label>Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label>Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label>Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        
+        <input type="submit" value="Signup" class="subbtn">
+    </form>
+</body>
+</html>

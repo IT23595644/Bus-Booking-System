@@ -1,141 +1,36 @@
 <html>
-    <title>Payment</title>
-    <link rel="stylesheet" href="style.css">
-  <body>
-    <div class="checkout-container">
-      <div class="left-side">
-        <div class="text-box">
-          <h1 class="home-heading">Bus365</h1>
-          <p class="home-price">pakaya hukapan</p>
-          <hr class="left-hr" />
-    
-        </div>
-      </div>
+    <head>
+        <title>Pyament Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <img src="bus365 1.jpg" alt="Error 404" class="logo" id="img">
+                <a href="home.html">Home</a>
+                <a href="#">Schedule</a>
+                <a href="#">Booking</a>
+                <a href="#">About Us</a>
 
-      <div class="right-side">
-        <div class="receipt">
-            
-            <div class="payment-info">
-                <h3 class="payment-heading">Payment Information</h3>
-                <form class="form-box" enctype="text/plain" method="post" target="_blank">
-                </div>
-                  <div>
-                    <label for="full-name">Full Name</label>
-                    <input id="full-name" name="full-name" placeholder="Cardholder Name" type="text"/>
-                  </div>
-                    <br>
-                  <div>
-                    <label for="credit-card-num">Card Number</label>
-                    <input id="credit-card-num" name="credit-card-num" placeholder="1111-2222-3333-4444" type="text"/>
-                  </div>
-                  <br>
-                  <div>
-                    <p class="expires">Expires on:</p><br>
-                    <div class="card-experation">
-                      <label for="expiration-month">Month</label>
-                      <select id="expiration-month" name="expiration-month" >
-                        <option value="">Month:</option>
-                        <option value="">January</option>
-                        <option value="">February</option>
-                        <option value="">March</option>
-                        <option value="">April</option>
-                        <option value="">May</option>
-                        <option value="">June</option>
-                        <option value="">July</option>
-                        <option value="">August</option>
-                        <option value="">September</option>
-                        <option value="">October</option>
-                        <option value="">November</option>
-                        <option value="">Decemeber</option>
-                      </select>
-      
-                      <label class="expiration-year">Year</label>
-                      <select id="experation-year" name="experation-year">
-                        <option value="">Year</option>
-                        <option value="">2023</option>
-                        <option value="">2024</option>
-                        <option value="">2025</option>
-                        <option value="">2026</option>
-                      </select>
-                      <br><br><br><br>
-                    </div>
-                  </div>
-      
-                  <div>
-                    <label for="cvv">CVV</label>
-                    <input id="cvv" name="cvv" placeholder="CVV" type="text"/>
-                    
-                  </div><br><br><br><br>
-                  <button id="paymentBtn">Save Card</button>
-                  <!-- The Modal -->
-<div id="paymentModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 class="form-title">Provide your card information</h2>
-      <label for="full-name">Full Name</label>
-      <input id="cardholder-name" class="input-field" type="text" placeholder="Cardholder Name" required>
-      <label for="credit-card-num">Card Number</label>
-      <input id="card-number" class="input-field" type="text" placeholder="Card Number" required>
-      
-      <div>
-        <p class="expires">Expires on:</p><br>
-        <div class="card-experation">
-          <label for="expiration-month">Month</label>
-          <select id="expiration-month" name="expiration-month" >
-            <option value="">Month:</option>
-            <option value="">January</option>
-            <option value="">February</option>
-            <option value="">March</option>
-            <option value="">April</option>
-            <option value="">May</option>
-            <option value="">June</option>
-            <option value="">July</option>
-            <option value="">August</option>
-            <option value="">September</option>
-            <option value="">October</option>
-            <option value="">November</option>
-            <option value="">Decemeber</option>
-          </select>
-
-          <label class="expiration-year">Year</label>
-          <select id="experation-year" name="experation-year">
-            <option value="">Year</option>
-            <option value="">2023</option>
-            <option value="">2024</option>
-            <option value="">2025</option>
-            <option value="">2026</option>
-          </select>
-          <br><br><br>
-        </div>
-      </div>
-      <label for="cvv">CVV</label>
-      <input id="cvv" name="cvv" placeholder="CVV" type="text"/>
-      <div class="checkbox">
-          <label><input type="checkbox" style="border-left: 1000px;" checked> Save card details</label>
-      </div>
-      <button class="save-btn" id="saveConfirm" >Save & Confirm</button>
-  </div>
-</div>
-<script src="savecard.js"></script>
-                  <br>
-                    <center>
-                   <button class="btn">
-                    <i class="fa-solid fa-lock"></i> Book Securely
-                  </button></center>
-                </form>
-      
-                <p class="footer-text"><br><br><br><br><br>
-                  <i class="fa-solid fa-lock"></i>
-                  Your credit card infomration is encrypted
-                </p>
-              </div>
-
-          </div>
-        </div>
-
+                pakayapakaka<big>pakaya</big>
+            </div>    
+                <div id="profile"><a href="#" id="prc"><img src="profile2.png" alt="Error 404" class="logo" id="img2">Mage Petiya</a></div>
+        </nav>
         
-      </div>
-  </body>
-</html>
+        <form action="" method="post">
+            <fieldset id="field">
+            <legend>Payment</legend>
+            <label for="name" class="lable">Name on Card :</label>
+            <input type="text" id="name" name="name" placeholder="Name" required class="input"><br><br>
+            <label for="card" class="lable">Card Number :</label>
+            <input type="text" id="card" name="card" placeholder="0000 0000 0000 0000" required class="input"><br><br>
+            <div id="divied">
+            <label for="date" class="lable">Expire Date :</label> 
+            <input type="date" id="date" name="date" required class="input"><br><br>
+            <label for="cvv" class="lable">CVV :</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required class="input"><br><br>
+            </div>
+            </fieldset>
+        </form>
+    </body>
+</html>    

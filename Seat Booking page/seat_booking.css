@@ -139,21 +139,10 @@ label {
 #passengers{
     width: 100%;
 }
-#date{
-    width: 100% ;
-}
 .form-group {
     flex: 1 1 45%;
 }
 
-.captcha-section {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-span{
-    color:rgb(125, 125, 220);
-}
 .actions {
     margin-top: 20px;
     margin-right: 10px;       

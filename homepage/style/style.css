@@ -286,7 +286,8 @@ span{
     color: gray;
     margin-bottom: 20px;
 }
-.card-btn{
+
+.card-btn,.book-btn{
     display: inline-block;
     background-color: blue;
     color:white;
@@ -367,7 +368,7 @@ span{
     max-width: 100%;
   }
   }
-  footer {
+footer {
     background-color: #444;
     color: #fff;
     text-align: center;

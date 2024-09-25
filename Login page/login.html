@@ -1,0 +1,116 @@
+<?php
+
+include ("connection.php");
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head><title>Bus365</title>
+
+    <link rel="stylesheet" type="text/css" href="login.css"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <script src="login.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="../homepage/home.html">Home</a></li>
+                <li><a href="#">Scheduling</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div id="combination">
+
+    <div>
+
+        <fieldset id="WelcomeField">
+            <div id="welbackground"></div>
+            <div id="welcomeText">
+            <h1><u>Welcome Back!</u></h1>
+            </div>
+        </fieldset>        
+
+    </div>
+
+    <div>
+    <fieldset id="loginField">
+
+    <h1 style="color:white;">Login</h1><hr><br>
+
+    <form method="post" action="loginPHP.php">
+
+        <fieldset>
+            <legend>Username</legend>
+
+            <input type="text" name="userName" id="UanP">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Password</legend>
+
+            <input type="password" name="password" id="UanP">
+
+        </fieldset>
+        <br>
+        <input type="checkbox" name="rememberme" id="rememberme">Remember me
+
+        <a href="forgetPW.html" id="forgetpw">Forget Password?</a>
+        </br><br>
+
+        <input type = "submit" value="Login" id="logbut"><br><br>
+
+    </form>
+        <div class="signup">
+        New User?
+        <a href="signup.html">SignUp</a></br><br><br><br>
+        </div>
+        
+
+        <p class="orsigninwith">----------------------------- Or Signin With --------------------------------</p>
+        
+        <div class="images">
+        <a href="https://www.facebook.com/"><img src="facebook.png" width=50 height=50></a>
+        <a href="https://www.instagram.com/"><img src="insta.png" width=46 height=46></a>
+        <a href="https://web.whatsapp.com/"><img src="whatsapp.png" width=46 height=46></a>
+        </div>
+
+    </fieldset>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-logo">LOGO</div>
+    <nav class="footer-nav">
+        <a href="#">Home</a> | 
+        <a href="#">Scheduling</a> | 
+        <a href="#">Booking</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Contact</a>
+    </nav>
+    <div class="social-media">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-google-fill"></i></a>
+    </div>
+    <p>Copyright © 2024 Website. All rights reserved.</p>
+    <p><a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a></p>
+</footer>
+
+</body>
+
+</html>

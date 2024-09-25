@@ -1,0 +1,221 @@
+body{
+
+    background-image : url("Mainbackground.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+header {
+    background-color: #150734;
+    color: #7ed5ea;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    position: relative;
+    color: #7ed5ea;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:after{
+    content:"";
+    position: absolute;
+    background-color:white;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width:100%;
+}
+
+nav a:hover {
+    color:azure;
+}
+
+fieldset{
+    
+    width:150px;
+    border-radius: 10px;
+    
+     
+
+}
+
+#combination{
+
+    display: flex;
+    margin-left:280px;
+    
+
+}
+
+#WelcomeField{
+
+    margin-left:490px;
+    margin-top:70px;
+    background-color:#79abb1;
+    width:440px;
+    height:540px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color:white;
+    /*background-attachment: fixed;*/
+
+}
+
+
+#forgetpw{
+
+    margin-left : 200px;
+
+}
+
+a{
+
+    text-decoration : none;
+
+}
+
+#UanP{
+    width : 400px;
+    background-color : #79abb1;
+    height : 25px;
+    border-style : none;
+
+
+}
+
+#loginField{
+    
+    
+    margin-top : 70px;
+    background-color : #79abb1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:540px;
+    color:#fff;
+    /*background: inherit;
+    overflow: hidden;*/
+    /*background-color: transparent;  
+
+*/
+}
+
+
+
+#logbut{
+
+    
+    background-color: #007fff;
+    font-size : 18px;
+    color : white;
+    width : 150px;
+    height : 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left : 135px;
+
+}
+
+
+.images{
+
+    margin-left : 130px;
+    margin-bottom:;
+
+}
+
+.signup{
+
+    margin-left : 150px;
+    
+
+}
+
+/*.loginimage{
+
+    margin-left : 50%;
+    margin-top : 10%;
+    background-color : #d4d4d4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}*/
+
+legend{
+
+    font-size: 18px;
+    font-style: italic;
+    color : white ;
+
+}
+
+
+footer {
+    margin-top:70px;
+    background-color: #150734;
+    color: #7ed5ea;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer nav {
+    margin-bottom: 1rem;
+}
+
+footer nav a {
+    color: #7ed5ea;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+#link-a{
+    text-decoration: none;
+}
+#link-a:visited{
+    color:#fff;
+}
+
