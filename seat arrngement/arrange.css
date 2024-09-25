@@ -51,6 +51,9 @@ h1 {
     background:goldenrod;
     color: white;
 }
+.seat.selected:hover{
+    color: rgb(111, 15, 15);
+}
 .book-detail{
     padding-left: 250px;
 }
