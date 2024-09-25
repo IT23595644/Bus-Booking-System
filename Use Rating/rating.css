@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Header */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:after{
+    content:"";
+    position: absolute;
+    background-color:white;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width:100%;
+}
+
+nav a:hover {
+    color:azure;
+}
+
+.rating {
+    display: flex;
+    direction: row-reverse;
+    font-size: 2rem;
+}
+
+
+.card{
+    justify-content: center;
+    flex-wrap:wrap-reverse;
+    gap: 25px;
+    margin-top:45px;
+
+  }
+ 
+
+  .Route-card{
+    width:300px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    align-items: center;
+
+  }
+  .Route-card:hover{
+    transform:translateY(-20px);
+  }
+  .Route-card img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+
+  }
+.card-cont{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.card-cont p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.card-btn{
+    display: inline-block;
+    background-color: blue;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial, .rating-form{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+  }
+  .testimonial:hover{
+    transform:translateY(10px);
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .stars{
+    color:navy;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.star {
+    size: 100vh;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+.star.selected {
+    color: gold;
+}
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+form label{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.rating-form button {
+    padding: 0.75rem 2rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-form button:hover {
+    background-color: #333;
+}

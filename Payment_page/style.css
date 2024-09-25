@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(54, 10, 2, 0.932);
+    background-color: rgba(233, 179, 169, 0.932);
     margin: 0;
 }
 .navbar{
@@ -62,4 +62,89 @@ nav a:hover {
     border: none;
     box-shadow: none; 
 }
-
+#field{
+    align-items: center;
+}
+.lable{
+    padding: 0 10px;
+  transition: all 300ms;
+  font-size: 12px;
+  color: #8b8e98;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 14px;
+  position: relative;
+  left: 15px;
+}
+.input{
+    width: auto;
+    height: 50px;
+    text-indent: 9px;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #21262e;
+    transition: all 0.3s;
+    caret-color: #d17842;
+    color: #aeaeae;
+}
+.input:focus{
+    border: 1px solid #d17842;
+}
+.input::placeholder{
+    color: #8b8e98;
+}
+.input:focus::placeholder{
+    color: #d17842;
+}
+#divied{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+#divied input{
+    width: 100%;
+    height: 50px;
+    text-indent: 9px;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #21262e;
+    transition: all 0.3s;
+    caret-color: #d17842;
+    color: #aeaeae;
+}
+#divied input:focus{
+    border: 1px solid #d17842;
+}
+#divied input::placeholder{
+    color: #8b8e98;
+}
+#divied input:focus::placeholder{
+    color: #d17842;
+}
+#divied input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    text-indent: 9px;
+    border-radius: 15px;
+    outline: none;
+    background-color: #d17842;
+    border: 1px solid #d17842;
+    transition: all 0.3s;
+    caret-color: #d17842;
+    color: #aeaeae;
+}
+#divied input[type="submit"]:hover{
+    background-color: #d17842;
+    border: 1px solid #d17842;
+    color: #aeaeae;
+}
+#divied input[type="submit"]:focus{
+    background-color: #d17842;
+    border: 1px solid #d17842;
+    color: #aeaeae;
+}
