@@ -44,3 +44,24 @@
          alert("Please fill in all fields!");
      }
  }
+     /*
+     saveConfirmBtn.onclick = function(event) {
+        // Prevent form submission
+        event.preventDefault();
+    
+        // Check if the form is filled
+        var cardNumber = document.getElementById("card-number").value;
+        var cardholderName = document.getElementById("cardholder-name").value;
+        var expMM = document.getElementById("exp-mm").value;
+        var expYY = document.getElementById("exp-yy").value;
+        var cvv = document.getElementById("cvv").value;
+    
+        // Check if all fields are filled
+        if (cardNumber && cardholderName && expMM && expYY && cvv) {
+            alert("Payment details saved!");
+            modal.style.display = "none"; // Close the modal
+        } else {
+            alert("Please fill in all fields!");
+        }
+    };*/
+    
