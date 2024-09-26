@@ -127,9 +127,6 @@ label {
     display: block;
     margin-bottom: 5px;
 }
-#nic{
-    width: 100%;
-}
 #id{
     width: 100%
 }
@@ -141,9 +138,6 @@ label {
 }
 #passengers{
     width: 100%;
-}
-#date{
-    width: 300px;
 }
 .form-group {
     flex: 1 1 45%;
