@@ -7,7 +7,7 @@
 <html >
 <head>
     <title>Contact Us</title>
-    <link rel="stylesheet" href="header_footer.css">
+    
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
