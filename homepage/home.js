@@ -1,5 +1,5 @@
  // Function to scroll back to the top
-      function scrollToTop() {
+      function scrollToTops() {
           window.scrollTo({
               top: 0,
               behavior: 'smooth'
