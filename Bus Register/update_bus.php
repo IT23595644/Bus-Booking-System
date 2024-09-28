@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'config.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM buses WHERE id = ?");
