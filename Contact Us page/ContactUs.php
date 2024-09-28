@@ -7,8 +7,8 @@
 <html >
 <head>
     <title>Contact Us</title>
-    <link rel="stylesheet" href="Headers-Footers/header.css">
-    <link rel="stylesheet" href="Headers-Footers/footer.css">
+    <link rel="stylesheet" href="../Headers-Footers/header.css">
+    <link rel="stylesheet" href="../Headers-Footers/footer.css">
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body> 

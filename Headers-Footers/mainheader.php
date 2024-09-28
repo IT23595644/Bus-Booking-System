@@ -1,9 +1,9 @@
 <header>
         <div class="contain">
-            <img src="Headers-Footers/logo.png" width="8%">
+            <img src="Headers-Footers/logo.png" width="10%">
             <div>
                 <h1>Bus365</h1>
-                <h6>Book with your Ease</h6>
+                <h6>Ride Easy, Ride with Bus365</h6>
             </div>
             
             
