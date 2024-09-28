@@ -71,7 +71,7 @@
                         <label for="date">Date</label>
                         <input type="date" id="date" value="2024-09-15" name="date" style="width:300px;">
                     </div>
-                    
+                                        
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
                         <button onclick="location.href='../homepage/home.html'" type="button" class="back">Back</button>
