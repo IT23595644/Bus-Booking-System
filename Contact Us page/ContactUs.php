@@ -13,7 +13,7 @@
 </head>
 <body> 
         <?php 
-            include('Headers-Footers/mainheader.php');
+            include('../Headers-Footers/mainheader.php');
         
         ?>
         <div class="container">
@@ -51,7 +51,7 @@
         </div>
         
         <?php
-                include("Headers-Footers/footer.php");
+                include("../Headers-Footers/footer.php");
             
          ?>     
 
