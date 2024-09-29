@@ -1,8 +1,6 @@
 <?php 
     include('config.php')
-
 ?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -12,10 +10,10 @@
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body> 
-        <?php 
-            include('../Headers-Footers/mainheader.php');
-        
-        ?>
+    
+<?php
+        include("../Headers-Footers/mainheader.php");
+    ?>
         <div class="container">
             <div class="box" >
                 <div class="heading">
@@ -50,20 +48,13 @@
             
         </div>
         
-        <?php
-                include("../Headers-Footers/footer.php");
-            
-         ?>     
-
-
-        
-        
-        
-       
-        
-        
+         
+    <?php
+        include ("../Headers-Footers/footer.php");
     
+    ?>
 </body>
+</html>
 <?php
     if(isset($_GET["submit"])){
         $name=$_GET["name"];
@@ -98,4 +89,3 @@
     
     mysqli_close($conn);
 ?>
-</html>
