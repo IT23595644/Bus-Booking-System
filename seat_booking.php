@@ -1,27 +1,14 @@
 <?php
-     include("database.php");
+     include("Seat Booking page/database.php"); //Database connection
 ?>
 
 <?php 
-include("Headers-Footers/header.php");
+    include("Headers-Footers/header.php"); //Header file
 ?>
+    
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
     <script src="Seat Booking page/seat_booking.js"></script>
-
-    <header>
-        <div class="logo">LOGO</div>
-        <nav>
-            <ul>
-                <li><a href="homepage/home.html">Home</a></li>
-                <li><a href="#">Scheduling</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="Contact Us page/contt us.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-  
+    
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
@@ -82,10 +69,6 @@ include("Headers-Footers/header.php");
         </div>
     </div>
    
-    <footer>
-        &copy; 2024 Website. All rights reserved.
-    </footer>
-</div>
-
-</body>
-</html>
+<?php
+    include("Headers-Footers/footer.php");  //Footer file
+?>
