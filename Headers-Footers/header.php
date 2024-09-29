@@ -77,6 +77,7 @@
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
+                    padding: 1px;
                 }           
         </style>
     </head>
@@ -95,8 +96,8 @@
                 <div class="nav">
                     <div class="left">
                         <ul>
-                            <li><a class="navigation" href="homepage/home.html">Home</a></li>
-                            <li><a class="navigation" href="Seat Booking page/seat_booking.php">Booking</a></li>
+                            <li><a class="navigation" href="index.php">Home</a></li>
+                            <li><a class="navigation" href="seat_booking.php">Booking</a></li>
                             <li><a class="navigation" href="#gasa">About</a></li>
                             <li><a class="navigation" href="#gasa">Scheduling</a></li>
                             <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
