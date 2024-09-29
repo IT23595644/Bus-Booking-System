@@ -112,14 +112,6 @@ p{
 .tab.active {
     background-color: #ccc;
 }
-.tabcontent {
-    animation: fadeEffect 3s; 
-}
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 form {
     display: flex;
     flex-wrap: wrap;
