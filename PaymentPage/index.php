@@ -1,12 +1,68 @@
+<?php
+include 'connect.php';
+?>
+
 <html>
     <title>Payment</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .saveLink{
+        text-decoration: none;
+        color: black;
+      }
+      .saveCard{
+        background-color: #0b7dbd;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 200px;
+        padding: 10px;
+        margin-top: -75px;  
+      }
+      .saveCard:hover{
+        background-color: #34aff4;
+      }
+      input{
+        border-radius: 10px;
+        padding: 7px;
+        margin-left: 10px;
+        width: 90%;    
+      }
+      input hover{
+        border: 1px solid black;
+      }
+      #full-name{
+        margin-left: -2px;
+        margin-top: 10px;
+      }
+      #credit-card-num{
+        margin-left: -2px;
+        margin-top: 10px;
+      }
+      #cvv{
+        width: 50px;  
+      }
+      #expiration-month{
+        padding: 7px;
+        border-radius: 10px;
+        width:75px;
+      }
+      #experation-year{
+        padding: 7px;
+        border-radius: 10px;
+      }
+      #year{
+        margin-left: 20px;
+      }
+      
+    </style>
   <body>
     <div class="checkout-container">
       <div class="left-side">
         <div class="text-box">
           <h1 class="home-heading">Bus365</h1>
-          <p class="home-price">pakaya hukapan</p>
+          <p class="home-price">____________________</p>
           <hr class="left-hr" />
     
         </div>
@@ -49,7 +105,7 @@
                         <option value="">Decemeber</option>
                       </select>
       
-                      <label class="expiration-year">Year</label>
+                      <label id="year">Year</label>
                       <select id="experation-year" name="experation-year">
                         <option value="">Year</option>
                         <option value="">2023</option>
@@ -66,58 +122,8 @@
                     <input id="cvv" name="cvv" placeholder="CVV" type="text"/>
                     
                   </div><br><br><br><br>
-                  <button id="paymentBtn">Save Card</button>
-                  <!-- The Modal -->
-<div id="paymentModal" class="modal">
+                  <button class="saveCard"><a href="cards.php" class="saveLink">Save Card</a></button>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 class="form-title">Provide your card information</h2>
-      <label for="full-name">Full Name</label>
-      <input id="cardholder-name" class="input-field" type="text" placeholder="Cardholder Name" required>
-      <label for="credit-card-num">Card Number</label>
-      <input id="card-number" class="input-field" type="text" placeholder="Card Number" required>
-      
-      <div>
-        <p class="expires">Expires on:</p><br>
-        <div class="card-experation">
-          <label for="expiration-month">Month</label>
-          <select id="expiration-month" name="expiration-month" >
-            <option value="">Month:</option>
-            <option value="">January</option>
-            <option value="">February</option>
-            <option value="">March</option>
-            <option value="">April</option>
-            <option value="">May</option>
-            <option value="">June</option>
-            <option value="">July</option>
-            <option value="">August</option>
-            <option value="">September</option>
-            <option value="">October</option>
-            <option value="">November</option>
-            <option value="">Decemeber</option>
-          </select>
-
-          <label class="expiration-year">Year</label>
-          <select id="experation-year" name="experation-year">
-            <option value="">Year</option>
-            <option value="">2023</option>
-            <option value="">2024</option>
-            <option value="">2025</option>
-            <option value="">2026</option>
-          </select>
-          <br><br><br>
-        </div>
-      </div>
-      <label for="cvv">CVV</label>
-      <input id="cvv" name="cvv" placeholder="CVV" type="text"/>
-      <div class="checkbox">
-          <label><input type="checkbox" style="border-left: 1000px;" checked> Save card details</label>
-      </div>
-      <button class="save-btn" id="saveConfirm" >Save & Confirm</button>
-  </div>
-</div>
 <script src="savecard.js"></script>
                   <br>
                     <center>
@@ -139,3 +145,4 @@
       </div>
   </body>
 </html>
+
