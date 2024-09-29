@@ -77,6 +77,7 @@
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
+                    padding: 1px;
                 }           
         </style>
     </head>
