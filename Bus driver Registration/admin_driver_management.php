@@ -52,7 +52,7 @@
 
 
                 while ($driver = $result->fetch_assoc()) {
-                    $address = isset($driver['address']) ? $driver['address'] : '';
+                    $address = isset($driver['Address']) ? $driver['Address'] : '';
 
                     echo "<tr>
                             <td>{$driver['id']}</td>
