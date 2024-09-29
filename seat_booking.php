@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
     <script src="Seat Booking page/seat_booking.js"></script>
-    
+
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
@@ -23,12 +23,12 @@
         <div class="booking-form">
            
             <div class="tabs">
-                <div class="tab active" onclick="openTab(event,'Customer Details')">Customer Details</div>
+                <div class="tab active">Customer Details</div>
             </div>
             
             <div id="Customer Details" class="tabcontent">
                 
-                <form method="POST">
+                <form method="POST" >
                     
                     <div class="form-group">
                         <label for="nic">NIC</label>
@@ -57,7 +57,7 @@
                                         
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
-                        <button onclick="location.href='homepage/home.html'" type="button" class="back">Back</button>
+                        <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
                     <?php

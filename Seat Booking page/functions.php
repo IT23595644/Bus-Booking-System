@@ -11,10 +11,9 @@
 
             $sql = "INSERT INTO seat_booking_history (NIC, Location, Destination, No_of_passengers, Date)
                     VALUES ('$nic', '$location', '$destination', '$passenger', '$date')";
-            mysqli_query($conn, $sql);
+            mysqli_query(mysql: $conn, query: $sql);
                         
-            header("Location: Payment_page/payment.html");
-            exit();
+            echo"<script> location.replace('index.php'); </script>";
         } 
     }
 ?>
