@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'db.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare("DELETE FROM buses WHERE id = ?");

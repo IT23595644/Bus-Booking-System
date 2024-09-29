@@ -1,10 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-image: url(back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
 }
