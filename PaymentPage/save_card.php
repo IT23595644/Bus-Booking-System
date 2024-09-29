@@ -28,9 +28,9 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <title>Save Card</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_save.css">
     <style>
-        form {
+         form {
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -44,47 +44,81 @@ if (isset($_POST['submit'])) {
 
         button {
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #999b98;
             color: white;
             border: none;
             cursor: pointer;
         }
+        .box{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            border: none ;
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            background-color: rgba(0,0,0, 0.2);
+        } 
+        #exp-m{
+            width: 50px;
+            margin-right: 10px;
+            background-color: rgba(173, 181, 255, 0.2);
+        }
+        #exp-y{
+            width: 70px;
+            margin-right: 10px;
+            background-color: rgba(173, 181, 255, 0.2);
+        }
+        .saveC{
+            width: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 355px;
+        }
+        #cardholder-name{    
+        margin-left: -2px;
+        margin-top: 10px;
+        padding: 7px;
+        background-color: rgba(173, 181, 255, 0.2);
+      }
+      #card-number{
+        margin-left: -2px;
+        margin-top: 10px;
+        padding: 7px;
+        background-color:rgba(173, 181, 255, 0.2);
+      }
+        #cvv{
+            width: 50px;  
+            padding: 7px;
+            background-color: rgba(173, 181, 255, 0.2);
+        }
+        .back{
+            margin-top: 0px;
+            margin-left: -5px;
+            width:20px
+        }
     </style> 
 </head>
 <body>
+    
     <form method="POST" action="save_card.php">
-        <label for="full-name">Full Name</label>
-        <input id="cardholder-name" name="Full_Name" class="input-field" type="text" placeholder="Cardholder Name" required><br>
-        <label for="credit-card-num">Card Number</label>
-        <input id="card-number" name="Card_Number" class="input-field" type="text" placeholder="Card Number" required>
-        <label for="exp-month">Expiration Month</label>
-        <select id="exp-month" name="Month">
-            <option value="">Month</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-        </select>
-        <label for="exp-year">Expiration Year</label>
-        <select id="exp-year" name="Year">
-            <option value="">Year</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-        </select>
-        <label for="cvv">CVV</label>
-        <input id="cvv" name="CVV" placeholder="CVV" type="text"/>
-        <button type="submit" name="submit">Save Card</button>
+    <div class="box">
+        <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
+        <label for="full-name" style="color: #f9f9f9; font-size:large">Full Name</label><br>
+        <input id="cardholder-name" name="Full_Name" class="input-field" type="text" required><br>
+        <label for="credit-card-num" style="color: #f9f9f9; font-size:large">Card Number</label><br>
+        <input id="card-number" name="Card_Number" class="input-field" type="number" required><br><br>
+        <label for="exp-month" style="color: #f9f9f9; font-size:large"> Month</label>
+        <input type="number" id="exp-m" name="Month">
+        <label for="exp-year" style="color: #f9f9f9; font-size:large"> Year</label>
+        <input type="number" id="exp-y" name="Year"><br><br><br>
+        <label for="cvv" style="color: #f9f9f9; font-size:large">CVV</label>
+        <input id="cvv" name="CVV" type="text"/><br>
+        <button type="submit" name="submit" class="saveC">Save Card</button>
+        </div>
     </form>
+    
 </body>
 </html>
 

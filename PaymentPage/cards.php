@@ -26,78 +26,138 @@ if (isset($_POST['submit'])) {
 <head>
     <title>Save Card</title>
     <style>
-        table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-    }
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(777.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    table, th, td {
-      border: 1px solid #ddd;
-    }
+.card-box {
+    background-color: #c0c0c0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    th, td {
-      padding: 12px;
-      text-align: left;
-    }
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-    th {
-      background-color: #f2f2f2;
-      color: #333;
-    }
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
 
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
+th {
+    background-color: #f4f4f4;
+}
 
-    tr:nth-child(odd) {
-      background-color: #e6e6e6;
-    }
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
 
-    tr:hover {
-      background-color: #d0d0d0;
-    }
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
 
-    td {
-      color: #333;
-    }
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
 
-    .nextButton {
-      background-color: #838383;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      border-radius: 16px;
-    }
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.exp-month {
+    width: 50px;
+}
+
+.update-btn {
+    background-color:#585858;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #585858;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn a, .delete-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.update-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+
+.add-new-card-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-new-card-btn:hover {
+    background-color: #0056b3;
+}
+
+.payment-details {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
     </style> 
 </head>
 <body>
 <div>
-  <div>
-    <h2>Choose an Option</h2>
+<div class="card-box">
+    <h2><a href="index.php" style="text-decoration: none; color:black;">Choose an Option</a></h2>
     <form method="POST" action="save_card.php">
-      
-      <a href="save_card.php">
-            <a href="save_card.php" class="nextButton">Add New Card</a>
-            <br><br>
+    <div class="payment-details box">
       <table>
         <tr>
           <td>ID</td>
           <td>Full Name</td>
           <td>Card Number</td>
-          <td>Expiration Month</td>
-          <td>Expiration Year</td>
+          <td> Month</td>
+          <td> Year</td>
           <td>CVV</td>
-          <td></td>
-          <td></td>
+          <td colspan="2"></td>
         </tr>
         <?php
         $query = "SELECT * FROM card_details";
@@ -114,16 +174,20 @@ if (isset($_POST['submit'])) {
             <td>'.$ID.'</td>
             <td>'.$fullName.'</td>
             <td>'.$cardNumber.'</td>
-            <td>'.$expMonth.'</td>
+            <td class="exp-month">'.$expMonth.'</td>
             <td>'.$expYear.'</td>
             <td>'.$cvv.'</td>
-            <td><button><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+            <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
+            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
             </tr>';
         }
       }
         ?>   
       </table>
+    </div>
+      <div class="button-container">
+          <a href="save_card.php" class="add-new-card-btn">Add New Card</a>
+        </div>
     </form>
   </div>
 </div>
