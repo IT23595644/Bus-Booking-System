@@ -1,9 +1,11 @@
 <?php
-include 'config.php';
-
-// Fetch all buses
-$stmt = $mysqli->query("SELECT * FROM buses");
+include 'db.php';
+/*
+$stmt = $pdo->query("SELECT * FROM buses");
 $buses = $stmt->fetchAll();
+
+*/
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +28,7 @@ $buses = $stmt->fetchAll();
             <th>Name</th>
             <th>Route</th>
             <th>Capacity</th>
-            <th>Actions</th>
+            <th class="actions">Actions</th>
         </tr>
         <?php foreach ($buses as $bus): ?>
         <tr>
@@ -34,7 +36,7 @@ $buses = $stmt->fetchAll();
             <td><?php echo $bus['name']; ?></td>
             <td><?php echo $bus['route']; ?></td>
             <td><?php echo $bus['capacity']; ?></td>
-            <td>
+            <td class="actions">
                 <button id="edit-button"><a href="update_bus.php?id=<?php echo $bus['id']; ?>">Edit</a></button>
                 <button id="delete-button"><a href="delete_bus.php?id=<?php echo $bus['id']; ?>" onclick="return confirm('Are you sure?');">Delete</a></button>
             </td>
