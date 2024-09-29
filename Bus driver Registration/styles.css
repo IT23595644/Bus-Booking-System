@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.adict{
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+
+}
+.adict a{
+text-decoration: none;
+color:white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
