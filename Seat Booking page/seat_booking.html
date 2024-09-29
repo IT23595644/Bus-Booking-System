@@ -39,11 +39,10 @@
         <div class="booking-form">
            
             <div class="tabs">
-                <div class="tab active" onclick="openTab(event,'General Passenger')">General Passenger</div>
-                <div class="tab" onclick="openTab(event,'Warrent Passenger')">Warrent Passenger</div>
+                <div class="tab active" onclick="openTab(event,'Customer Details')">Customer Details</div>
             </div>
             
-            <div id="General Passenger" class="tabcontent">
+            <div id="Customer Details" class="tabcontent">
                 
                 <form method="POST">
                     
@@ -83,44 +82,6 @@
 
                 </form>
             </div>
-
-            <div id="Warrent Passenger" class="tabcontent">
-                <form method="POST">
-                    
-                    <div class="form-group">
-                        <label for="id">Warrent ID</label>
-                        <input type="text" id="id" name="wid">
-                    </div>
-                    <div class="form-group">
-                        <label for="from">From</label>
-                        <input type="text" id="from" name="wfrom">
-                    </div>
-                    <div class="form-group">
-                        <label for="to">To</label>
-                        <input type="text" id="to" name="wto">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="passengers">No of passengers</label>
-                        <input type="text" id="passengers" name="wpassengers">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" value="2024-09-15" name="wdate" style="width:300px;">
-                    </div>
-                    
-                    <?php
-                        include("functions_warrent.php");
-                    ?>
-                    
-                    <div class="actions">
-                        <button type="submit" class="confirm">Confirm</button>
-                        <button onclick="location.href='../homepage/home.html'" type="button" class="back">Back</button>
-                    </div>
-                </form>
-            </div>
-            
         </div>
     </div>
    

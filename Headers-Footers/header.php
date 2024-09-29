@@ -47,7 +47,7 @@
                     text-decoration: none;   
                     color:rgb(255, 255, 255);
                 }
-                .nav a:hover{
+                .nav .navigation:hover{
                     background-color: rgb(5, 5, 5);
                     transition: 0.5s;
                 }
@@ -59,6 +59,9 @@
                     border: none;
                     border-radius: 8px;
                     font-weight: bold;
+                }
+                .btnin a{
+                    text-decoration: none;
                 }
                 .btnin:hover{
                     background-color: #3787ff;
@@ -94,18 +97,18 @@
                 <div class="nav">
                     <div class="left">
                         <ul>
-                            <li><a href="homepage/home.html">Home</a></li>
-                            <li><a href="Seat Booking page/seat_booking.php">Booking</a></li>
-                            <li><a href="#gasa">About</a></li>
-                            <li><a href="#gasa">Scheduling</a></li>
-                            <li><a href="ContactUs.php">Contact Us</a></li>
+                            <li><a class="navigation" href="homepage/home.html">Home</a></li>
+                            <li><a class="navigation" href="Seat Booking page/seat_booking.php">Booking</a></li>
+                            <li><a class="navigation" href="#gasa">About</a></li>
+                            <li><a class="navigation" href="#gasa">Scheduling</a></li>
+                            <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="right">
                         <?php
                             if(isset($_SESSION["username"]))
                             {
-                                echo'<a href="Inc/logout.inc.php"><button class="btnin">Log Out</button></a>';
+                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
                             }
                             else{
                                 echo'<button class="btnin">Sign In</button>
