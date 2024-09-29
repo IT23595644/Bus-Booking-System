@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<?php
+        include_once("Headers-Footers/header.php");
+  ?>
+
     
     <title>User Ratings</title>
-    <link rel="stylesheet" href="rating.css">
-    <script src="ratings.js"></script>
+    <link rel="stylesheet" href="../Use Rating/rating.css">
+    <script src="../Use Rating/ratings.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
-
-</head>
-<body>
 
     <!-- Header Section -->
     <header>
@@ -170,5 +168,7 @@
 
 
     </div>
-
-</body>
+    <?php
+        include_once("../Bus-Booking-System/Headers-Footers/footer.php`");
+    ?>
+  

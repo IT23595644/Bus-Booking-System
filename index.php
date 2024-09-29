@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus 365</title>
-    <link rel="stylesheet" href="style/style.css">
+<?php
+        include_once("Headers-Footers/header.php");
+  ?>
+    <link rel="stylesheet" href="../Bus-Booking-System/homepage/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+    <link rel="icon" href="../Bus-Booking-System/Headers-Footers/logo.png" type="image/png">
 
-</head>
-<body>
 <div class="content">
-    <div class="navbar">
-        <nav>
-            <img src="images/logo.jpg" alt="Error 404" class="logo">
-            <a href="home.html">Home</a>
-            <a href="#">Schedule</a>
-            <a href="../Seat Booking page/seat_booking.php">Booking</a>
-            <a href="#">About Us</a>
-            <a href="../Contact Us page/ContactUs.php">Contact Us</a>
-
-         <div class="login">
-          <a href="../Login page/login.html"> <i class="ri-login-circle-line"></i>Log in</a>
-         </div>
-         
-         <div class="register">
-          <a href="../SignUp/signup.html"> <i class="ri-register-circle-line"></i>Register</a>
-         </div>
-    
-        </nav>
-    </div>
-  
     <div class="location">
         <div class="locat">
             <p>Travel To</p>
@@ -82,7 +57,7 @@
     <div class="border"></div>
     <div class="card">
         <div class="Route-card">
-            <img src="images/bus2.png">
+            <img src="../Bus-Booking-System/homepage/images/bus1.jpg">
             <div class="card-cont">
                 <h1>ND - 2256 </h1>
                 <p>Matara to Katharagama</p>
@@ -90,7 +65,7 @@
             </div>
         </div>
         <div class="Route-card">
-            <img src="images/xx.png">
+            <img src="../Bus-Booking-System/homepage/images/xx.png">
             <div class="card-cont">
                 <h1>NC - 0056 </h1>
                 <p>Badulla to Ampara</p>
@@ -98,7 +73,7 @@
             </div>
         </div>
         <div class="Route-card">
-            <img src="images/bus1.jpg">
+            <img src="../Bus-Booking-System/homepage/images/bus1.jpg">
             <div class="card-cont">
                 <h1>NB - 1089 </h1>
                 <p>Tangalle to Jaffna</p>
@@ -116,7 +91,7 @@
       <div class="row">
         <div class="col">
           <div class="testimonial">
-            <img src="images/p1.png" alt="">
+            <img src="../Bus-Booking-System/homepage/images/p1.png" alt="">
             <div class="name">Wasika</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -135,7 +110,7 @@
 
         <div class="col">
           <div class="testimonial">
-            <img src="images/p2.png" alt="">
+            <img src="../Bus-Booking-System/homepage/images/p2.png" alt="">
             <div class="name">Nethmi</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -154,7 +129,7 @@
 
         <div class="col">
           <div class="testimonial">
-            <img src="images/p3.png" alt="">
+            <img src="../Bus-Booking-System/homepage/images/p3.png" alt="">
             <div class="name">Supuni</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -177,25 +152,7 @@
   <button id="back-to-top" onclick="scrollToTops()"></button>
     <script src="home.js"></script>
 
-  <footer>
-    <div class="footer-logo">LOGO</div>
-    <nav class="footer-nav">
-        <a href="#">Home</a> | 
-        <a href="#">Scheduling</a> | 
-        <a href="#">Booking</a> | 
-        <a href="#">About</a> | 
-        <a href="#">Contact</a>
-    </nav>
-    <div class="social-media">
-        <a href="#"><i class="ri-facebook-fill"></i></a>
-        <a href="#"><i class="ri-linkedin-fill"></i></a>
-        <a href="#"><i class="ri-google-fill"></i></a>
-    </div>
-    <p>Copyright © 2024 Website. All rights reserved.</p>
-    <p><a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a></p>
-</footer>
+  <?php
+        include_once("../Bus-Booking-System/Headers-Footers/footer.php");
+  ?>
   
-
-
-</body>
-</html>

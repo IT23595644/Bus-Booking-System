@@ -24,6 +24,7 @@
                     justify-content:center;
                     align-items: center;
                     text-align: center;
+                    padding:40px 40px 40px 40px;
                 }
                 .nav{
                     display:flex;
@@ -70,13 +71,14 @@
                 footer{
                     font-family: 'poppins';
                     color:rgb(255, 255, 255);
-                    position: fixed;
+                    position: relative;
                     bottom:0px;
                     left:50%;
                     transform: translateX(-50%);
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
+                    margin-top: 60px;
                 }           
         </style>
     </head>
@@ -85,7 +87,7 @@
         <div class="mainContainer"
         <header>
                 <div class="contain">
-                    <img src="logo.png" width="8%">
+                    <img src="../Headers-Footers/logo.png" width="8%">
                     <div>
                         <h1>Bus365</h1>
                         <h6>Ride Easy, Ride with Bus365</h6>
