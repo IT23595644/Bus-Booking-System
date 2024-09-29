@@ -2,24 +2,21 @@
      include("database.php");
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Book Your Seats</title>
-    <link rel="stylesheet" href="seat_booking.css">
-    <script src="seat_booking.js"></script>
-</head>
-<body>
+<?php 
+include("Headers-Footers/header.php");
+?>
+    <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
+    <script src="Seat Booking page/seat_booking.js"></script>
 
     <header>
         <div class="logo">LOGO</div>
         <nav>
             <ul>
-                <li><a href="../homepage/home.html">Home</a></li>
+                <li><a href="homepage/home.html">Home</a></li>
                 <li><a href="#">Scheduling</a></li>
                 <li><a href="#">Booking</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="../Contact Us page/contt us.html">Contact us</a></li>
+                <li><a href="Contact Us page/contt us.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +30,7 @@
     
     <div class="main-section">
         <div class="image-section">
-            <img src="e.png" alt="bus_art" height="300px" width="375px">
+            <img src="Seat Booking page/e.png" alt="bus_art" height="300px" width="375px">
         </div>
 
         <div class="booking-form">
@@ -73,11 +70,11 @@
                                         
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
-                        <button onclick="location.href='../homepage/home.html'" type="button" class="back">Back</button>
+                        <button onclick="location.href='homepage/home.html'" type="button" class="back">Back</button>
                     </div>
 
                     <?php
-                        include("functions_general.php");
+                        include("Seat Booking Page/functions.php");
                     ?>
 
                 </form>

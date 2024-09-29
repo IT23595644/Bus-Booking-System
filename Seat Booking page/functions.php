@@ -13,7 +13,7 @@
                     VALUES ('$nic', '$location', '$destination', '$passenger', '$date')";
             mysqli_query($conn, $sql);
                         
-            header("Location: ../Payment_page/payment.html");
+            header("Location: Payment_page/payment.html");
             exit();
         } 
     }
