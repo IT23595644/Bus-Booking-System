@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+
+?>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Bus365</title>
@@ -97,6 +102,7 @@
                     <div class="right">
                         <button class="btnin">Sign In</button>
                         <button class="btnin">Sign Up</button>
+                        <button class="btnin">Log Out</button>
                     </div>   
                 </div>  
         </header>
