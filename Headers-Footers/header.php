@@ -100,9 +100,17 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <button class="btnin">Sign In</button>
-                        <button class="btnin">Sign Up</button>
-                        <button class="btnin">Log Out</button>
+                        <?php
+                            if(isset($_SESSION["username"]))
+                            {
+                                echo'<a href="Inc/logout.inc.php"><button class="btnin">Log Out</button></a>';
+                            }
+                            else{
+                                echo'<button class="btnin">Sign In</button>
+                                    <button class="btnin">Sign Up</button>';
+                            }
+
+                        ?>
                     </div>   
                 </div>  
         </header>
