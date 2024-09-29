@@ -153,6 +153,6 @@
     <script src="home.js"></script>
 
   <?php
-        include_once("../Bus-Booking-System/Headers-Footers/footer.php`");
+        include_once("../Bus-Booking-System/Headers-Footers/footer.php");
   ?>
   
