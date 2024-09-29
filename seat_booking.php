@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
     <script src="Seat Booking page/seat_booking.js"></script>
-    
+
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
@@ -57,7 +57,7 @@
                                         
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
-                        <button onclick="location.href='homepage/home.html'" type="button" class="back">Back</button>
+                        <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
                     <?php

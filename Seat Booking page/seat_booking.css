@@ -9,49 +9,7 @@ body {
     background-size: cover;
 }
 
-header {
-    background-color: #444;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav ul li a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-a:after{
-    content:"";
-    position: absolute;
-    background-color:white;
-    height: 3px;
-    width:0;
-    left:0;
-    bottom:-10px;
-    transition: 0.3s;
-}
-a:hover:after{
-    width:100%;
-}
-nav a:hover {
-    color:azure;
-}
 .title{
     background-color: #ccccccb4;
     margin-right: 600px;
@@ -75,7 +33,7 @@ p{
     display: flex;
     padding: 20px;
     border: 5px solid white;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 10px;
@@ -111,6 +69,7 @@ p{
 }
 .tab.active {
     background-color: #ccc;
+
 }
 form {
     display: flex;
@@ -155,13 +114,4 @@ label {
     background-color: #ccc;
 }
 
-
-footer {
-  background-color: #444;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 89px;;
-  
-}
 
