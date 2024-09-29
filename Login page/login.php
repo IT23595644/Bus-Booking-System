@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 include("config.php");
 
@@ -7,11 +6,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $sql = "SELECT * FROM logindetails WHERE '$user' = userName AND '$pass' =  password";
+    $sql = "SELECT * FROM logindetails WHERE userName = '$user';";
     $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
 
+    if(mysqli_num_rows($result)>0){
+        $row=mysqli_fetch_assoc($result);
+        
+        if($row["password"]==$pass){
+            session_start();
+            $_SESSION["username"]=$row["userName"];
+            $_SESSION["password"]=$row["password"];
+
+            
+            header("location:../homepage/home.html");
+
+        }
+        else{
+            
+            header("location: index.php?error=incorrectpassword");
+            
+        }
+    }
+    else{
+        echo "<script>
+                alert('UserNotfound');
+        </script>";
+    }
+    
+/*
     if($count<1){
 
         echo '<script>
@@ -25,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         header("location : welcome.php");
 
-    }
+    }*/
 
 }
 
