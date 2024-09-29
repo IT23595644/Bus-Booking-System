@@ -16,10 +16,4 @@
         echo "Database is disconected";
     }
         
-    
-    
-    
-   
-
-
 ?>

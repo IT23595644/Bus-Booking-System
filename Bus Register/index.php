@@ -2,7 +2,7 @@
 include 'config.php';
 
 // Fetch all buses
-$stmt = $pdo->query("SELECT * FROM buses");
+$stmt = $mysqli->query("SELECT * FROM buses");
 $buses = $stmt->fetchAll();
 ?>
 

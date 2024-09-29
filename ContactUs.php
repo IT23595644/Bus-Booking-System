@@ -1,29 +1,15 @@
 <?php 
-    include('config.php')
-
+    include('Contact Us page/config.php')
 ?>
-
-<!DOCTYPE html>
-<html >
-<head>
-    <title>Contact Us</title>
-    
-    <link rel="stylesheet" href="contactus.css">
-</head>
-<body>
-    <div class="companyname">
-        <center>Bus365</center>
-        <label>Book With Your Ease</label>
-    </div>   
-        <?php 
-            include("header.html");
-        
+        <?php
+        include_once("Headers-Footers/header.php");
         ?>
+        <link rel="stylesheet" href="Contact Us page/contactus.css">
         <div class="container">
             <div class="box" >
                 <div class="heading">
                     <h1>Contact Us</h1>
-                    <label >At Bus365, we are committed to making your travel experience seamless and hassle-free. Whether you have a question about your booking, need assistance with our services, or want to provide feedback, we’re here to help.</label><br><br>
+                    <label >At Bus365, we are committed to making your travel experience seamless and hassle-free. Whether you have a question about your booking, need assistance with our services, or want to provide feedback, we are here to help.</label><br><br>
                     <pre><b>Customer Support:<b></pre>
                     <ul>
                         <li><span class="icon">📞</span>Phone:0703375900</li>
@@ -48,21 +34,18 @@
                             <input class="btn"type="submit" name="submit"><br>
                         </form>
                     </fieldset>
-                </div>       
-            </div>
-        
-        
-        
-        </div>
-        <div>
-            <?php
-                include("footer.html");
+                </div>   
+            <div>
             
-            ?>
         </div>
         
+         
+    <?php
+        include_once("Headers-Footers/footer.php");
     
+    ?>
 </body>
+</html>
 <?php
     if(isset($_GET["submit"])){
         $name=$_GET["name"];
@@ -89,11 +72,7 @@
            
 
         }
-
-            
-       
     
     
     mysqli_close($conn);
 ?>
-</html>
