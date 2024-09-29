@@ -28,7 +28,7 @@
             
             <div id="Customer Details" class="tabcontent">
                 
-                <form method="POST">
+                <form method="POST" >
                     
                     <div class="form-group">
                         <label for="nic">NIC</label>
