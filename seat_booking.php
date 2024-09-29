@@ -23,7 +23,7 @@
         <div class="booking-form">
            
             <div class="tabs">
-                <div class="tab active" onclick="openTab(event,'Customer Details')">Customer Details</div>
+                <div class="tab active">Customer Details</div>
             </div>
             
             <div id="Customer Details" class="tabcontent">
