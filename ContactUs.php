@@ -1,19 +1,10 @@
 <?php 
-    include('config.php')
+    include('Contact Us page/config.php')
 ?>
-<!DOCTYPE html>
-<html >
-<head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../Headers-Footers/header.css">
-    <link rel="stylesheet" href="../Headers-Footers/footer.css">
-    <link rel="stylesheet" href="contactus.css">
-</head>
-<body> 
-    
-<?php
-        include("../Headers-Footers/mainheader.php");
-    ?>
+        <?php
+        include_once("Headers-Footers/header.php");
+        ?>
+        <link rel="stylesheet" href="Contact Us page/contactus.css">
         <div class="container">
             <div class="box" >
                 <div class="heading">
@@ -50,7 +41,7 @@
         
          
     <?php
-        include ("../Headers-Footers/footer.php");
+        include_once("Headers-Footers/footer.php");
     
     ?>
 </body>
@@ -81,10 +72,6 @@
            
 
         }
-
-            
-            /*
-        }*/
     
     
     mysqli_close($conn);
