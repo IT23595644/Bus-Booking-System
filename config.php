@@ -4,8 +4,7 @@
     $db_password="";
     $db_name="bus365";
     $conn="";
-
-
+    
     try{
         $conn=mysqli_connect($db_server, 
         $db_user,

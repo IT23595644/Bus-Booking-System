@@ -3,7 +3,7 @@
     $db_server="localhost";
     $db_user= "root";
     $db_pass= "";
-    $db_name= "bus365";
+    $db_name= "x";
     $conn="";
 
     try{
