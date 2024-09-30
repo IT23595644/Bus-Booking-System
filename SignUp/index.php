@@ -1,20 +1,17 @@
 <?php
 
- include('connection.php');
+    include('connection.php');
+
+    include('../Headers-Footers/header.php');
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus365</title>
     <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
-    <h2>Register Form</h2>
+
+    <br>
+    <div class="title"><h2>Register Form</h2></div>
+    <br>
+    <div id="regform">
     <form action="signup.php" method="POST">
         <label>First Name:</label><br>
         <input type="text" id="first_name" name="first_name" required ><br><br>
@@ -36,5 +33,11 @@
         
         <input type="submit" value="Signup" class="subbtn">
     </form>
-</body>
-</html>
+    </div>
+    <br><br><br>
+
+<?php
+
+    include('../Headers-Footers/footer.php');
+
+?>
