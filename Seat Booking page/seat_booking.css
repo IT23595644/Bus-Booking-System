@@ -94,6 +94,9 @@ label {
 #passengers{
     width: 100%;
 }
+#seat_no{
+    width: 100%;
+}
 .form-group {
     flex: 1 1 45%;
 }

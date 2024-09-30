@@ -14,7 +14,8 @@
             
             <button type="button" class="button">Add Supporter</button><br>
             <?php
-            
+             echo "<table border='1'><th>First Name<th>Last Name</th><th>Address</th><th>Phone Number</th><th>DOB</th>";
+             
             
 
             
