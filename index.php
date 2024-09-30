@@ -31,7 +31,7 @@
 <div class="testimonials">
   <div class="view">
       <div class="search-container">
-        <form method="POST">
+        <form method="GET" action="search-results.php">
           <div class="form-group">
               <label for="from">From</label>
               <input type="text" id="from" name="from">
@@ -44,7 +44,9 @@
               <label for="date">Date</label>
               <input type="date" id="date" value="2024-09-15" name="date" style="width:300px;">
           </div>
-          
+          <?php
+          include('search-results.php');
+          ?>
           <div class="actions">
               <button type="button" class="serch">Search</button>
           </div>

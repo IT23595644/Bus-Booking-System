@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-a:after{
+.card-btn:after{
     content:"";
     position: absolute;
     background-color: blue;
@@ -21,12 +21,8 @@ a:after{
     bottom:1px;
     transition: 0.3s;
 }
-a:hover:after{
+.card-btn:hover:after{
     width:100%;
-}
-
-nav a:hover {
-    color:azure;
 }
 
 .logo{
