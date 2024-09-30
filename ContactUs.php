@@ -44,6 +44,7 @@
         include_once("Headers-Footers/footer.php");
     
     ?>
+    
 </body>
 </html>
 <?php
