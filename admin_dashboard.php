@@ -2,7 +2,8 @@
     include("Headers-Footers/header.php");
 ?>
 
-<link rel="stylesheet" href="admin_styles.css"> 
+<link rel="stylesheet" href="Admin dashboard/admin_styles.css"> 
+<script src="Admin dashboard/admin.js"></script>
 
 <div class="title">
     <h1>Admin Dashboard</h1>

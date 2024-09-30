@@ -141,6 +141,14 @@ table tr:last-child td:last-child {
     justify-content: center;
     margin-top: 20px;
 }
+.row-click:hover {
+      background-color: #d0d0d0;
+      cursor: pointer;
+    }
+  .card-click{
+        text-decoration: none;
+        color: black;
+  }  
     </style> 
 </head>
 <body>
@@ -170,13 +178,16 @@ table tr:last-child td:last-child {
             $expMonth = $row['Month'];
             $expYear = $row['Year'];
             $cvv = $row['CVV'];
-            echo '<tr>
-            <td>'.$ID.'</td>
-            <td>'.$fullName.'</td>
-            <td>'.$cardNumber.'</td>
-            <td class="exp-month">'.$expMonth.'</td>
-            <td>'.$expYear.'</td>
-            <td>'.$cvv.'</td>
+            
+            echo '<tr class="row-click">
+            
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$ID.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$fullName.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$cardNumber.'</a></td>
+            <td class="exp-month"><a href="index.php?cardid='.$ID.'" class="card-click" >'.$expMonth.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$expYear.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$cvv.'</a></td>
+            
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
             <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
             </tr>';

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    background: url(background.jpg);
+    background: url('../UserDashboard/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,6 +15,17 @@ hr{
     margin-right: 25px;
     
 }
+.logdetails{
+    padding:8px;
+    background-color: #c8c8c8b8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+input,label{  
+    margin-left:50px;
+    width:75%;
+}
 
 .box{
     border-radius: 15px;
@@ -24,6 +35,7 @@ hr{
     margin-right: 50px;
     margin-top: 0%;
     background-color: #c8c8c8b8;
+    padding:50px;
 
 }
 

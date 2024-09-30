@@ -3,14 +3,13 @@
    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if (isset($_POST['nic'], $_POST['from'], $_POST['to'], $_POST['passengers'], $_POST['date'])) {
-            $nic = $_POST['nic'];
-            $location = $_POST['from'];
-            $destination = $_POST['to'];
-            $passenger = $_POST['passengers'];
+            $seat_no = $_POST['seat_no'];
             $date = $_POST['date'];
+            $nic = $_POST['nic'];
+    
 
-            $sql = "INSERT INTO seat_booking_history (NIC, Location, Destination, No_of_passengers, Date)
-                    VALUES ('$nic', '$location', '$destination', '$passenger', '$date')";
+            $sql = "INSERT INTO seatbooks (seatNum, date, NIC)
+                    VALUES ('$seat_no', '$date', '$nic')";
             mysqli_query(mysql: $conn, query: $sql);
                         
             echo"<script> location.replace('index.php'); </script>";

@@ -26,6 +26,9 @@
                     align-items: center;
                     text-align: center;
                 }
+                .iconlogo{
+                    font-size: 4rem;
+                }
                 .nav{
                     display:flex;
                     justify-content: space-between;
@@ -41,7 +44,7 @@
                     
                 }
 
-                .nav a{
+                .nav .navigation{
                     
                     padding:18px 30px;
                     text-decoration: none;   
@@ -71,10 +74,10 @@
                 footer{
                     font-family: 'poppins';
                     color:rgb(255, 255, 255);
-                    position: fixed;
+                    position:fixed;
                     bottom:0px;
                     left:50%;
-                    transform: translateX(-50%);
+                    transform: translateX(-50%); 
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
@@ -87,7 +90,8 @@
         <div class="mainContainer"
         <header>
                 <div class="contain">
-                    <img src="./Headers-Footers/logo.png" width="8%">
+                <!--<img src="./Headers-Footers/logo.png" width="8%">-->
+                    <div class="iconlogo">🚌</div>
                     <div>
                         <h1>Bus365</h1>
                         <h6>Ride Easy, Ride with Bus365</h6>

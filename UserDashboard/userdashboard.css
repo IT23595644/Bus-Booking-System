@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    background: url(background.jpg);
+    background: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,6 +15,16 @@ hr{
     margin-right: 25px;
     
 }
+.logdetails{
+    padding:8px;
+    background-color: #c8c8c8b8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.logdetails h4{
+    
+}
+
 
 .box{
     border-radius: 15px;
