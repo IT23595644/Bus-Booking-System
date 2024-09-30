@@ -1,5 +1,5 @@
 <?php 
-    include('Contact Us page/config.php')
+    include('config.php')
 ?>
         <?php
         include_once("Headers-Footers/header.php");
