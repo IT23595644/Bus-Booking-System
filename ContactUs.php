@@ -77,4 +77,3 @@
     
     mysqli_close($conn);
 ?>
-}
