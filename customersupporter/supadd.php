@@ -11,14 +11,28 @@
     
 
     <div class="box">      
-        <div class="button1">
+      <!--  <div class="button1">
             
             <button type="button" class="button"></button><br>
-        </div>
+        </div>-->
         <div>
             <form method="post" action="">
-              <label>First Name:</label>
-            <input type="text0" name="fname">
+                <label>First Name:</label><br>
+                <input type="text" name="fname"><br>
+
+                <label>Last Name:</label><br>
+                <input type="text" name="fname"><br>
+
+                <label>Address Name:</label><br>
+                <input type="text" name="fname"><br>
+
+                <label>First Name:</label><br>
+                <input type="text" name="fname"><br>
+
+                <label>First Name:</label><br>
+                <input type="text" name="fname"><br>
+
+                
 
 
 
