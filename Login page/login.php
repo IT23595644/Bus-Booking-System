@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             echo "<script>
                     invalidPassword();
-                    header('location:../Login page/index.php');
+                    window.location.href = 'index.php';
                 </script>";
 
         }
