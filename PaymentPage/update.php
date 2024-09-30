@@ -87,13 +87,13 @@ if($result){
         margin-top: 10px;
         padding: 7px;
         background-color: rgba(173, 181, 255, 0.2);
-      }
-      #card-number{
+        }
+        #card-number{
         margin-left: -2px;
         margin-top: 10px;
         padding: 7px;
         background-color:rgba(173, 181, 255, 0.2);
-      }
+        }
         #cvv{
             width: 50px;  
             padding: 7px;
@@ -107,7 +107,6 @@ if($result){
     </style> 
 </head>
 <body>
-                <!--   <button class="saveCard"><a href="cards.php" class="saveLink">Save Card</a></button> -->
 
     <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
     <div class="box">

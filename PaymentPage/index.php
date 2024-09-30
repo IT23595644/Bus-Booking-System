@@ -1,10 +1,22 @@
 <?php
 include 'connect.php';
+
+$ID = $_GET['cardid'];
+$sql = "SELECT * FROM card_details WHERE Card_ID='$ID'";
+$result = mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_assoc($result);
+$fullName = $row['Full_Name'];
+$cardNumber = $row['Card_Number'];
+$expMonth = $row['Month'];
+$expYear = $row['Year'];
+$cvv = $row['CVV'];
 ?>
 
 <html>
     <title>Payment</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_save.css">
     <style>
       .saveLink{
         text-decoration: none;
@@ -23,38 +35,52 @@ include 'connect.php';
       .saveCard:hover{
         background-color: #34aff4;
       }
-      input{
-        border-radius: 10px;
-        padding: 7px;
-        margin-left: 10px;
-        width: 90%;    
-      }
-      input hover{
-        border: 1px solid black;
-      }
-      #full-name{
+      .input-field {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        #exp-m{
+            width: 50px;
+            margin-left: -1px;
+            background-color: rgba(173, 181, 255, 0.2);
+            padding: 5px;
+        }
+        #exp-y{
+            width: 70px;
+            margin-left: 100px;
+            margin-top: -5px;
+            background-color: rgba(173, 181, 255, 0.2);
+            padding: 5px;
+        }
+        .saveC{
+            width: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 355px;
+        }
+        #cardholder-name{    
         margin-left: -2px;
         margin-top: 10px;
-      }
-      #credit-card-num{
+        padding: 7px;
+        background-color: rgba(173, 181, 255, 0.2);
+        }
+        #card-number{
         margin-left: -2px;
         margin-top: 10px;
-      }
-      #cvv{
-        width: 50px;  
-      }
-      #expiration-month{
         padding: 7px;
-        border-radius: 10px;
-        width:75px;
-      }
-      #experation-year{
-        padding: 7px;
-        border-radius: 10px;
-      }
-      #year{
-        margin-left: 20px;
-      }
+        background-color:rgba(173, 181, 255, 0.2);
+        }
+        #cvv{
+            width: 50px;  
+            padding: 7px;
+            background-color: rgba(173, 181, 255, 0.2);
+        }
+        #exp-year{
+            margin-left: 100px;
+            margin-top: -78px;
+            padding: 7px;
+        }
       
     </style>
   <body>
@@ -73,56 +99,30 @@ include 'connect.php';
             
             <div class="payment-info">
                 <h3 class="payment-heading">Payment Information</h3>
-                <form class="form-box" enctype="text/plain" method="post" target="_blank">
+                <form class="form-box" method="post" action="cards.php?cardid=<?php echo $ID; ?>">
                 </div>
                   <div>
                     <label for="full-name">Full Name</label>
-                    <input id="full-name" name="full-name" placeholder="Cardholder Name" type="text"/>
+                    <input id="cardholder-name" name="full-name"  class="input-field" placeholder="Cardholder Name" type="text" value="<?php echo $fullName;?>">
                   </div>
-                    <br>
+                    
                   <div>
                     <label for="credit-card-num">Card Number</label>
-                    <input id="credit-card-num" name="credit-card-num" placeholder="1111-2222-3333-4444" type="text"/>
+                    <input id="card-number" name="credit-card-num"  class="input-field" placeholder="0000-0000-0000-0000" type="text"  value="<?php echo $cardNumber;?>">
                   </div>
-                  <br>
-                  <div>
-                    <p class="expires">Expires on:</p><br>
-                    <div class="card-experation">
-                      <label for="expiration-month">Month</label>
-                      <select id="expiration-month" name="expiration-month" >
-                        <option value="">Month:</option>
-                        <option value="">January</option>
-                        <option value="">February</option>
-                        <option value="">March</option>
-                        <option value="">April</option>
-                        <option value="">May</option>
-                        <option value="">June</option>
-                        <option value="">July</option>
-                        <option value="">August</option>
-                        <option value="">September</option>
-                        <option value="">October</option>
-                        <option value="">November</option>
-                        <option value="">Decemeber</option>
-                      </select>
-      
-                      <label id="year">Year</label>
-                      <select id="experation-year" name="experation-year">
-                        <option value="">Year</option>
-                        <option value="">2023</option>
-                        <option value="">2024</option>
-                        <option value="">2025</option>
-                        <option value="">2026</option>
-                      </select>
-                      <br><br><br><br>
-                    </div>
-                  </div>
-      
+                    <label id="exp-month" style="color: black; "> Month</label>
+                    <input type="number" id="exp-m" name="Month" value="<?php echo $expMonth;?>">
+                    <label id="exp-year" style="color: black; "> Year</label>
+                    <input type="number" id="exp-y" name="Year" value="<?php echo $expYear;?>"><br><br>
+
                   <div>
                     <label for="cvv">CVV</label>
-                    <input id="cvv" name="cvv" placeholder="CVV" type="text"/>
+                    <input id="cvv" name="cvv" placeholder="CVV" type="text"  value="<?php echo $cvv;?>">
                     
-                  </div><br><br><br><br>
-                  <button class="saveCard"><a href="cards.php" class="saveLink">Save Card</a></button>
+                  </div><br><br>
+                  <!-- <button class="saveCard"><a href="cards.php" class="saveLink">Save Card</a></button> -->
+                  <button class="saveCard" type="submit">Save Card</button>
+
 
 <script src="savecard.js"></script>
                   <br>
