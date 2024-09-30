@@ -1,10 +1,9 @@
 <?php
-include 'db.php';
-/*
+include '../config.php';
+
 $stmt = $pdo->query("SELECT * FROM buses");
 $buses = $stmt->fetchAll();
 
-*/
 
 ?>
 
@@ -25,17 +24,23 @@ $buses = $stmt->fetchAll();
 <table>
         <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>Number</th>
+            <th>Owner</th>
             <th>Route</th>
+            <th>Price</th>
             <th>Capacity</th>
+            <th>Status</th>
             <th class="actions">Actions</th>
         </tr>
         <?php foreach ($buses as $bus): ?>
         <tr>
-            <td><?php echo $bus['id']; ?></td>
-            <td><?php echo $bus['name']; ?></td>
+            <td><?php echo $bus['busID']; ?></td>
+            <td><?php echo $bus['busNum']; ?></td>
+            <td><?php echo $bus['busOwner']; ?></td>
             <td><?php echo $bus['route']; ?></td>
-            <td><?php echo $bus['capacity']; ?></td>
+            <td><?php echo $bus['price']; ?></td>
+            <td><?php echo $bus['seatCount']; ?></td>
+            <td><?php echo $bus['status']; ?></td>
             <td class="actions">
                 <button id="edit-button"><a href="update_bus.php?id=<?php echo $bus['id']; ?>">Edit</a></button>
                 <button id="delete-button"><a href="delete_bus.php?id=<?php echo $bus['id']; ?>" onclick="return confirm('Are you sure?');">Delete</a></button>
