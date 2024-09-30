@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $seatCount = $_POST['seatCount'];
     $status = $_POST['status'];
 
-    $stmt = $conn->prepare("INSERT INTO buses (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status]);
 
     header("Location: index.php");
