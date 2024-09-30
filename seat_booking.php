@@ -1,5 +1,5 @@
 <?php
-     include("Seat Booking page/database.php"); //Database connection
+     include("config.php"); //Database connection
 ?>
 
 <?php 
@@ -30,12 +30,7 @@
                 
                 <form method="POST" >
                     
-                    <div class="form-group">
-                        <label for="nic">NIC</label>
-                        <input style="width:100%;" type="text" id="nic" name="nic">
-                    </div>
-
-                    <div class="form-group">
+                     <div class="form-group">
                         <label for="from">From</label>
                         <input type="text" id="from" name="from">
                     </div>
@@ -51,17 +46,22 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" value="2024-09-15" name="date" style="width:300px;">
+                        <label for="seat_no">Seat No</label>
+                        <input type="seat_no" id="seat_no" name="seat_no" style="width:290px;">
                     </div>
-                                        
+                    
+                    <div class="form-group">
+                        <label for="bus_id">Bus ID</label>
+                        <input type="bus_id" id="bus_id" name="bus_id" style="width:300px;">
+                    </div>
+                                 
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
                     <?php
-                        include("Seat Booking Page/functions.php");
+                        include("Seat Booking page/functions.php");
                     ?>
 
                 </form>

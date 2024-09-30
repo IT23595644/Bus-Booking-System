@@ -1,12 +1,12 @@
 <?php
-include 'db.php';
+include '../config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $route = $_POST['route'];
     $capacity = $_POST['capacity'];
 
-    $stmt = $pdo->prepare("INSERT INTO buses (name, route, capacity) VALUES (?, ?, ?)");
+    $stmt = $mysqli->prepare("INSERT INTO buses (name, route, capacity) VALUES (?, ?, ?)");
     $stmt->execute([$name, $route, $capacity]);
 
     header("Location: index.php");

@@ -3,6 +3,7 @@
 ?>
 
 <link rel="stylesheet" href="Admin dashboard/admin_styles.css"> 
+<script src="Admin dashboard/admin.js"></script>
 
 <div class="title">
     <h1>Admin Dashboard</h1>

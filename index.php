@@ -29,29 +29,6 @@
     </section>
 </div>
 <div class="testimonials">
-  <div class="view">
-      <div class="search-container">
-        <form method="POST">
-          <div class="form-group">
-              <label for="from">From</label>
-              <input type="text" id="from" name="from">
-          </div>
-          <div class="form-group">
-              <label for="to">To</label>
-              <input type="text" id="to" name="to">
-          </div>
-          <div class="form-group">
-              <label for="date">Date</label>
-              <input type="date" id="date" value="2024-09-15" name="date" style="width:300px;">
-          </div>
-          
-          <div class="actions">
-              <button type="button" class="serch">Search</button>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="testimonials">
   <div class="inner">
     <h1>Popular Route</h1>
     <div class="border"></div>
