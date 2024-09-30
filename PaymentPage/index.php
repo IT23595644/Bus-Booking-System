@@ -93,7 +93,7 @@ $cvv = "";
   }
   
  .body12 {
-    font-size: 62.5%; /* 10/16 = 0.625 * 100 */
+    font-size: 62.5%;
   }
   
   .body12 {
@@ -131,13 +131,14 @@ $cvv = "";
     margin-bottom: 1.2rem;
   }
   
-  /* Left Side Of Container */
   .left-side {
     background: url('bus00.png');
     background-position: center;
     background-position: 0px 1000px ;
     background-size: cover;
     position: relative;
+    margin-bottom: 150px;
+    margin-top: 87px;
   }
   
   .text-box {
@@ -146,6 +147,7 @@ $cvv = "";
     padding: 1rem 2rem;
     position: absolute;
     bottom: 0;
+    margin-bottom: 0px;
   }
   
   /* Left container text */
@@ -176,6 +178,8 @@ $cvv = "";
   .right-side {
     background-color: #fff;
     padding: 1.8rem 3.2rem;
+    margin-top: 87px;
+    margin-bottom: 0px;
   }
   
   .receipt {
@@ -183,7 +187,8 @@ $cvv = "";
     flex-direction: column;
     gap: 1rem;
     border-bottom: solid 1px;
-    margin-bottom: 1rem;
+    margin-bottom: 0px;
+    margin-top: 10px;
   }
   
   .receipt-heading {
@@ -271,6 +276,7 @@ label {
   .footer-text {
     font-size: 1rem;
     text-align: center;
+    margin-top: -91px;
   }
   
   .form-box *:focus {
@@ -324,7 +330,7 @@ button {
         border-radius: 10px;
         margin-left: 200px;
         padding: 10px;
-        margin-top: -75px;  
+        margin-top: -66px;  
       }
       .saveCard:hover{
         background-color: #34aff4;
@@ -385,6 +391,9 @@ button {
         .cvv1{
             margin-top: -36px;
         }
+        .name1{
+            margin-top: 10px;
+        }
       
     </style>
   </head>
@@ -398,15 +407,16 @@ button {
     
         </div>
       </div>
-
+      <div class="wBox">
       <div class="right-side">
         <div class="receipt">
             
             <div class="payment-info">
+            
                 <h3 class="payment-heading">Payment Information</h3>
                 <form class="form-box" method="post" action="cards.php?cardid=<?php echo $ID; ?>">
                 </div>
-                  <div>
+                  <div class="name1">
                     <label id="full-name">Full Name</label>
                     <input id="cardholder-name" name="full-name"  class="input-field" placeholder="Cardholder Name" type="text" value="<?php echo $fullName;?>">
                   </div>
@@ -435,9 +445,9 @@ button {
                   </button></center>
                 </form>
       
-                <p class="footer-text"><br><br><br><br><br>
-                  <i class="fa-solid fa-lock"></i>
-                  Your credit card infomration is encrypted
+                <p class="footer-text" style="font-size: 10px;"><br><br><br><br><br>
+                  
+                  
                 </p>
               </div>
 
@@ -446,7 +456,6 @@ button {
 
         
       </div>
-    </div>
   <?php include '../Headers-Footers/footer.php'; ?> 
 
 </body>
