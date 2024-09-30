@@ -36,6 +36,9 @@ if($result){
     <title>Save Card</title>
     <link rel="stylesheet" href="style_save.css">
     <style>
+        body {
+        background: url('777.jpg'); 
+         }
          form {
             display: flex;
             flex-direction: column;
@@ -56,14 +59,14 @@ if($result){
             cursor: pointer;
         }
         .box{
-            width: 100%;
+            width: 50%;
             margin: 0 auto;
             margin-top: 100px;
             padding: 20px;
             border: none ;
             background-color: #f9f9f9;
             border-radius: 20px;
-            background-color: rgba(0,0,0, 0.2);
+            background-color: #dfdfdf;
         } 
         #exp-m{
             width: 50px;
@@ -111,15 +114,15 @@ if($result){
     <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
     <div class="box">
     <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
-        <label for="full-name" style="color: #f9f9f9; font-size:large">Full Name</label><br>
+        <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
         <input id="cardholder-name" name="Full_Name" class="input-field" type="text" value=<?php echo $fullName;?>><br>
-        <label for="credit-card-num" style="color: #f9f9f9; font-size:large">Card Number</label><br>
+        <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
         <input id="card-number" name="Card_Number" class="input-field" type="number" value=<?php echo $cardNumber;?>><br><br>
-        <label for="exp-month" style="color: #f9f9f9; font-size:large"> Month</label>
+        <label for="exp-month" style="color: black; font-size:large"> Month</label>
         <input type="number" id="exp-m" name="Month" value=<?php echo $expMonth;?>>
-        <label for="exp-year" style="color: #f9f9f9; font-size:large"> Year</label>
+        <label for="exp-year" style="color: black; font-size:large"> Year</label>
         <input type="number" id="exp-y" name="Year" value=<?php echo $expYear;?>><br><br><br>
-        <label for="cvv" style="color: #f9f9f9; font-size:large">CVV</label>
+        <label for="cvv" style="color: black; font-size:large">CVV</label>
         <input id="cvv" name="CVV" type="text" value=<?php echo $cvv;?>><br>
         <button type="submit" name="submit" class="saveC">Save Card</button>
         </div>

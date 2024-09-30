@@ -9,7 +9,7 @@
     font-size: 62.5%; /* 10/16 = 0.625 * 100 */
   }
   
-  body {
+  .body12 {
     background: url('777.jpg');
     background-position: center;
     background-size: cover;
