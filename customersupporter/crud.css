@@ -23,19 +23,20 @@ hr{
 }
 
 input,label{  
-    margin-left:50px;
-    width:75%;
+    margin-left:175px;
+    width:50%;
 }
+
 
 .box{
     border-radius: 15px;
     border: 3px solid rgb(145, 141, 141);
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
     margin-top: 0%;
     background-color: #c8c8c8b8;
-    padding:50px;
+    padding:25px;
 
 }
 
