@@ -1,4 +1,5 @@
 <?php
+    include ('../config.php');
     include("../Headers-Footers/header.php");
 ?>
 
@@ -12,14 +13,16 @@
     <div class="box">      
         <div class="button1">
             
-            <button type="button" class="button">Add Supporter</button><br>
-            <?php
-            
-            
+            <button type="button" class="button"></button><br>
+        </div>
+        <div>
+            <form method="post" action="">
+              <label>First Name:</label>
+            <input type="text0" name="fname">
 
-            
-            ?>
 
+
+            </form>
         </div>
     </div>
 

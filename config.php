@@ -1,15 +1,19 @@
-<?php
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $db = "bus365";
+<?php   
+    $db_server="localhost";
+    $db_user="root";
+    $db_password="";
+    $db_name="bus365";
+    $conn="";
 
-    $conn= new mysqli ("$host","$username","$password","$db");
 
-    if($conn->connect_error){
-
-            die('Data base not connected!' . $conn->connect_error);
-
+    try{
+        $conn=mysqli_connect($db_server, 
+        $db_user,
+        $db_password,
+        $db_name);
     }
-
+    catch(mysqli_sql_exception){
+        echo "Database is disconected";
+    }
+        
 ?>
