@@ -8,6 +8,14 @@ function validateForm() {
         return false;
     }
 
-   // errorMessage.innerHTML = "";  // Clear error message if validation passes
     return true;
+
+}
+
+function invalidPassword() {
+    alert("Invalid Password");
+}
+
+function invalidUsername() {
+    document.getElementById('errorMessage').innerHTML = "Invalid Username";
 }

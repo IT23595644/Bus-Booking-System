@@ -18,36 +18,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["password"]=$row["password"];
 
             
-            header("location:../homepage/home.html");
+            header("location:../index.php");
 
         }
         else{
             
-            header("location: index.php?error=incorrectpassword");
-            
+            echo "<script>
+                    invalidPassword();
+                    header('location:../Login page/index.php');
+                </script>";
+
         }
     }
-    else{
-        echo "<script>
-                alert('UserNotfound');
-        </script>";
-    }
-    
-/*
-    if($count<1){
-
-        echo '<script>
-            window.location.href = "index.php";
-            alert("Login failed. Invalid Username or Password!");
-            </script>';
-
-    }
-    
-    else {
-
-        header("location : welcome.php");
-
-    }*/
+   
 
 }
 

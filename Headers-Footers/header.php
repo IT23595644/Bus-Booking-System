@@ -115,8 +115,8 @@
                                 echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
                             }
                             else{
-                                echo'<button class="btnin">Sign In</button>
-                                    <button class="btnin">Sign Up</button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
+                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
                             }
 
                         ?>
