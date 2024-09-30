@@ -1,18 +1,21 @@
 <?php
-include 'db.php';
+include '../config.php';
 
-$id = $_GET['id'];
-$stmt = $pdo->prepare("SELECT * FROM buses WHERE id = ?");
+$id = $_POST['id'];
+$stmt = $conn->prepare("SELECT * FROM buses WHERE busID = ?");
 $stmt->execute([$id]);
 $bus = $stmt->fetch();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
+    $num = $_POST['busNum'];
+    $busOwner = $_POST['busOwner'];
     $route = $_POST['route'];
-    $capacity = $_POST['capacity'];
+    $price = $_POST['price'];
+    $seatCount = $_POST['seatCount'];
+    $status = $_POST['status'];
 
-    $stmt = $pdo->prepare("UPDATE buses SET name = ?, route = ?, capacity = ? WHERE id = ?");
-    $stmt->execute([$name, $route, $capacity, $id]);
+    $stmt = $conn->prepare("UPDATE buses SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ? WHERE busID = ?");
+    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status, $id]);
 
     header("Location: index.php");
 }
@@ -29,14 +32,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <h1>Update Bus Details</h1>
 <form method="POST">
-    <label for="name">Bus Name:</label>
-    <input type="text" name="name" value="<?php echo $bus['name']; ?>" required>
-    
-    <label for="route">Route:</label>
+    <label>Bus Number:</label>
+    <input type="text" name="num" value="<?php echo $bus['busNum']; ?>" required>
+
+    <label>Bus Owner:</label>
+    <input type="text" name="busOwner" value="<?php echo $bus['busOwner']; ?>" required>
+
+    <label>Route:</label>
     <input type="text" name="route" value="<?php echo $bus['route']; ?>" required>
+
+    <label>Price:</label>
+    <input type="text" name="price" value="<?php echo $bus['price']; ?>" required>
     
-    <label for="capacity">Capacity:</label>
-    <input type="number" name="capacity" value="<?php echo $bus['capacity']; ?>" required>
+    <label>Seat Count:</label>
+    <input type="text" name="seatCount" value="<?php echo $bus['seatCount']; ?>" required>
+    
+    <label>Status:</label>
+    <input type="text" name="status" value="<?php echo $bus['status']; ?>" required>
     
     <input type="submit" value="Update Bus">
 </form>

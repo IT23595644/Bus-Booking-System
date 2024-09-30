@@ -2,12 +2,15 @@
 include '../config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
+    $num = $_POST['busNum'];
+    $busOwner = $_POST['busOwner'];
     $route = $_POST['route'];
-    $capacity = $_POST['capacity'];
+    $price = $_POST['price'];
+    $seatCount = $_POST['seatCount'];
+    $status = $_POST['status'];
 
-    $stmt = $mysqli->prepare("INSERT INTO buses (name, route, capacity) VALUES (?, ?, ?)");
-    $stmt->execute([$name, $route, $capacity]);
+    $stmt = $conn->prepare("INSERT INTO buses (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status]);
 
     header("Location: index.php");
 }
@@ -24,15 +27,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <h1>Add New Bus</h1>
 <form method="POST">
-    <label for="name">Bus Name:</label>
-    <input type="text" name="name" required>
+    <label for="name">Bus Number:</label>
+    <input type="text" name="busNum" required>
     
-    <label for="route">Route:</label>
-    <input type="text" name="route" required>
+    <label for="route">Bus Owner:</label>
+    <input type="text" name="busOwner" required>
     
-    <label for="capacity">Capacity:</label>
-    <input type="number" name="capacity" required>
+    <label for="capacity">Route:</label>
+    <input type="number" name="route" required>
     
+    <label for="price">Price:</label>
+    <input type="number" name="price" required>
+    
+    <label for="seatCount">Seat Count:</label>
+    <input type="number" name="seatCount" required>
+    
+    <label for="status">Status:</label>
+    <input type="text" name="status" required>
+
     <input type="submit" value="Add Bus">
 </form>
 

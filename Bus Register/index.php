@@ -1,10 +1,5 @@
 <?php
 include '../config.php';
-
-$stmt = $pdo->query("SELECT * FROM buses");
-$buses = $stmt->fetchAll();
-
-
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +27,12 @@ $buses = $stmt->fetchAll();
             <th>Status</th>
             <th class="actions">Actions</th>
         </tr>
-        <?php foreach ($buses as $bus): ?>
+        <?php 
+        
+        $stmt = $conn->query("SELECT * FROM buses");
+        $buses = $stmt->fetchAll();
+        
+        foreach ($buses as $bus): ?>
         <tr>
             <td><?php echo $bus['busID']; ?></td>
             <td><?php echo $bus['busNum']; ?></td>
