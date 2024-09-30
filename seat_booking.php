@@ -30,37 +30,39 @@
                 
                 <form method="POST" >
                     
-                    <div class="form-group">
-                        <label for="seat_no">Seat No</label>
-                        <input style="width:100%;" type="text" id="seat_no" name="seat_no">
+                     <div class="form-group">
+                        <label for="from">From</label>
+                        <input type="text" id="from" name="from">
                     </div>
 
                     <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="text" id="date" name="date">
+                        <label for="to">To</label>
+                        <input type="text" id="to" name="to">
                     </div>
 
-                    <div class="form-group">
-                        <label for="nic">NIC</label>
-                        <input type="text" id="nic" name="nic">
-                    </div>
-            
                     <div class="form-group">
                         <label for="passengers">No of passengers</label>
                         <input type="text" id="passengers" name="passengers">
                     </div>
 
                     <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" value="2024-09-15" name="date" style="width:300px;">
+                        <label for="seat_no">Seat No</label>
+                        <input type="seat_no" id="seat_no" name="seat_no" style="width:290px;">
                     </div>
-                                        
+                    
+                    <div class="form-group">
+                        <label for="bus_id">Bus ID</label>
+                        <input type="bus_id" id="bus_id" name="bus_id" style="width:300px;">
+                    </div>
+                                 
                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
-                    
+                    <?php
+                        include("Seat Booking page/functions.php");
+                    ?>
 
                 </form>
             </div>

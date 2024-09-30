@@ -11,7 +11,6 @@
         <h4>User Id:#PHPsession<h4>
         <h4>User Name:#PHPsession<h4>
         
-        
     </div>
 
     <div class="box">
