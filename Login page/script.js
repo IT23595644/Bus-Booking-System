@@ -11,11 +11,3 @@ function validateForm() {
     return true;
 
 }
-
-function invalidPassword() {
-    alert("Invalid Password");
-}
-
-function invalidUsername() {
-    document.getElementById('errorMessage').innerHTML = "Invalid Username";
-}

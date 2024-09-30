@@ -9,7 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE userName = '$user';";
     $result = mysqli_query($conn,$sql);
 
-    if(mysqli_num_rows($result)>0){
+    if(mysqli_num_rows($result)==0){
+        echo "<script>
+                alert('User does not exist');
+                window.location.href = 'index.php';
+            </script>";
+    }
+
+    else if(mysqli_num_rows($result)>0){
         $row=mysqli_fetch_assoc($result);
         
         if($row["password"]==$pass){
@@ -24,14 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         else{
             
             echo "<script>
-                    invalidPassword();
+                    alert('Incorrect Password');
                     window.location.href = 'index.php';
                 </script>";
 
         }
     }
    
-
 }
 
 ?>
