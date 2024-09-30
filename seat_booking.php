@@ -1,5 +1,5 @@
 <?php
-     include("Seat Booking page/database.php"); //Database connection
+     include("config.php"); //Database connection
 ?>
 
 <?php 
@@ -60,9 +60,7 @@
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
-                    <?php
-                        include("Seat Booking Page/functions.php");
-                    ?>
+                    
 
                 </form>
             </div>
