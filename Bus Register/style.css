@@ -10,6 +10,8 @@ table {
     width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #ffffff63;
+
 }
 
 table, th, td {
@@ -46,7 +48,7 @@ a{
     cursor: pointer;
 }
 
-#edit-button{
+.edit-button{
     background-color: #00b81c;
     border: none;
     padding: 10px 25px;
@@ -58,7 +60,7 @@ a{
     margin-left: 10px;
 }
 
-#delete-button{
+.delete-button{
     background-color: #ff0000;
     border: none;
     padding: 10px 15px;
