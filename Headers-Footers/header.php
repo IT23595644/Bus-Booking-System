@@ -25,6 +25,9 @@
                     align-items: center;
                     text-align: center;
                 }
+                .iconlogo{
+                    font-size: 4rem;
+                }
                 .nav{
                     display:flex;
                     justify-content: space-between;
@@ -40,7 +43,7 @@
                     
                 }
 
-                .nav a{
+                .nav .navigation{
                     
                     padding:18px 30px;
                     text-decoration: none;   
@@ -86,7 +89,8 @@
         <div class="mainContainer"
         <header>
                 <div class="contain">
-                    <img src="./Headers-Footers/logo.png" width="8%">
+                <!--<img src="./Headers-Footers/logo.png" width="8%">-->
+                    <div class="iconlogo">🚌</div>
                     <div>
                         <h1>Bus365</h1>
                         <h6>Ride Easy, Ride with Bus365</h6>
