@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('Passwords do not match!');</script>";
     } else {
         // Hash the password
-        $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
+        $final_pass = $pass;
 
     
         $stmt = $conn->prepare("INSERT INTO users (firstName, lastName, UserName, email, password) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $first_name, $last_name, $user, $email, $hashed_pass);
+        $stmt->bind_param("sssss", $first_name, $last_name, $user, $email, $final_pass);
 
         
         if ($stmt->execute()) {

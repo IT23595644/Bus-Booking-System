@@ -8,6 +8,6 @@ function validateForm() {
         return false;
     }
 
-   // errorMessage.innerHTML = "";  // Clear error message if validation passes
     return true;
+
 }
