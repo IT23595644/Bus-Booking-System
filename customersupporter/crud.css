@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background: url('../UserDashboard/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    padding: 30px;
+}
+
+hr{
+    margin-right: 25px;
+    
+}
+.logdetails{
+    padding:8px;
+    background-color: #c8c8c8b8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+input,label{  
+    margin-left:50px;
+    width:75%;
+}
+
+.box{
+    border-radius: 15px;
+    border: 3px solid rgb(145, 141, 141);
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0%;
+    background-color: #c8c8c8b8;
+    padding:50px;
+
+}
+
+.button:hover{
+    background-color: gray;
+    cursor:pointer;
+}
+
+.button{
+    border-radius: 15px;
+    border: 1px solid rgb(145, 141, 141);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+h3{
+    margin-left: 25px;
+}
