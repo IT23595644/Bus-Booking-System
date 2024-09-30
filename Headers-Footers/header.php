@@ -43,7 +43,7 @@
                     
                 }
 
-                .nav a{
+                .nav .navigation{
                     
                     padding:18px 30px;
                     text-decoration: none;   
