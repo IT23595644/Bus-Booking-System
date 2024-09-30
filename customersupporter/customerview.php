@@ -3,7 +3,7 @@
     include("../Headers-Footers/header.php");
 ?>
 
-    <link rel="stylesheet" href="../customersupporter/crud.css"> 
+    <link rel="stylesheet" href="./crud.css"> 
     
 
     <div class="title">
@@ -13,11 +13,11 @@
 
     <div class="box">      
         
-            <button type="button" class="button">Add Supporter</button><br>
+            <button type="button" class="button"><a href="./supadd.php">Add Supporter</a></button><br>
             
             <table>
             <tr>
-              <th>First Name<th>Last Name</th><th>Address</th><th>Phone Number</th><th>DOB</th><th colspan="2">Operation</th>
+                 <th>Customer Supporter ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>Phone Number</th><th>DOB</th><th colspan="2">Operation</th>
             </tr>
             <?php
                $sql="SELECT * FROM customersupporter;";
@@ -28,7 +28,7 @@
                {    
                     while($row=mysqli_fetch_assoc($result))
                     {
-                        echo "<tr><td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td><button class='update-btn'><a href='#'>UPDATE</a></button></td><td><button class='delete-btn'><a href='delete.php?deleteid='>DELETE</a></button></td></tr>";
+                        echo "<tr><td>".$row['supId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td><button class='update-btn'><a href='./supupdate.php?updateid=".$row['supId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='supdelete.php?deleteid=".$row['supId']."'>DELETE</a></button></td></tr>";
                     }
                }
                ?>

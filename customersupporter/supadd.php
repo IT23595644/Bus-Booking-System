@@ -11,10 +11,11 @@
         $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)
               VALUES('$supFname','$supLname','$address','$pnum','$dob')";
 
-
-
-        mysqli_query($conn,$sql);
-
+        $result=mysqli_query($conn,$sql);
+        if($result)
+        {
+            header("location: customerview.php");
+        }
 
         mysqli_close($conn);
 
