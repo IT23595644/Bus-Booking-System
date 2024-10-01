@@ -1,11 +1,5 @@
 <?php
-include 'db.php';
-/*
-$stmt = $pdo->query("SELECT * FROM buses");
-$buses = $stmt->fetchAll();
-
-*/
-
+include '../config.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,23 +19,34 @@ $buses = $stmt->fetchAll();
 <table>
         <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>Number</th>
+            <th>Owner</th>
             <th>Route</th>
+            <th>Price(LKR)</th>
             <th>Capacity</th>
+            <th>Status</th>
             <th class="actions">Actions</th>
         </tr>
-        <?php foreach ($buses as $bus): ?>
+        <?php 
+        
+        $stmt = $conn->query("SELECT * FROM bus");
+
+        while ($bus = $stmt->fetch_assoc()): ?>
         <tr>
-            <td><?php echo $bus['id']; ?></td>
-            <td><?php echo $bus['name']; ?></td>
-            <td><?php echo $bus['route']; ?></td>
-            <td><?php echo $bus['capacity']; ?></td>
+            <td><?php echo htmlspecialchars($bus['busID']); ?></td>
+            <td><?php echo htmlspecialchars($bus['busNum']); ?></td>
+            <td><?php echo htmlspecialchars($bus['busOwner']); ?></td>
+            <td><?php echo htmlspecialchars($bus['route']); ?></td>
+            <td><?php echo htmlspecialchars($bus['price']); ?></td>
+            <td><?php echo htmlspecialchars($bus['seatCount']); ?></td>
+            <td><?php echo htmlspecialchars($bus['status']); ?></td>
             <td class="actions">
-                <button id="edit-button"><a href="update_bus.php?id=<?php echo $bus['id']; ?>">Edit</a></button>
-                <button id="delete-button"><a href="delete_bus.php?id=<?php echo $bus['id']; ?>" onclick="return confirm('Are you sure?');">Delete</a></button>
+                <a class="edit-button" href="update_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>">Edit</a>
+                <a class="delete-button" href="delete_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>" onclick="return confirm('Are you sure?');">Delete</a>
             </td>
         </tr>
-        <?php endforeach; ?>
+        
+        <?php endwhile; ?>
 </table>
 
 </body>

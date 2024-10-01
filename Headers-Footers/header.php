@@ -90,7 +90,6 @@
         <div class="mainContainer"
         <header>
                 <div class="contain">
-                <!--<img src="./Headers-Footers/logo.png" width="8%">-->
                     <div class="iconlogo">🚌</div>
                     <div>
                         <h1>Bus365</h1>
@@ -110,13 +109,13 @@
                     </div>
                     <div class="right">
                         <?php
-                            if(isset($_SESSION["username"]))
+                            if(isset($_SESSION["aid"]))
                             {
                                 echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
                             }
                             else{
-                                echo'<button class="btnin">Sign In</button>
-                                    <button class="btnin">Sign Up</button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
+                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
                             }
 
                         ?>

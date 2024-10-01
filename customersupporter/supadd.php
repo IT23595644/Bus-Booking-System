@@ -11,14 +11,11 @@
         $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)
               VALUES('$supFname','$supLname','$address','$pnum','$dob')";
 
-
-
-        mysqli_query($conn,$sql);
-
-
-
-
-
+        $result=mysqli_query($conn,$sql);
+        if($result)
+        {
+            header("location: customerview.php");
+        }
 
         mysqli_close($conn);
 
@@ -41,7 +38,7 @@
             <button type="button" class="button"></button><br>
         </div>-->
         <div>
-            <form method="post" action="supadd.php">
+            <form method="post" >
                 <label>First Name:</label><br>
                 <input type="text" name="fname"><br>
 

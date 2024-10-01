@@ -181,15 +181,16 @@ table tr:last-child td:last-child {
             
             echo '<tr class="row-click">
             
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$ID.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$fullName.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$cardNumber.'</a></td>
-            <td class="exp-month"><a href="index.php?cardid='.$ID.'" class="card-click" >'.$expMonth.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$expYear.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" >'.$cvv.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$ID.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$fullName.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cardNumber.'</a></td>
+            <td class="exp-month"><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expMonth.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave"'.$expYear.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
             <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+             
             </tr>';
         }
       }

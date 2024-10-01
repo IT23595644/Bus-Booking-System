@@ -9,7 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE userName = '$user';";
     $result = mysqli_query($conn,$sql);
 
-    if(mysqli_num_rows($result)>0){
+    if(mysqli_num_rows($result)==0){
+        echo "<script>
+                alert('User does not exist');
+                window.location.href = 'index.php';
+            </script>";
+    }
+
+    else if(mysqli_num_rows($result)>0){
         $row=mysqli_fetch_assoc($result);
         
         if($row["password"]==$pass){
@@ -18,37 +25,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["password"]=$row["password"];
 
             
-            header("location:../homepage/home.html");
+            header("location:../index.php");
 
         }
         else{
             
-            header("location: index.php?error=incorrectpassword");
-            
+            echo "<script>
+                    alert('Incorrect Password');
+                    window.location.href = 'index.php';
+                </script>";
+
         }
     }
-    else{
-        echo "<script>
-                alert('UserNotfound');
-        </script>";
-    }
-    
-/*
-    if($count<1){
-
-        echo '<script>
-            window.location.href = "index.php";
-            alert("Login failed. Invalid Username or Password!");
-            </script>';
-
-    }
-    
-    else {
-
-        header("location : welcome.php");
-
-    }*/
-
+   
 }
 
 ?>
