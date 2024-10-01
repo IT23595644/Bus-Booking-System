@@ -35,9 +35,10 @@ if($result){
 <head>
     <title>Save Card</title>
     <link rel="stylesheet" href="style_save.css">
+    <?php include '../Headers-Footers/header.php'; ?>
     <style>
         body {
-        background: url('777.jpg'); 
+        background: url('back.jpg'); 
          }
          form {
             display: flex;
@@ -129,4 +130,5 @@ if($result){
     </form>
 
 </body>
+    <?php include '../Headers-Footers/footer.php'; ?> 
 </html>

@@ -1,20 +1,18 @@
 <?php
 include '../config.php';
+
+include "../Headers-Footers/header.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bus Management System</title>
-</head>
-<body>
+<link rel="stylesheet" href="style.css">
 
-<h1>Bus Management System</h1>
+<div class="content">
+<br>
+<center><h1>Bus Management System</h1></center>
 
 <button class="add-button"><a href="add_bus.php">Add New Bus</a></button>
+
+<center>
 
 <table>
         <tr>
@@ -25,6 +23,7 @@ include '../config.php';
             <th>Price(LKR)</th>
             <th>Capacity</th>
             <th>Status</th>
+            <th>Time</th>
             <th class="actions">Actions</th>
         </tr>
         <?php 
@@ -40,6 +39,7 @@ include '../config.php';
             <td><?php echo htmlspecialchars($bus['price']); ?></td>
             <td><?php echo htmlspecialchars($bus['seatCount']); ?></td>
             <td><?php echo htmlspecialchars($bus['status']); ?></td>
+            <td><?php echo htmlspecialchars($bus['time']);?></td>
             <td class="actions">
                 <a class="edit-button" href="update_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>">Edit</a>
                 <a class="delete-button" href="delete_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>" onclick="return confirm('Are you sure?');">Delete</a>
@@ -48,6 +48,8 @@ include '../config.php';
         
         <?php endwhile; ?>
 </table>
+</center>
+</div>
 
-</body>
-</html>
+<?php include "../Headers-Footers/footer.php"; ?>
+

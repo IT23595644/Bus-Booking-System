@@ -6,7 +6,7 @@
 
 
 nav {
-    background-image: url("back3.jpg");
+    background-image: url("back1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,33 +27,11 @@ nav {
     align-content: center;
 }
 
-.welcome{
-
-    background-color: rgba(255, 255, 255, 0.24);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    height: 500px;
-    font-size: 10px;
-
-}
-
-.welcomeNote{
-
-    text-align: justify;
-    font-size: 18px;
-
-}
-
 .login-container {
     background-color: rgb(255, 255, 255, 0.24);
     backdrop-filter: blur(10px);
     padding: 40px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: 500px;
@@ -106,7 +84,7 @@ h2 {
     background-color: #1c199c;
 }
 
-.admin-btn{
+.user-btn{
     margin-left: 25%;
     margin-top:10%;
     padding:1px;
@@ -116,12 +94,12 @@ h2 {
     background-color: #ad0000;
 }
 
-.admin-btn a:hover{
+.user-btn a:hover{
     color:rgb(255, 230, 0);
 
 }
 
-.admin-btn a {
+.user-btn a {
 
     text-decoration: none;
     color:rgb(255, 255, 255);

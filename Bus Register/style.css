@@ -1,21 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
     background-image: url(back1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'poppins';
+}
+
+.content{
+
+    align-content: center;
+    
+
 }
 
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff63;
+    table-layout: fixed;
 
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #494949;
 }
 
 th, td {
@@ -34,42 +42,50 @@ label {
 
 a{
     text-decoration: none;
-    color: #ffffff;
 }
 
 .add-button{
     background-color: #007bff;
     border: none;
+    margin-top:5px;
+    margin-left:5%;
     padding: 10px 15px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .edit-button{
     background-color: #00b81c;
+    color:white;
     border: none;
-    padding: 10px 25px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
 }
 
 .delete-button{
     background-color: #ff0000;
+    color:white;
     border: none;
-    padding: 10px 15px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    padding: 5px 10px;
+    border-radius:5px;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.delete-button:hover{
+
+    background-color: #ffffff;
+    color:rgb(255, 0, 0);
+
+}
+
+.edit-button:hover{
+
+    background-color: #ffffff;
+    color:#00b81c;
+
 }
 
 input[type="text"], input[type="number"] {

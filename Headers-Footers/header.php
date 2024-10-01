@@ -21,7 +21,7 @@
                 .contain{
                     
                     display:flex;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #c4c4c4;
                     justify-content:center;
                     align-items: center;
                     text-align: center;
@@ -102,16 +102,17 @@
                         <ul>
                             <li><a class="navigation" href="index.php">Home</a></li>
                             <li><a class="navigation" href="seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="#gasa">About</a></li>
+                            <li><a class="navigation" href="#gasa">About Us</a></li>
                             <li><a class="navigation" href="#gasa">Scheduling</a></li>
                             <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="right">
                         <?php
-                            if(isset($_SESSION["aid"]))
+                            if(isset($_SESSION["username"]))
                             {
                                 echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Profile</a></button>';
                             }
                             else{
                                 echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
