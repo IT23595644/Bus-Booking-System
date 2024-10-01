@@ -1,12 +1,12 @@
 <?php
 
-include("config.php");
+include("../config.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE userName = '$user';";
+    $sql = "SELECT * FROM admin WHERE userName = '$user';";
     $result = mysqli_query($conn,$sql);
 
     if(mysqli_num_rows($result)==0){
@@ -23,10 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_start();
             $_SESSION["username"]=$row["userName"];
             $_SESSION["password"]=$row["password"];
-            $_SESSION["userId"]=$row["userId"];
 
             
-            header("location:../index.php");
+            header("location:../admin_dashboard.php");
 
         }
         else{
