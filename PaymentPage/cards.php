@@ -24,16 +24,17 @@ if (isset($_POST['submit'])) {
 
 <html>
 <head>
+
     <title>Save Card</title>
     <style>
-    body {
+    .body12 {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(777.jpg);
+    background-image: url(back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +44,7 @@ if (isset($_POST['submit'])) {
     background-color: #c0c0c0;
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin-top: -200px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -151,15 +152,14 @@ table tr:last-child td:last-child {
   }  
     </style> 
 </head>
-<body>
-<div>
+<?php include '../Headers-Footers/header.php'; ?>
+<div class="body12">
 <div class="card-box">
     <h2><a href="index.php" style="text-decoration: none; color:black;">Choose an Option</a></h2>
-    <form method="POST" action="save_card.php">
+    <form method="POST" action="">
     <div class="payment-details box">
       <table>
         <tr>
-          <td>ID</td>
           <td>Full Name</td>
           <td>Card Number</td>
           <td> Month</td>
@@ -181,11 +181,10 @@ table tr:last-child td:last-child {
             
             echo '<tr class="row-click">
             
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$ID.'</a></td>
             <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$fullName.'</a></td>
             <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cardNumber.'</a></td>
             <td class="exp-month"><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expMonth.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave"'.$expYear.'</a></td>
+            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expYear.'</a></td>
             <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
@@ -203,5 +202,5 @@ table tr:last-child td:last-child {
     </form>
   </div>
 </div>
-</body>
+<?php include '../Headers-Footers/footer.php'; ?> 
 </html>

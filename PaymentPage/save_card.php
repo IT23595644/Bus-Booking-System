@@ -30,16 +30,21 @@ if (isset($_POST['submit'])) {
     <title>Save Card</title>
     <link rel="stylesheet" href="style_save.css">
     <style>
+        .bg {
+        background: url('back.jpg');
+        height: 100vh;
+         }
          form {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 45%;
             margin: 0 auto;
         }
 
         .input-field {
             margin-bottom: 10px;
             padding: 5px;
+            width: 90%;
         }
 
         button {
@@ -50,7 +55,7 @@ if (isset($_POST['submit'])) {
             cursor: pointer;
         }
         .box{
-            width: 100%;
+            width: 60%;
             margin: 0 auto;
             margin-top: 100px;
             padding: 20px;
@@ -100,7 +105,9 @@ if (isset($_POST['submit'])) {
         }
     </style> 
 </head>
-<body>
+<div class="bg">
+<?php include '../Headers-Footers/header.php'; ?>
+<div class="body12">
     
     <form method="POST" action="save_card.php">
     <div class="box">
@@ -119,6 +126,8 @@ if (isset($_POST['submit'])) {
         </div>
     </form>
     
-</body>
+</div>
+<?php include '../Headers-Footers/footer.php'; ?> 
+</div>
 </html>
 
