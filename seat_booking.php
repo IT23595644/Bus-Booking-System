@@ -17,7 +17,7 @@
     
     <div class="main-section">
         <div class="image-section">
-            <img src="Seat Booking page/e.png" alt="bus_art" height="300px" width="375px">
+            <img src="Seat Booking page/e.png" alt="bus_art" height="350px" width="375px">
         </div>
 
         <div class="booking-form">
@@ -54,14 +54,16 @@
                         <label for="bus_id">Bus ID</label>
                         <input type="bus_id" id="bus_id" name="bus_id" style="width:300px;">
                     </div>
-                                 
-                    <div class="actions">
+                   
+                     <div class="actions">
                         <button type="submit" class="confirm">Confirm</button>
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
+                    <a href="index.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
+
                     <?php
-                        include("Seat Booking page/functions.php");
+                        include("Seat Booking page/booking_create.php");
                     ?>
 
                 </form>

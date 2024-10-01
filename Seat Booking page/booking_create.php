@@ -10,7 +10,7 @@
             $bus_id = $_POST['bus_id'];
     
 
-            $sql = "INSERT INTO test_seatbooking (seatNum, busId, Location, Destination, Passengers)
+            $sql = "INSERT INTO seatbooks (seatNum, busId, Location, Destination, Passengers)
                     VALUES ('$seat_no', '$bus_id', '$location', '$destination', '$passengers')";
             
             mysqli_query(mysql: $conn, query: $sql);
