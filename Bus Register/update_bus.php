@@ -84,6 +84,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <label>Status:</label>
     <input type="text" name="status" value="<?php echo htmlspecialchars($bus['status']); ?>">
+
+    <label>Time:</label>
+    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>">
     
     <input type="submit" value="Update Bus">
 </form>

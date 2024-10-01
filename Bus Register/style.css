@@ -9,11 +9,12 @@ body {
 .content{
 
     align-content: center;
+    
 
 }
 
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff63;
@@ -41,14 +42,13 @@ label {
 
 a{
     text-decoration: none;
-    color: #ffffff;
 }
 
 .add-button{
     background-color: #007bff;
     border: none;
     margin-top:5px;
-    margin-left:10%;
+    margin-left:5%;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -56,6 +56,7 @@ a{
 
 .edit-button{
     background-color: #00b81c;
+    color:white;
     border: none;
     padding: 5px 20px;
     border-radius: 5px;
@@ -65,6 +66,7 @@ a{
 
 .delete-button{
     background-color: #ff0000;
+    color:white;
     border: none;
     padding: 5px 10px;
     border-radius:5px;

@@ -28,8 +28,7 @@ $cvv = "";
 
 
 <?php include '../Headers-Footers/header.php'; ?>
-<link rel="stylesheet" href="stdyle.css">
-    <link rel="stylesheet" href="stylde_save.css">
+<script src="js/myScript.js"></script>
     <style>
         
 
@@ -81,15 +80,6 @@ $cvv = "";
   }
   #year{
     margin-left: 20px;
-  }
-
-
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
   }
   
  .body12 {
@@ -418,30 +408,27 @@ button {
                 </div>
                   <div class="name1">
                     <label id="full-name">Full Name</label>
-                    <input id="cardholder-name" name="full-name"  class="input-field" placeholder="Cardholder Name" type="text" value="<?php echo $fullName;?>">
+                    <input id="cardholder-name" name="full-name"  class="input-field" placeholder="Cardholder Name" type="text" oninput="validateName()" value="<?php echo $fullName;?>">
                   </div>
                     
                   <div class="card1">
                     <label id="credit-card-num">Card Number</label>
-                    <input id="card-number" name="credit-card-num"  class="input-field" placeholder="0000-0000-0000-0000" type="text"  value="<?php echo $cardNumber;?>">
+                    <input id="card-number" name="credit-card-num"  class="input-field" placeholder="0000-0000-0000-0000" type="text" oninput="validateCard()" value="<?php echo $cardNumber;?>">
                   </div>
                     <label id="exp-month" style="color: black; "> Month</label>
-                    <input type="number" id="exp-m" class="exp" name="Month" value="<?php echo $expMonth;?>">
+                    <input type="number" id="exp-m" class="exp" name="Month" oninput="validateMonth()" value="<?php echo $expMonth;?>">
                     <label id="exp-year" style="color: black; "> Year</label>
-                    <input type="number" id="exp-y" class="exp" name="Year" value="<?php echo $expYear;?>"><br><br>
+                    <input type="number" id="exp-y" class="exp" name="Year" oninput="validateYear()" value="<?php echo $expYear;?>"><br><br>
 
                   <div class="cvv1">
                     <label for="cvv">CVV</label>
-                    <input id="cvv" name="cvv" placeholder="CVV" type="text"  value="<?php echo $cvv;?>">
+                    <input id="cvv" name="cvv" placeholder="CVV" type="text" oninput="validateCVV()" value="<?php echo $cvv;?>">
                   </div><br><br>
-                  <button class="saveCard" type="submit" style="font-size: 15px;"><a href="cards.php" style="text-decoration:none; color:black;">Save Card</a></button>
-
-
-<script src="savecard.js"></script>
+                  <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Save Card</a></button>
                   <br>
                     <center>
                    <button class="btn" type="submit"  style="font-size: 20px;">
-                    <i class="fa-solid fa-lock"></i> Book Securely
+                    <i class="fa-solid fa-lock"></i> Pay Now
                   </button></center>
                 </form>
       

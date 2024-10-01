@@ -27,6 +27,12 @@ hr{
 
 }
 
+a{
+
+    text-decoration: none;
+
+}
+
 .button:hover{
     background-color: gray;
     cursor:pointer;

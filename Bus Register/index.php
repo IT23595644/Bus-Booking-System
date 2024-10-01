@@ -23,6 +23,7 @@ include "../Headers-Footers/header.php";
             <th>Price(LKR)</th>
             <th>Capacity</th>
             <th>Status</th>
+            <th>Time</th>
             <th class="actions">Actions</th>
         </tr>
         <?php 
@@ -38,6 +39,7 @@ include "../Headers-Footers/header.php";
             <td><?php echo htmlspecialchars($bus['price']); ?></td>
             <td><?php echo htmlspecialchars($bus['seatCount']); ?></td>
             <td><?php echo htmlspecialchars($bus['status']); ?></td>
+            <td><?php echo htmlspecialchars($bus['time']);?></td>
             <td class="actions">
                 <a class="edit-button" href="update_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>">Edit</a>
                 <a class="delete-button" href="delete_bus.php?id=<?php echo htmlspecialchars($bus['busID']); ?>" onclick="return confirm('Are you sure?');">Delete</a>
