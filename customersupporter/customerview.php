@@ -13,7 +13,9 @@
 
     <div class="box">      
         
-            <button type="button" class="button"><a href="./supadd.php">Add Supporter</a></button><br>
+            <button type="button" class="button">
+                <a class="anchorBtn" style=" padding: 8px; margin-bottom: 10px; width:10px;"href="./supadd.php">Add Supporter</a>
+            </button><br>
             
             <table>
             <tr>
