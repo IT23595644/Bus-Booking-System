@@ -2,22 +2,22 @@
     include ('../config.php');
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
-        $supFname=$_POST["firstName"];
-        $supLname=$_POST["lastName"];
+        $dFname=$_POST["firstName"];
+        $dLname=$_POST["lastName"];
         $address=$_POST["address"];
         $pnum=$_POST["pNum"];
         $dob=$_POST["dob"];
-        $lice=$_POST["licenseId"];
+        $licen=$_POST["licenseId"];
 
 
 
-        $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)
-              VALUES('$supFname','$supLname','$address','$pnum','$dob')";
+        $sql="INSERT INTO busdriver (firstName,lastName,address,pNum,dob,licenseId)
+              VALUES('$dFname','$dLname','$address','$pnum','$dob','$licen')";
 
         $result=mysqli_query($conn,$sql);
         if($result)
         {
-            header("location: customerview.php");
+            header("location: adddrive.php");
         }
 
         mysqli_close($conn);
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="crud.css"> 
 
     <div class="title">
-        <h1>Manage Customer Supporters</h1>
+        <h1>Manage Bus Driver</h1>
     </div>
     
 
@@ -43,19 +43,22 @@
         <div>
             <form method="post" >
                 <label>First Name:</label><br>
-                <input type="text" name="fname"><br>
+                <input type="text" name="firstName"><br>
 
                 <label>Last Name:</label><br>
-                <input type="text" name="lname"><br>
+                <input type="text" name="lastName"><br>
 
                 <label>Address Name:</label><br>
                 <input type="text" name="address"><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pnum"><br>
+                <input type="text" name="pNum"><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="text" name="dob"><br><br>
+                <input type="date" name="dob"><br><br>
+
+                <label>license Id:</label><br>
+                <input type="text" name="licenseId"><br><br>
 
                 <input class="button" type="submit" name="submit">               
 
