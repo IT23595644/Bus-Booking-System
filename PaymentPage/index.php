@@ -97,7 +97,7 @@ $cvv = "";
   }
   
   .body12 {
-    background: url('777.jpg');
+    background: url('back.jpg');
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(8px);
@@ -458,4 +458,3 @@ button {
       </div>
   <?php include '../Headers-Footers/footer.php'; ?> 
 
-</body>

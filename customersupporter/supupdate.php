@@ -68,10 +68,10 @@
                 <input type="text" name="address" ><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pnum" ><br>
+                <input type="tel" name="pnum" ><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="text" name="dob" ><br><br>
+                <input type="date" name="dob" ><br><br>
 
                 <input class="button" type="submit" name="submit" value="Update">               
 
