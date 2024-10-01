@@ -54,11 +54,6 @@ a{
     cursor: pointer;
 }
 
-.add-button:hover{
-    background-color: white;
-    color:#007bff;
-}
-
 .edit-button{
     background-color: #00b81c;
     border: none;
