@@ -2,20 +2,14 @@
 
     include("config.php");
 
+    include("../Headers-Footers/header.php");
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+<link rel="stylesheet" href="styles.css">
+<nav>
 <div class="combination">
-
+    
     <div class="welcome">
         
         <h1>Welcome Back to Bus365!</h1>
@@ -48,7 +42,7 @@
 
 </div>
 
+</nav>
     <script src="script.js"></script>
-</body>
-</html>
 
+<?php include("../Headers-Footers/footer.php");

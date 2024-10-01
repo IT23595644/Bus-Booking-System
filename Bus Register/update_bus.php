@@ -88,7 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="submit" value="Update Bus">
 </form>
 
-<a href="index.php">Back to Bus List</a>
+<button style="margin:10px">
+    <a href="index.php" style="text-decoration:none;">Back to Bus List</a>
+<button>
 
 </body>
 </html>
