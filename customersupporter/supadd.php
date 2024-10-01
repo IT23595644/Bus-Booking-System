@@ -38,7 +38,7 @@
             <button type="button" class="button"></button><br>
         </div>-->
         <div>
-            <form method="post" action="supadd.php">
+            <form method="post" >
                 <label>First Name:</label><br>
                 <input type="text" name="fname"><br>
 
