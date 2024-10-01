@@ -24,7 +24,7 @@
         <div class="welc">
             <h1>WELCOME To <strong>BUS365</strong></h1>
             <h3>Your Safe Travel Our Main Goal</h3><br>
-           <center><a href="#"class="book-btn">Book Ticket</a></center>
+           <center><a href="seat_booking.php"class="book-btn">Book Ticket</a></center>
         </div>
     </section>
 </div>
@@ -126,7 +126,7 @@
       </div>
     </div>
   </div>
-  <button id="back-to-top" onclick="scrollToTops()"></button>
+  <button id="back-to-top" onclick="scrollToTops()"><i class="ri-arrow-up-fill"></i></button>
     <script src="home.js"></script>
 
   <?php
