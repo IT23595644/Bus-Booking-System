@@ -27,23 +27,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <h1>Add New Bus</h1>
 <form method="POST">
-    <label for="name">Bus Number:</label>
+    <label>Bus Number:</label>
     <input type="text" name="busNum" required>
     
-    <label for="route">Bus Owner:</label>
+    <label>Bus Owner:</label>
     <input type="text" name="busOwner" required>
     
-    <label for="capacity">Route:</label>
+    <label>Route:</label>
     <input type="number" name="route" required>
     
-    <label for="price">Price:</label>
+    <label>Price:</label>
     <input type="number" name="price" required>
     
-    <label for="seatCount">Seat Count:</label>
+    <label>Seat Count:</label>
     <input type="number" name="seatCount" required>
     
-    <label for="status">Status:</label>
+    <label>Status:</label>
     <input type="text" name="status" required>
+
+    <label>Time:</label>
+    <input type="text" name="time" required>
 
     <input type="submit" value="Add Bus">
 </form>
