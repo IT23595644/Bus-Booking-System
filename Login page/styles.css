@@ -107,21 +107,24 @@ h2 {
 }
 
 .admin-btn{
-    align-content:center;
-    padding:10px;
-
+    margin-left: 25%;
+    margin-top:10%;
+    padding:1px;
+    border-radius:5px;
+    border-color: #ad0000;
+    width:50%;
+    background-color: #ad0000;
 }
 
-.admin-btn:hover{
-
-    background-color:rgb(255, 102, 0);
+.admin-btn a:hover{
+    color:rgb(255, 230, 0);
 
 }
 
 .admin-btn a {
 
     text-decoration: none;
-    color:white;
+    color:rgb(255, 255, 255);
 
 }
 

@@ -37,7 +37,7 @@
             <button class="submit-btn" type="submit">Login</button>
             <div id="errorMessage" class="error-message"></div>
         </form>
-        <button class="admin-btm"><a href="../Admin Login/index.php">Login as Admin</a></h6>
+        <button class="admin-btn"><a href="../Admin Login/index.php">Login as Admin</a></h6>
     </div>
 
 </div>
