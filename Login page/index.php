@@ -40,9 +40,10 @@
                 <label for="password"><strong>Password</strong></label>
                 <input type="password" id="password" name="password" placeholder="Enter your password">
             </div>
-            <button type="submit">Login</button>
+            <button class="submit-btn" type="submit">Login</button>
             <div id="errorMessage" class="error-message"></div>
         </form>
+        <button class="admin-btm"><a href="../Admin Login/index.php">Login as Admin</a></h6>
     </div>
 
 </div>
