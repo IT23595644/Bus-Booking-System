@@ -102,7 +102,7 @@
                         <ul>
                             <li><a class="navigation" href="index.php">Home</a></li>
                             <li><a class="navigation" href="seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="#gasa">About</a></li>
+                            <li><a class="navigation" href="#gasa">About Us</a></li>
                             <li><a class="navigation" href="#gasa">Scheduling</a></li>
                             <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
                         </ul>
