@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_start();
             $_SESSION["username"]=$row["userName"];
             $_SESSION["password"]=$row["password"];
+            $_SESSION["userId"]=$row["userId"];
 
             
             header("location:../index.php");
