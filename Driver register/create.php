@@ -2,11 +2,14 @@
     include ('../config.php');
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
-        $supFname=$_POST["fname"];
-        $supLname=$_POST["lname"];
+        $supFname=$_POST["firstName"];
+        $supLname=$_POST["lastName"];
         $address=$_POST["address"];
-        $pnum=$_POST["pnum"];
+        $pnum=$_POST["pNum"];
         $dob=$_POST["dob"];
+        $lice=$_POST["licenseId"];
+
+
 
         $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)
               VALUES('$supFname','$supLname','$address','$pnum','$dob')";
@@ -49,10 +52,10 @@
                 <input type="text" name="address"><br>
 
                 <label>Phone Number:</label><br>
-                <input type="tel" name="pnum"><br>
+                <input type="text" name="pnum"><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="date" name="dob"><br><br>
+                <input type="text" name="dob"><br><br>
 
                 <input class="button" type="submit" name="submit">               
 
@@ -67,5 +70,6 @@
 <?php
     include("../Headers-Footers/footer.php");
 ?>
+
 
 
