@@ -7,10 +7,10 @@
 
 <div class="containerSchedule">
     <br>
-    <h2>Bus Schedule<h2>
+    <h2 class="pageTitle">Bus Schedule<h2>
 
     <br>
-        <table border='1'>
+        <table>
             <tr>
                 <th>Bus ID</th>
                 <th>Bus Number-Plate</th>
