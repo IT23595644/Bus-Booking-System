@@ -7,7 +7,7 @@
 ?>
     
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
-
+    <div class="body1234"
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
@@ -163,7 +163,7 @@
             </div>
         </div>
     </div>
-   
+</div> 
 <?php
     include("Headers-Footers/footer.php");  //Footer file
 ?>

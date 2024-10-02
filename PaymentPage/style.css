@@ -5,14 +5,17 @@
     
   }
   
-  html {
+  .body1234{
     font-size: 62.5%; /* 10/16 = 0.625 * 100 */
+   
   }
   
   .body12 {
     background: url('back.jpg');
     background-position: center;
     background-size: cover;
+    
+    
     backdrop-filter: blur(8px);
     color: #3c3c39;
   

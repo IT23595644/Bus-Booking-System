@@ -1,9 +1,9 @@
 <?php
-include 'connect.php'; 
+include '../config.php'; 
 if(isset($_GET['deleteid'])){
     $ID=$_GET['deleteid'];
 
-    $sql="delete from card_details where Card_ID=$ID";
+    $sql="DELETE FROM paymentdetails where payCardId=$ID";
     $result=mysqli_query($conn,$sql);
     if($result){
         header('location:cards.php');
