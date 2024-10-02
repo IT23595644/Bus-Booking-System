@@ -129,27 +129,6 @@
           </div>
         </div>
     </div>
-        <div class="testimonials">
-            <div class="inner">
-                <h1>Give Ratings And  Reviews</h1>
-                    <div class="rating-form">
-                    <form method="post" action="submit_review.php">
-                        <label for="message">Review:</label>
-                        <textarea id="message" name="message" placeholder="Type your review"></textarea>
-                        <p>Give Rating:</p>
-                        <div class="rating">
-                            <span class="star" data-value="5">&#9733;</span>
-                            <span class="star" data-value="4">&#9733;</span>
-                            <span class="star" data-value="3">&#9733;</span>
-                            <span class="star" data-value="2">&#9733;</span>
-                            <span class="star" data-value="1">&#9733;</span>
-                        </div>
-                        <button type="submit">Submit</button>
-    </form>
-                        </div>
-                </div>
-        </div>
-    </div>
     <br>
     <?php
         include_once("../Bus-Booking-System/Headers-Footers/footer.php");
