@@ -155,7 +155,7 @@ table tr:last-child td:last-child {
 <?php include '../Headers-Footers/header.php'; ?>
 <div class="body12">
 <div class="card-box">
-    <h2><a href="index.php" style="text-decoration: none; color:black;">Choose an Option</a></h2>
+    <h2><a href="payment.php" style="text-decoration: none; color:black;">Choose an Option</a></h2>
     <form method="POST" action="">
     <div class="payment-details box">
       <table>
@@ -181,11 +181,11 @@ table tr:last-child td:last-child {
             
             echo '<tr class="row-click">
             
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$fullName.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cardNumber.'</a></td>
-            <td class="exp-month"><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expMonth.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expYear.'</a></td>
-            <td><a href="index.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
+            <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$fullName.'</a></td>
+            <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cardNumber.'</a></td>
+            <td class="exp-month"><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expMonth.'</a></td>
+            <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$expYear.'</a></td>
+            <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
             <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>

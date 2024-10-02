@@ -54,7 +54,7 @@
                 <label>Date Of Birth:</label><br>
                 <input type="date" name="dob"><br><br>
 
-                <input class="button" type="submit" name="submit">               
+                <input class="button" style="background-color:#24a0ed" type="submit" name="submit">               
 
             </form>
         </div>

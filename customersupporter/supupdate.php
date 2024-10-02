@@ -3,15 +3,16 @@
         
         if(isset($_GET['updateid'])){   
             $id=$_GET['updateid'];
-        $sql="SELECT * FROM customersupporter where supId=$id";
-        $result=mysqli_query($conn,$sql);
-        $row=mysqli_fetch_assoc($result);
 
-        $fname=$row['firstName'];
-        $lname=$row['lastName'];
-        $address=$row['address'];
-        $pNum=$row['pNum'];
-        $dob=$row['dob'];
+            $sql="SELECT * FROM customersupporter where supId=$id";
+            $result=mysqli_query($conn,$sql);
+            $row=mysqli_fetch_assoc($result);
+
+            $fname=$row['firstName'];
+            $lname=$row['lastName'];
+            $address=$row['address'];
+            $pNum=$row['pNum'];
+            $dob=$row['dob'];
         
         }   
         
@@ -24,7 +25,8 @@
             $pnum=$_POST["pnum"];
             $dob=$_POST["dob"];
             echo $supFname ;
-            $sql="UPDATE customersupporter  SET firstName='$supFname',lastName='$supLname',address='$address',pNum='$pnum',dob='$dob' WHERE supId='$id';";
+            $sql="UPDATE customersupporter  SET firstName='$supFname',lastName='$supLname',address='$address',pNum='$pnum',dob='$dob' 
+                  WHERE supId='$id';";
 
             
             $result=mysqli_query($conn,$sql);
@@ -59,21 +61,21 @@
         <div>
             <form method="post" >
                 <label>First Name:</label><br>
-                <input type="text" name="fname" ><br>
+                <input type="text" name="fname" value="<?php echo"$fname" ?>"><br>
 
                 <label>Last Name:</label><br>
-                <input type="text" name="lname" ><br>
+                <input type="text" name="lname" value="<?php echo"$lname" ?>" ><br>
 
                 <label>Address Name:</label><br>
-                <input type="text" name="address" ><br>
+                <input type="text" name="address" value="<?php echo"$address" ?>"><br>
 
                 <label>Phone Number:</label><br>
-                <input type="tel" name="pnum" ><br>
+                <input type="tel" name="pnum" value="<?php echo"$pNum" ?>"><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="date" name="dob" ><br><br>
+                <input type="date" name="dob" value="<?php echo"$dob" ?>"><br><br>
 
-                <input class="button" type="submit" name="submit" value="Update">               
+                <input class="button" style="background-color:#24a0ed" type="submit" name="submit" value="Update">               
 
             </form>
         </div>

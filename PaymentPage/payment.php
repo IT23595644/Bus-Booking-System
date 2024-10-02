@@ -177,7 +177,7 @@ $cvv = "";
     flex-direction: column;
     gap: 1rem;
     border-bottom: solid 1px;
-    margin-bottom: 0px;
+    margin-bottom: -11px;
     margin-top: 10px;
   }
   
@@ -404,7 +404,7 @@ button {
             <div class="payment-info">
             
                 <h3 class="payment-heading">Payment Information</h3>
-                <form class="form-box" method="post" action="cards.php?cardid=<?php echo $ID; ?>">
+                <form class="form-box" method="post" action="cards.php?cardid=<?php echo $ID; ?>" onsubmit="return validateForm()">
                 </div>
                   <div class="name1">
                     <label id="full-name">Full Name</label>
@@ -413,7 +413,7 @@ button {
                     
                   <div class="card1">
                     <label id="credit-card-num">Card Number</label>
-                    <input id="card-number" name="credit-card-num"  class="input-field" placeholder="0000-0000-0000-0000" type="text" oninput="validateCard()" value="<?php echo $cardNumber;?>">
+                    <input id="card-number" name="credit-card-num"  class="input-field" placeholder="0000-0000-0000-0000" type="number" oninput="validateCard()" value="<?php echo $cardNumber;?>">
                   </div>
                     <label id="exp-month" style="color: black; "> Month</label>
                     <input type="number" id="exp-m" class="exp" name="Month" oninput="validateMonth()" value="<?php echo $expMonth;?>">
@@ -426,13 +426,16 @@ button {
                   </div><br><br>
                   <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Save Card</a></button>
                   <br>
-                    <center>
-                   <button class="btn" type="submit"  style="font-size: 20px;">
-                    <i class="fa-solid fa-lock"></i> Pay Now
-                  </button></center>
+                  <center>
+                      <button class="btn" type="submit" style="font-size: 20px;">Pay Now</button>
+                  </center>
+                    <!-- <center>
+                   <button class="btn" style="font-size: 20px;" type="submit">
+                    <a href="cards.php" style="text-decoration:none; color:white;" >Pay Now</a>
+                  </button></center> -->
                 </form>
       
-                <p class="footer-text" style="font-size: 10px;"><br><br><br><br><br>
+                
                   
                   
                 </p>

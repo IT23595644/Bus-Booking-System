@@ -23,7 +23,8 @@
     <section>
         <div class="welc">
             <h1>WELCOME To <strong>BUS365</strong></h1>
-            <h3>Your Safe Travel Our Main Goal</h3><br>
+            <h3>Your Safe Travel Our Main Goal</h3>
+            <h3>Ride Easy, Ride with Bus365.</h3><br>
            <center><a href="seat_booking.php"class="book-btn">Book Ticket</a></center>
         </div>
     </section>
@@ -60,6 +61,28 @@
     </div>
   </div>
 </div>
+
+<div class="testimonials">
+    <div class="inner">
+      <h1>Why Book with BusSeat?</h1>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="col">
+        <div class="box" >
+                <div class="heading">
+                    <ul>
+                        <li><div class="icon">🔍</div>More Choices</li>
+                        <li><div class="icon">🙂‍↔️</div>Customer Support</li>
+                        <li><div class="icon">🎫</div>Best Price</li>
+                        <li><div class="icon">🗺️</div>Google Map Location</li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
   <div class="testimonials">
     <div class="inner">
       <h1>User Reviews</h1>
@@ -81,7 +104,7 @@
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
-            <a href="../Use Rating/userRating.html" class="card-btn">read more</a>
+            <a href="userRating.php" class="card-btn">read more</a>
           </div>
         </div>
 
@@ -100,7 +123,7 @@
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
-            <a href="../Use Rating/userRating.html" class="card-btn">read more</a>
+            <a href="userRating.php" class="card-btn">read more</a>
           </div>
         </div>
 
@@ -119,7 +142,7 @@
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
-            <a href="../Use Rating/userRating.html" class="card-btn">read more</a>
+            <a href="userRating.php" class="card-btn">read more</a>
           </div>
 
         </div>
