@@ -33,7 +33,9 @@
     align-content: start;
 
 }
-section{
+section{  
+    padding-bottom:40px;
+    background-color: #686868a0;
     width:100%;
     height:90%;
     display:flex;
@@ -42,14 +44,14 @@ section{
     margin-top: 5%;
     margin-left: 10%;
     width:80%;
-    color:white;
+    color:rgb(255, 255, 255);
 
 }
 
 .welc h1{
     width:100%;
     font-size: 4rem;
-    text-shadow: 0 0 7px white;
+    text-shadow: 0 0 7px rgb(0, 0, 0);
     font-family:initial;
     text-align: center;
 }
@@ -63,10 +65,10 @@ strong{
 }
 
 .welc h3{
-    color:blue;
+    color:rgb(44, 111, 255);
     width:100%;
     font-size: 2rem;
-    text-shadow: 0 0 7px whitesmoke;
+    text-shadow: 0 0 7px rgb(255, 255, 255);
     text-align: center;
 }
 #bkk{

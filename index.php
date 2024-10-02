@@ -22,7 +22,7 @@
 
     <section>
         <div class="welc">
-            <h1>WELCOME To <strong>BUS365</strong></h1>
+            <h1>WELCOME TO <strong>BUS365</strong></h1>
             <h3>Your Safe Travel Our Main Goal</h3>
             <h3>Ride Easy, Ride with Bus365.</h3><br>
            <center><a href="seat_booking.php"class="book-btn">Book Ticket</a></center>
