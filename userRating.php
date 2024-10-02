@@ -27,7 +27,10 @@
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>Best Passenger Service</h3>
+                  Overall good experience, and Good passenger service and buses have confortable seats. 
+                  <br>
+                  <h6>Date of experience: April 12, 2024</h6>
                 </p>
               </div>
             </div>
@@ -45,7 +48,11 @@
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>User friendly Bus Ticket Website</h3>
+                  It was easy to purchase bus tickets on Bus365.lk website. 
+                  Some of the companies do not have admin charge, which is good. Keep it up guys!
+                  <br>
+                  <h6>Date of experience: August 20, 2024</h6>
                 </p>
               </div>
             </div>
@@ -63,7 +70,11 @@
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>  Overall good experience </h3>
+
+                Overall good experience, but can improve on more options for cancel booking and refund
+                <br>
+                <h6>Date of experience: October 30, 2023</h6>
                 </p>
               </div>
             </div>
@@ -79,14 +90,18 @@
                 <div class="name">Anuradha</div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>Busonlineticket</h3>
+                Busonlineticket? More like busonlinescam. Not only did they waste my whole day waiting for continuous delays, 
+                they cancelled my trip and offered the refund only to go to Malaysia. No refund allowed for return trip.
+                <br>
+                <h6>Date of experience: March 21, 2024</h6>
                 </p>
               </div>
             </div>
@@ -104,7 +119,11 @@
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>User friendly Bus Ticket Website</h3>
+                  It was easy to purchase bus tickets on Bus365.lk website. 
+                  Some of the companies do not have admin charge, which is good. Keep it up guys!
+                  <br>
+                  <h6>Date of experience: December 20, 2023</h6>
                 </p>
               </div>
             </div>
@@ -115,14 +134,19 @@
                 <div class="name">Pethum</div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
     
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <h3>No customer service</h3>
+                No customer service. Bus was late 1.5 hours in mid night. Bus driver talking over the phone while driving. 
+                They do not read your emails, they answer whatever they like. Employees are rude, 
+                unapologetic and shouldn't be working with customers.
+                <br>
+                <h6>Date of experience: January 23, 2023</h6>
                 </p>
               </div>
             </div>
