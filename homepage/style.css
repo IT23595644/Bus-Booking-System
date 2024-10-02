@@ -8,7 +8,7 @@
 }
 .content{
     min-height:100vh;
-    background-image:url('../homepage/777.jpg');
+    background-image:url('./images/buswallBlur.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -324,8 +324,16 @@ span{
     text-transform: uppercase;
     margin: 20px 0;
   }
+  .box {
+    padding:50px 25px;
+    background-color: rgba(219, 219, 219, 0.812);
+    border-radius: 10px;
+    height:450px;
+    margin-top:20px;
+    margin-bottom:30px;
+    }
   .stars{
-    color:rgb(96, 96, 97);
+    color:rgb(162, 111, 2);
     margin-bottom: 20px;
   }
   
