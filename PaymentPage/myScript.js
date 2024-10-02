@@ -1,56 +1,77 @@
-function validateForm() {
-    var name = document.getElementById('cardholder-name').value;
-    var cardNumber = document.getElementById('card-number').value;
-    var month = document.getElementById('exp-m').value;
-    var year = document.getElementById('exp-y').value;
-    var cvv = document.getElementById('cvv').value;
-
-    if (name === '' || cardNumber === '' || month === '' || year === '' || cvv === '') {
-        alert('Please fill in all the fields.');
-        return false;
+// Validate the entire form
+function validateForm(event) {
+    const fullName = document.getElementById('cardholder-name').value;
+    const cardNumber = document.getElementById('card-number').value;
+    const expMonth = document.getElementById('exp-m').value;
+    const expYear = document.getElementById('exp-y').value;
+    const cvv = document.getElementById('cvv').value;
+  
+    // Prevent form submission if any field is empty
+    if (fullName === "" || cardNumber === "" || expMonth === "" || expYear === "" || cvv === "") {
+      alert("Please fill in all the fields.");
+      event.preventDefault(); // Prevent form submission
+      return false;
     }
-    alert('Card saved successfully!');
-    // Add logic to actually save the card information to your database here
-}
-
-function validateName() {
-    var nameInput = document.getElementById('cardholder-name');
-    if (nameInput.value.length < 5) {
-        nameInput.style.border= '3px solid red';
-    } else {
-        nameInput.style.border = '3px solid green';
-    }}
-
-function validateCard() {
-    var emailInput = document.getElementById('card-number');
-    if (nameInput.value.length < 5) {
-        emailInput.style.border = '3px solid green';
-    } else {
-        emailInput.style.border = '3px solid red';
+  
+    // Validate each field
+    if (!validateName() || !validateCard() || !validateMonth() || !validateYear() || !validateCVV()) {
+      event.preventDefault(); // Prevent form submission if any validation fails
+      return false;
     }
-}
-
-function validateMonth() {
-    var locationInput = document.getElementById('exp-m');
-    if (locationInput.value.length < 5) {
-        locationInput.style.border = '3px solid red';
-    } else {
-        locationInput.style.border = '3px solid green';
+  
+    return true; // Proceed if all fields are valid
+  }
+  
+  // Validate Cardholder Name
+  function validateName() {
+    const nameField = document.getElementById('cardholder-name').value;
+    if (nameField === "") {
+      alert("Name cannot be empty.");
+      return false;
     }
-}
-function validateYear() {
-    var locationInput = document.getElementById('exp-y');
-    if (locationInput.value.length < 5) {
-        locationInput.style.border = '3px solid red';
-    } else {
-        locationInput.style.border = '3px solid green';
+    return true;
+  }
+  
+  // Validate Card Number (basic check for length)
+  function validateCard() {
+    const cardNumber = document.getElementById('card-number').value;
+    const regex = /^[0-9]{16}$/; // Basic check for a 16-digit number
+    if (!regex.test(cardNumber)) {
+      alert("Please enter a valid 16-digit card number.");
+      return false;
     }
-}
-function validateCVV() {
-    var locationInput = document.getElementById('cvv');
-    if (locationInput.value.length < 5) {
-        locationInput.style.border = '3px solid red';
-    } else {
-        locationInput.style.border = '3px solid green';
+    return true;
+  }
+  
+  // Validate Expiry Month (should be between 1 and 12)
+  function validateMonth() {
+    const month = document.getElementById('exp-m').value;
+    if (month < 1 || month > 12) {
+      alert("Please enter a valid expiration month (1-12).");
+      return false;
     }
-}    
+    return true;
+  }
+  
+  // Validate Expiry Year (should not be in the past)
+  function validateYear() {
+    const year = document.getElementById('exp-y').value;
+    const currentYear = new Date().getFullYear();
+    if (year < currentYear) {
+      alert("Expiration year cannot be in the past.");
+      return false;
+    }
+    return true;
+  }
+  
+  // Validate CVV (basic check for 3-digit number)
+  function validateCVV() {
+    const cvv = document.getElementById('cvv').value;
+    const regex = /^[0-9]{3}$/; // Basic check for 3-digit CVV
+    if (!regex.test(cvv)) {
+      alert("Please enter a valid 3-digit CVV.");
+      return false;
+    }
+    return true;
+  }
+  
