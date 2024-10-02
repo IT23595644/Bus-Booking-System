@@ -4,7 +4,13 @@
 ?>
 
     <link rel="stylesheet" href="./booking_crud.css"> 
-    
+    <script>
+        function confirmDelete(bookingId) {
+            if (confirm("Are you sure you want to delete this booking?")) {
+                window.location.href = './booking_delete.php?deleteid=' + bookingId;
+            }
+        }
+    </script>
 
     <div class="title">
         <h1>Seat Booking Details</h1>
@@ -29,14 +35,15 @@
                 {    
                         while($row=mysqli_fetch_assoc($result))
                         {
-                            echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['Passengers']."</td><td><button class='update-btn'><a href='./booking_update.php?updateid=".$row['bookingId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='booking_delete.php?deleteid=".$row['bookingId']."'>DELETE</a></button></td></tr>";
+                            echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['Passengers']."</td><td><button class='update-btn'><a href='./booking_update.php?updateid=".$row['bookingId']."'>UPDATE</a></button></td><td><button class='delete-btn' onclick='confirmDelete({$row['bookingId']})'>DELETE</button></td></tr>";
                         }
                 }
                 ?>
+
                 </table>
             </div>
     </div>
-    
+    <br><br>
 <?php
     include("../Headers-Footers/footer.php");
 ?>

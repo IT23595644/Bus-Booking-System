@@ -12,65 +12,65 @@
     <br><br>
     <div class="title">
         <h1>Book Your Seats</h1>
-        <p>You can book both ways</p>
     </div>
     
     <div class="main-section">
         <div class="image-section">
-          
+
             <style>
-            .mySlides {
-                display: none;
-            }
-            img {
-                vertical-align: middle;
-            }
+                .mySlides {
+                    display: none;
+                }
+                img {
+                    vertical-align: middle;
+                }
 
-            /* Slideshow container */
-            .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-            }
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
 
-            .dot {
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-            }
-            .active {
-                background-color: white;
-            }
+                .dot {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: grey;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                .active {
+                    background-color: white;
+                }
+                
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 3.5s;
+                }
 
-            /* Fading animation */
-            .fade {
-            animation-name: fade;
-            animation-duration: 3.5s;
-            }
+                @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                }
+                img{
 
-            @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-            }
+                }
             </style>
             
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img src="Seat Booking page/a.jpeg" style="width:100%">
+                    <img src="Seat Booking page/slideshow1.png" style="width:350px; height:320px;">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="Seat Booking page/d.jpg" style="width:100%">
+                    <img src="Seat Booking page/slideshow2.png" style="width:350px; height:320px;">
     
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="Seat Booking page/e.png" style="width:100%">
+                    <img src="Seat Booking page/slideshow3.png" style="width:350px; height:320px;">
                 </div>
 
                 <div style="text-align:center">
@@ -89,18 +89,25 @@
                 let i;
                 let slides = document.getElementsByClassName("mySlides");
                 let dots = document.getElementsByClassName("dot");
+                
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";  
                 }
+
                 slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
+
                 slides[slideIndex-1].style.display = "block";  
                 dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 5000); // Change image every 2 seconds
+                setTimeout(showSlides, 5000); 
                 }
+
             </script>
 
 
@@ -110,7 +117,7 @@
         <div class="booking-form">
            
             <div class="tabs">
-                <div class="tab active">Customer Details</div>
+                <div class="tab active">Booking Details</div>
             </div>
             
             <div id="Customer Details" class="tabcontent">
@@ -134,12 +141,12 @@
 
                     <div class="form-group">
                         <label for="seat_no">Seat No</label>
-                        <input type="seat_no" id="seat_no" name="seat_no" style="width:290px;">
+                        <input type="seat_no" id="seat_no" name="seat_no">
                     </div>
                     
                     <div class="form-group">
                         <label for="bus_id">Bus ID</label>
-                        <input type="bus_id" id="bus_id" name="bus_id" style="width:300px;">
+                        <input type="bus_id" id="bus_id" name="bus_id" style="width:310px;">
                     </div>
                    
                      <div class="actions">
@@ -147,7 +154,7 @@
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
-                    <a href="index.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
+                    <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
 
                     <?php
                         include("Seat Booking page/booking_create.php");
