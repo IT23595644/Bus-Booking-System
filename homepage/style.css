@@ -208,7 +208,25 @@ span{
        scale:1;
     }
   }
-
+  .heading ul{margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .heading ul li{
+    list-style-type: none;
+    margin-left:100px;
+    background-color: rgba(112, 112, 112, 0.393);
+    padding:20px;
+    border-radius: 8px;
+    font-weight: bold;
+    }
+    .heading ul li:hover{
+    background-color: rgba(112, 112, 112, 0.84);
+    }
+    .icon{
+    font-size: 1.8rem;
+    }
   .view1{
     background-color: white;
     padding: 10vh 20px;
@@ -326,14 +344,7 @@ span{
     text-transform: uppercase;
     margin: 20px 0;
   }
-  .box {
-    padding:50px 25px;
-    background-color: rgba(219, 219, 219, 0.812);
-    border-radius: 10px;
-    height:450px;
-    margin-top:20px;
-    margin-bottom:30px;
-    }
+
   .stars{
     color:rgb(162, 111, 2);
     margin-bottom: 20px;
