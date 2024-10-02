@@ -12,7 +12,7 @@
         $busId=$row['busId'];
         $location=$row['Location'];
         $destination=$row['Destination'];
-        $passengers=$row['Passengers'];
+        $d_date=$row['d_date'];
         
         }   
         
@@ -21,11 +21,11 @@
             
             $bookFrom=$_POST["from"];
             $bookTo=$_POST["to"];
-            $bookPassengers=$_POST["passengers"];
+            $bookd_date=$_POST["d_date"];
             $bookSeatnum=$_POST["seatnum"];
             $bookBusid=$_POST["busid"];
-            echo $bookFrom ;
-            $sql="UPDATE seatbooks  SET Location='$bookFrom',Destination='$bookTo',Passengers='$bookPassengers',seatNum='$bookSeatnum',busId='$bookBusid' WHERE bookingId='$id';";
+            /* echo $bookFrom ; */
+            $sql="UPDATE seatbooks  SET Location='$bookFrom',Destination='$bookTo',d_date='$bookd_date',seatNum='$bookSeatnum',busId='$bookBusid' WHERE bookingId='$id';";
 
             
             $result=mysqli_query($conn,$sql);
@@ -63,8 +63,8 @@
                 <label>To:</label><br>
                 <input type="text" name="to" ><br>
 
-                <label>No of passengers:</label><br>
-                <input type="text" name="passengers" ><br>
+                <label>Departure Date:</label><br>
+                <input type="text" name="d_date" ><br>
 
                 <label>Seat No:</label><br>
                 <input type="text" name="seatnum" ><br>

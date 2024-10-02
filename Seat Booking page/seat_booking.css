@@ -87,7 +87,7 @@ label {
 #to{
     width: 100%;
 }
-#passengers{
+#d_date{
     width: 100%;
 }
 #seat_no{
@@ -114,4 +114,5 @@ label {
 .actions .back {
     background-color: #ccc;
 }
+
 

@@ -7,7 +7,6 @@
 ?>
     
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
-    <script src="Seat Booking page/seat_booking.js"></script>
 
     <br><br>
     <div class="title">
@@ -58,7 +57,7 @@
                 }
             </style>
             
-            <div class="slideshow-container">
+             <div class="slideshow-container">
 
                 <div class="mySlides fade">
                     <img src="Seat Booking page/slideshow1.png" style="width:350px; height:320px;">
@@ -135,8 +134,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="passengers">No of passengers</label>
-                        <input type="text" id="passengers" name="passengers">
+                        <label for="d_date">Departure Date</label>
+                        <input type="date" id="d_date" name="d_date" value="2024-10-01" style="width:100%;">
                     </div>
 
                     <div class="form-group">

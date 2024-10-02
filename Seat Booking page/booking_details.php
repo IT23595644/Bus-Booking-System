@@ -24,7 +24,7 @@
             <div>
                 <table>
                 <tr>
-                    <th>Booking_ID</th><th>Seat_no</th><th>Date</th><th>Bus_ID</th><th>Location</th><th>Destination</th><th>No_of_passengers</th><th colspan="2">Operation</th>
+                    <th>Booking_ID</th><th>Seat_no</th><th>Date</th><th>Bus_ID</th><th>Location</th><th>Destination</th><th>Departure_date</th><th colspan="2">Operation</th>
                 </tr>
                 <?php
                 $sql="SELECT * FROM seatbooks;";
@@ -35,7 +35,7 @@
                 {    
                         while($row=mysqli_fetch_assoc($result))
                         {
-                            echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['Passengers']."</td><td><button class='update-btn'><a href='./booking_update.php?updateid=".$row['bookingId']."'>UPDATE</a></button></td><td><button class='delete-btn' onclick='confirmDelete({$row['bookingId']})'>DELETE</button></td></tr>";
+                            echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['d_date']."</td><td><button class='update-btn'><a href='./booking_update.php?updateid=".$row['bookingId']."'>UPDATE</a></button></td><td><button class='delete-btn' onclick='confirmDelete({$row['bookingId']})'>DELETE</button></td></tr>";
                         }
                 }
                 ?>
