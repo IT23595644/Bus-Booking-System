@@ -8,7 +8,7 @@
 }
 .content{
     min-height:100vh;
-    background-image:url('./images/buswallcrop2.jpg');
+    background-image:url('./images/buswallcrop3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,6 +32,10 @@
     height:45px;
     align-content: start;
 
+}
+section{
+    background-color:#6b6b6b87;
+    padding:25px;
 }
 
 .welc{
@@ -278,7 +282,7 @@ span{
 
 .card-btn,.book-btn{
     display: inline-block;
-    background-color: rgb(79, 79, 83);
+    background-color: rgb(0, 106, 255);
     color:white;
     text-decoration: none;
     border-radius: 5px;

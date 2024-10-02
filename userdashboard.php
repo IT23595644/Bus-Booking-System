@@ -1,5 +1,11 @@
 <?php
-    include("Headers-Footers/header.php");
+    session_start();
+    if(!isset($_SESSION["username"]))
+    {
+        header("location: Login page/index.php");
+        exit();
+    }
+    include("UserDashboard/header.php");
 ?>
 
     <link rel="stylesheet" href="./UserDashboard/userdashboard.css"> 
@@ -8,8 +14,8 @@
         <h1>User Dashboard</h1>
     </div>
     <div class="logdetails">
-        <h4>User Id:#PHPsession<h4>
-        <h4>User Name:#PHPsession<h4>
+        <h4>Hellow<h4>
+        <h4><?php echo"{$_SESSION['username']}";?><h4>
         
     </div>
 

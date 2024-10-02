@@ -25,7 +25,14 @@
             <h1>WELCOME</h1>
             <h3>Your Safe Travel Our Main Goal</h3>
             <h3>Ride Easy, Ride with Bus365.</h3><br>
-           <center><a href="seat_booking.php"class="book-btn">Book Ticket</a></center>
+           <center><?php if(isset($_SESSION['userId'])){
+                            echo '<a href="seat_booking.php"class="book-btn">';
+                          }
+                          else{
+                            echo '<a href="Login page/index.php"class="book-btn">';
+                          }             
+           ?>
+           Book Ticket</a></center>
         </div>
     </section>
 </div>

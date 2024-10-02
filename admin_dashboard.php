@@ -1,5 +1,10 @@
 <?php
-    include("Headers-Footers/header.php");
+    session_start();
+    if(!isset($_SESSION["username"]))
+    {
+        header("location: Login page/index.php");
+    }
+    include("Headers-Footers/header2.php");
 ?>
 
 <link rel="stylesheet" href="Admin dashboard/admin_styles.css"> 

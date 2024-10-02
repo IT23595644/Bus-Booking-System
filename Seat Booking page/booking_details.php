@@ -1,6 +1,6 @@
 <?php
     include_once("../config.php");
-    include("../Headers-Footers/header.php");
+    include("header.php");
 ?>
 
     <link rel="stylesheet" href="./booking_crud.css"> 

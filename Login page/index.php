@@ -134,7 +134,7 @@
     
     <div class="welcome">
         
-        <h1>Welcome Back to Bus365!</h1>
+        <h1><big><big>Welcome</big></big> to Bus365!</h1>
         <br><br>
         <p class="welcomeNote"><b>Your journey starts here.</b><br>Log in to access our seamless bus booking and scheduling system, designed to make your travel planning effortless. 
         Whether you're commuting for work, planning a weekend getaway, or embarking on an adventure, 
