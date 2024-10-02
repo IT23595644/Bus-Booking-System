@@ -151,6 +151,20 @@ table tr:last-child td:last-child {
         color: black;
   }  
     </style> 
+    <script>
+    function deleteData() {
+        var response = confirm("Are you sure you want to delete this?");
+        if (response) {
+            // User clicked "Yes", proceed with deletion
+            alert("Data deleted");
+            // Place your actual deletion code here, e.g., an API call
+        } else {
+            // User clicked "No", cancel the action
+            alert("Deletion canceled");
+        } 
+    }
+</script>
+
 </head>
 <?php include '../Headers-Footers/header.php'; ?>
 <div class="body12">
@@ -188,7 +202,7 @@ table tr:last-child td:last-child {
             <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'" onclick="deleteData()">DELETE</a></button></td>
              
             </tr>';
         }
