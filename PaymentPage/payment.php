@@ -386,6 +386,82 @@ button {
         }
       
     </style>
+    <script>
+      function validateForm(){
+        var name = document.getElementById("cardholder-name").value;
+        var card = document.getElementById("card-number").value;
+        var month = document.getElementById("exp-m").value;
+        var year = document.getElementById("exp-y").value;
+        var cvv = document.getElementById("cvv").value;
+        var valid = true;
+        if(name == ""){
+          alert("Name is required");
+          valid = false;
+        }
+        if(card == ""){
+          alert("Card Number is required");
+          valid = false;
+        }
+        if(month == ""){
+          alert("Month is required");
+          valid = false;
+        }
+        if(year == ""){
+          alert("Year is required");
+          valid = false;
+        }
+        if(cvv == ""){
+          alert("CVV is required");
+          valid = false;
+        }
+        return valid;
+      }
+      function validateName(){
+        var name = document.getElementById("cardholder-name").value;
+        if(name == ""){
+          document.getElementById("cardholder-name").style.border = "1px solid red";
+        }
+        else{
+          document.getElementById("cardholder-name").style.border = "1px solid green";
+        }
+      }
+      function validateCard(){
+        var card = document.getElementById("card-number").value;
+        if(card == ""){
+          document.getElementById("card-number").style.border = "1px solid red";
+        }
+        else{
+          document.getElementById("card-number").style.border = "1px solid green";
+        }
+      }
+      function validateMonth(){
+        var month = document.getElementById("exp-m").value;
+        if(month == ""){
+          document.getElementById("exp-m").style.border = "1px solid red";
+        }
+        else{
+          document.getElementById("exp-m").style.border = "1px solid green";
+        }
+      }
+      function validateYear(){
+        var year = document.getElementById("exp-y").value;
+        if(year == ""){
+          document.getElementById("exp-y").style.border = "1px solid red";
+        }
+        else{
+          document.getElementById("exp-y").style.border = "1px solid green";
+        }
+      }
+      function validateCVV(){
+        var cvv = document.getElementById("cvv").value;
+        if(cvv == ""){
+          document.getElementById("cvv").style.border = "1px solid red";
+        }
+        else{
+          document.getElementById("cvv").style.border = "1px solid green";
+        }
+      }
+    </script>
   </head>
     <div class="body12">
     <div class="checkout-container">
@@ -426,13 +502,10 @@ button {
                   </div><br><br>
                   <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Save Card</a></button>
                   <br>
-                  <center>
-                      <button class="btn" type="submit" style="font-size: 20px;">Pay Now</button>
-                  </center>
-                    <!-- <center>
+                    
                    <button class="btn" style="font-size: 20px;" type="submit">
-                    <a href="cards.php" style="text-decoration:none; color:white;" >Pay Now</a>
-                  </button></center> -->
+                    <a href="cards.php" style="text-decoration:none; color:white;" onclick="validateForm()" >Pay Now</a>
+                  </button></center>
                 </form>
       
                 
