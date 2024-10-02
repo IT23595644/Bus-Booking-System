@@ -1,47 +1,6 @@
 <?php
         include_once("Headers-Footers/header.php");
   ?>
-  <style>
-    .fooot {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.fooot nav {
-    margin-bottom: 1rem;
-}
-
-.fooot nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-.fooot nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.fooot .social-media a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-
-.fooot p {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-#link-a{
-    text-decoration: none;
-}
-#link-a:visited{
-    color:#fff;
-}
-
-  </style>
     <link rel="stylesheet" href="../Bus-Booking-System/homepage/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -63,11 +22,7 @@
 
     <section>
         <div class="welc">
-<<<<<<< HEAD
             <h1>WELCOME</h1>
-=======
-            <h1>WELCOME TO <strong>BUS365</strong></h1>
->>>>>>> 89c0123e191b43ae44020ddb6c68ce5d77284ef4
             <h3>Your Safe Travel Our Main Goal</h3>
             <h3>Ride Easy, Ride with Bus365.</h3><br>
            <center><a href="seat_booking.php"class="book-btn">Book Ticket</a></center>
@@ -114,7 +69,7 @@
 
       <div class="row">
         <div class="col">
-                    <ul>
+                    <ul class="Icon-type">
                         <li><div class="icon">🔍</div>More Choices</li>
                         <li><div class="icon">🙂‍↔️</div>Customer Support</li>
                         <li><div class="icon">🎫</div>Best Price</li>
@@ -214,8 +169,8 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
           <a href="#"><i class="ri-linkedin-fill"></i></a>
           <a href="#"><i class="ri-google-fill"></i></a>
       </div>
-      <p>Copyright © 2024 Website. All rights reserved.</p>
-      <p><a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a></p>
+      <a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a>
+      <br>
   </div>
   <button id="back-to-top" onclick="scrollToTops()"><i class="ri-arrow-up-fill"></i></button>
     <script src="home.js"></script>
