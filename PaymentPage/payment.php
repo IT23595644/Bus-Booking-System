@@ -426,13 +426,10 @@ button {
                   </div><br><br>
                   <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Save Card</a></button>
                   <br>
-                  <center>
-                      <button class="btn" type="submit" style="font-size: 20px;">Pay Now</button>
-                  </center>
-                    <!-- <center>
+                    
                    <button class="btn" style="font-size: 20px;" type="submit">
                     <a href="cards.php" style="text-decoration:none; color:white;" >Pay Now</a>
-                  </button></center> -->
+                  </button></center>
                 </form>
       
                 
