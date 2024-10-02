@@ -64,7 +64,7 @@
                 <input type="text" name="to" ><br>
 
                 <label>Departure Date:</label><br>
-                <input type="text" name="d_date" ><br>
+                <input type="date" name="d_date" value="2018-07-22"><br>
 
                 <label>Seat No:</label><br>
                 <input type="text" name="seatnum" ><br>
