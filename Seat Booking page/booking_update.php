@@ -3,6 +3,7 @@
         
         if(isset($_GET['updateid'])){   
             $id=$_GET['updateid'];
+            
         $sql="SELECT * FROM seatbooks where bookingId=$id";
         $result=mysqli_query($conn,$sql);
         $row=mysqli_fetch_assoc($result);

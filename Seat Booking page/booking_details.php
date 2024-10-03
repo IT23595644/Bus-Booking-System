@@ -37,6 +37,7 @@
                         {
                             echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['d_date']."</td><td><button class='update-btn'><a href='./booking_update.php?updateid=".$row['bookingId']."'>UPDATE</a></button></td><td><button class='delete-btn' onclick='confirmDelete({$row['bookingId']})'>DELETE</button></td></tr>";
                         }
+                        
                 }
                 ?>
 

@@ -13,10 +13,17 @@
 
             $sql = "INSERT INTO seatbooks (seatNum, busId,userId, Location, Destination, d_date)
                     VALUES ('$seat_no', '$bus_id','$uid', '$location', '$destination', '$d_date')";
-            
+           
             mysqli_query(mysql: $conn, query: $sql);
-                        
-            echo"<script> location.replace('index.php'); </script>";
+
+            $sql2="SELECT MAX(bookingId) as 'id' FROM seatbooks ";
+            
+            $result=mysqli_query($conn,$sql2);
+            $row=mysqli_fetch_assoc($result);
+            $_SESSION['bookid']=$row['id'];
+            
+                      
+            echo"<script> location.replace('seat_booking_reciept.php'); </script>";
         } 
     }
 ?>

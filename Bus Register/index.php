@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 
-include "../Headers-Footers/header.php";
+include "./header.php";
 ?>
 
 <link rel="stylesheet" href="style.css">

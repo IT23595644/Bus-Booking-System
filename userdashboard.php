@@ -29,22 +29,20 @@
     </div>
 
     <div class="box">
-        <h3>User Reviews<h3>
+        <h3>Crud2<h3>
         <hr><br>
-        <div class="button2">
-            <button type="button" class="button">Details</button>
-            <button type="button" class="button">Update</button>
-            <button type="button" class="button">Delete</button>
+        <div class="button1">
+            <button type="button" class="button" onclick="document.location='##givethepath'">Show Details</button>
+            <button type="button" class="button" onclick="document.location='index.php'">Back</button>
         </div>
     </div>
 
     <div class="box">
-        <h3>Payment Details<h3>
+        <h3>Crud3<h3>
         <hr><br>
-        <div class="button3">
-            <button type="button" class="button">Details</button>
-            <button type="button" class="button">Update</button>
-            <button type="button" class="button">Delete</button>
+        <div class="button1">
+            <button type="button" class="button" onclick="document.location='##givethepath'">Show Details</button>
+            <button type="button" class="button" onclick="document.location='index.php'">Back</button>
         </div>
     </div>
 
