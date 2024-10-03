@@ -163,26 +163,62 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
       </div>
     </div>
   </div>
+  <br><br>
   <div class=fooot>
-      <nav class="footer-nav">
-          <a href="#">Home</a> | 
-          <a href="#">Scheduling</a> | 
-          <a href="#">Booking</a> | 
-          <a href="#">About</a> | 
-          <a href="#">Contact</a>
-      </nav>
-      <div class="social-media">
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-google-fill"></i></a>
-      </div>
-      <a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a>
-      <br>
+        <div class="const">
+            <div class="Creat">
+                <div class="foot-er" id="company"> 
+                    <img src="../Bus-Booking-System/Headers-Footers/logo.png" alt="" class="logo">
+                    <p> Ride Easy, Ride with Bus365.</p>
+                    
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                     </p>
+                </div>
+                <div class="foot-er" id="services"> 
+                    <h3>Services</h3>
+                    <div class="links">
+                        <a href="#">Booking Ticket</a>
+                        <a href="#">Show Bus Sheduling</a>
+                        <a href="#">Customer Support Service</a>
+                        <a href="#">Available Buses Monitoring </a>
+                    </div>
+                </div>
+                <div class="foot-er" id="link">
+                    <h3>Links</h3>
+                    <div class="links">
+                        <a href="../Bus-Booking-System/Terms and Condition/Term&condition.php">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="../Bus-Booking-System/ContactUs.php">Help & Support</a>
+                        <a href="../Bus-Booking-System/F&Q/fandQ.php">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="foot-er" id="contact"> 
+                    <h3>Contact</h3>
+                    <div class="cont-detail">
+                        <i class="fa fa-location"></i>
+                        <center><p>BUS365 Online Booking System <br> Matara,Sri Lanka.</p></center>
+                    </div>
+                    <div class="cont-detail">
+                        <i class="fa fa-phone"></i>
+                        <p>+94-778045685</p>
+                    </div>
+                    <div class="cont-detail">
+                        <p><a href="#">support@bus365.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class ="allright"> &copy; 2024 Bus Booking System. All rights reserved.</p>
+
   </div>
   <button id="back-to-top" onclick="scrollToTops()"><i class="ri-arrow-up-fill"></i></button>
     <script src="home.js"></script>
-
-  <?php
-        include_once("../Bus-Booking-System/Headers-Footers/footer.php");
-  ?>
   
