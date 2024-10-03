@@ -29,7 +29,7 @@
                {    
                     while($row=mysqli_fetch_assoc($result))
                     {
-                        echo "<tr><td>".$row['driverId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td>".$row['licenseId']."</td><td><button class='update-btn'><a href='./updrive.php?updateid=".$row['driverId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='.php?deleteid=".$row['driverId']."'>DELETE</a></button></td></tr>";
+                        echo "<tr><td>".$row['driverId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td>".$row['licenseId']."</td><td><button class='update-btn'><a href='./updrive.php?updateid=".$row['driverId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='deletedrive.php?deleteid=".$row['driverId']."'>DELETE</a></button></td></tr>";
                     }
                }
                ?>
