@@ -166,6 +166,8 @@ if($result){
     <style>
         body {
         background: url('back.jpg'); 
+        
+        
          }
          form {
             display: flex;
@@ -187,9 +189,10 @@ if($result){
             cursor: pointer;
         }
         .box{
+            
             width: 50%;
             margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 25px;
             padding: 20px;
             border: none ;
             background-color: #f9f9f9;
@@ -211,7 +214,7 @@ if($result){
             margin-top: 10px;
             padding: 10px;
             border-radius: 10px;
-            margin-left: 355px;
+            margin-left: 250px;
         }
         #cardholder-name{    
         margin-left: -2px;
@@ -252,7 +255,7 @@ if($result){
         <input type="number" id="exp-y" name="Year" value=<?php echo $expYear;?>><br><br><br>
         <label for="cvv" style="color: black; font-size:large">CVV</label>
         <input id="cvv" name="CVV" type="text" value=<?php echo $cvv;?>><br>
-        <button type="submit" name="submit" class="saveC">Save Card</button>
+        <button type="submit" name="submit" class="saveC">Update Card</button>
         </div>
     </form>
 

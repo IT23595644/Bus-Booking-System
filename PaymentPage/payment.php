@@ -34,7 +34,7 @@ $cvv = "";
     <head>
         <title>Bus365</title>
         <link rel="icon" href="../Headers-Footers/logo.png" type="image/jpg">
-        <script src="myScript.js"></script>
+        <!--<script src="myScript.js"></script>-->
         <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -634,7 +634,7 @@ button {
                     <label for="cvv">CVV</label>
                     <input id="cvv" name="cvv" placeholder="CVV" type="text" oninput="validateCVV()" value="<?php echo $cvv;?>">
                   </div><br><br>
-                  <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Save Card</a></button>
+                  <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Use Card</a></button>
                   <br>
                     
                    <button class="btn" style="font-size: 20px;" type="submit">
@@ -654,5 +654,5 @@ button {
         
       </div>
     </div>
-  <?php include '../Headers-Footers/footer.php'; ?> 
+<?php include '../Headers-Footers/footer.php'; ?> 
 

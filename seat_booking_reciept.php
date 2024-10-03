@@ -138,11 +138,12 @@
                          $_SESSION['destine']=$row2['Destination'];
                          $_SESSION['bid']=$row2['busId'];
 
+                        //newlycreated New Table for price
                          $sql1="SELECT * FROM busprice where busID='{$row2['busId']}'";
                          $result=mysqli_query($conn,$sql1) ;  
                          $row=mysqli_fetch_assoc($result);
                          $price=$row['price'];
-                         
+
                          mysqli_close($conn);
                     ?>
                 
@@ -178,7 +179,7 @@
                     </div>
                     <br>
                      <div class="actions">
-                        <button type="submit" class="confirm">Confirm</button>
+                        <button type="submit" class="confirm" onclick="document.location='./PaymentPage/payment.php'">Checkout</button>
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
                     
