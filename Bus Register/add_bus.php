@@ -8,9 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $price = $_POST['price'];
     $seatCount = $_POST['seatCount'];
     $status = $_POST['status'];
+    $time = $_POST['time'];
 
-    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status]);
+    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status, time) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status, $time]);
 
            
 

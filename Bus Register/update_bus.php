@@ -37,10 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $price = $_POST['price'];
     $seatCount = $_POST['seatCount'];
     $status = $_POST['status'];
+    $time = $_POST['time'];
 
     // Prepare the update statement
-    $stmt = $conn->prepare("UPDATE bus SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ? WHERE busID = ?");
-    $stmt->bind_param("sssdisi", $num, $busOwner, $route, $price, $seatCount, $status, $id); // Bind parameters
+    $stmt = $conn->prepare("UPDATE bus SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ?, time = ? WHERE busID = ?");
+    $stmt->bind_param("sssdisi", $num, $busOwner, $route, $price, $seatCount, $status, $time, $id); // Bind parameters
     
     // Execute the update query
     if ($stmt->execute()) {
