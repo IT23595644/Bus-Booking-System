@@ -23,16 +23,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Bus</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php include("header.php"); ?>
 
-<h1>Add New Bus</h1>
+<link rel="stylesheet" href="style.css">
+    <style>
+        label{
+            font-size:15px;
+        }
+    </style>
+<a style="padding:0px;color:red; background-color:white;" href="index.php">◀ Return to Bus List</a>
+<h1><center>Add New Bus</center></h1>
+<div class="addContent">
 <form method="POST">
     <label>Bus Number:</label>
     <input type="text" name="busNum" required>
@@ -55,10 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Time:</label>
     <input type="text" name="time" required>
 
-    <input type="submit" value="Add Bus">
+    <center><input type="submit" value="Add Bus"></center>
 </form>
 
-<a href="index.php">Back to Bus List</a>
+</div>
 
-</body>
-</html>
+<?php include("../Headers-Footers/footer.php"); ?>

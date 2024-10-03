@@ -10,7 +10,7 @@ include "./header.php";
 <br>
 <center><h1>Bus Management System</h1></center>
 
-<button class="add-button"><a href="add_bus.php">Add New Bus</a></button>
+<button class="add-button"><a href="add_bus.php" style="color:white;">Add New Bus</a></button>
 
 <center>
 
