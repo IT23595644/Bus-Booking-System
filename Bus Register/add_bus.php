@@ -11,8 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status]);
+    
+    /*       MEKA DELETE KARANNA EPO
 
-    header("Location: index.php");
+    $sql1="INSERT INTO busPrice (price)
+           VALUES('$price')";
+    mysqli_query($conn,$sql1);
+
+    header("Location: index.php");*/
 }
 ?>
 

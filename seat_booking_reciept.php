@@ -123,20 +123,27 @@
                     <?php 
                     
                         $bid=$_SESSION["bookid"];
-                         $sql="SELECT b.price FROM seatbooks s,bus b where b.busID=s.busId and bookingId='$bid'";
+                         /*$sql="SELECT b.price FROM seatbooks s,bus b where b.busID=s.busId and bookingId='$bid'";
                          $result=mysqli_query($conn,$sql) ;  
                          $row=mysqli_fetch_assoc($result);
-                         $price=$row['price'];  
+                         $price=$row['price'];  */
+                         
                         
                          $sql2="SELECT * from seatbooks where bookingId= '$bid'";
                          $result2=mysqli_query($conn,$sql2) ;  
                          $row2=mysqli_fetch_assoc($result2);
 
                          $_SESSION['sNum']=$row2['seatNum'];
-                         
                          $_SESSION['locate']=$row2['Location'];
                          $_SESSION['destine']=$row2['Destination'];
                          $_SESSION['bid']=$row2['busId'];
+
+                         $sql1="SELECT * FROM busprice where busID='{$row2['busId']}'";
+                         $result=mysqli_query($conn,$sql1) ;  
+                         $row=mysqli_fetch_assoc($result);
+                         $price=$row['price'];
+                         
+                         mysqli_close($conn);
                     ?>
                 
                     <div class="form">
