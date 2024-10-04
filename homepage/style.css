@@ -481,28 +481,22 @@ span{
     font-size: small;
     padding: 2px 0;
 }
-#back-to-top {
-    width: 50px;
-    height: 30px;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color:black;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    background-color: transparent;
-}
-#back-to-top img{
-    width: 40px;
-    height: 40px;
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it stays on top */
+    background-color: #555; /* Dark background */
+    color: white; /* White text */
+    padding: 10px; /* Some padding */
+    border: none; /* Remove borders */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon */
+    font-size: 18px; /* Increase font size */
 }
 
-/* Show the button when user scrolls down */
-#back-to-top.show {
-    display: block;
+#scrollToTopBtn:hover {
+    background-color: #333; /* Add a darker background on hover */
 }
 

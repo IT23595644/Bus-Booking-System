@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="icon" href="../Bus-Booking-System/Headers-Footers/logo.png" type="image/png">
-
+    
 <div class="content">
     <div class="location">
         <div class="locat">
@@ -164,6 +164,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
     </div>
   </div>
   <br><br>
+  <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top"><i class="ri-arrow-up-circle-line"></i></button>
   <div class=fooot>
         <div class="const">
             <div class="Creat">
@@ -217,8 +218,29 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
         </div>
         <br>
         <p class ="allright"> &copy; 2024 Bus Booking System. All rights reserved.</p>
+        <script>
+          // Show the button when scrolling down 100px from the top of the document
+            window.onscroll = function() {
+                scrollFunction();
+            };
 
+            function scrollFunction() {
+                const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            }
+
+            // Smooth scroll to the top of the page when the button is clicked
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+              }
+    </script>
   </div>
-  <button id="back-to-top" onclick="scrollToTops()"><i class="ri-arrow-up-fill"></i></button>
-    <script src="home.js"></script>
+
   
