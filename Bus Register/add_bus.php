@@ -50,13 +50,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Seat Count:</label>
     <input type="number" name="seatCount" required>
     
-    <label>Status:</label>
-    <input type="text" name="status" required>
+    <label>Status: </label>
+    <select name="status" style="width:200px">
+        <option value="None"></option>
+        <option value="Available">Available</option>
+        <option value="Unavailable">Unavailable</option>
+    </select>
 
     <label>Time:</label>
     <input type="text" name="time" required>
 
-    <center><input type="submit" value="Add Bus"></center>
+    <center><input type="submit" value="Add Bus" onclick="AddBus()"></center>
 </form>
 
 </div>

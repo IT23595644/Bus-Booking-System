@@ -84,11 +84,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Seat Count:</label>
     <input type="text" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
 
-    <label>Status:</label>
-    <input type="text" name="status" value="<?php echo htmlspecialchars($bus['status']); ?>">
+    <label>Status: </label>
+    <select name="status" style="width:200px" required>
+        <option value="None"></option>
+        <option value="Available">Available</option>
+        <option value="Unavailable">Unavailable</option>
+    </select>
 
     <label>Time:</label>
-    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>">
+    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>" required>
     
     <input type="submit" value="Update Bus">
 </div>
