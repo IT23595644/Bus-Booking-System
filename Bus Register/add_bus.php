@@ -24,13 +24,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <?php include("header.php"); ?>
-
 <link rel="stylesheet" href="style.css">
     <style>
         label{
             font-size:15px;
         }
     </style>
+<script src="script.js"></script>
+
 <a style="padding:0px;color:red; background-color:white;" href="index.php">◀ Return to Bus List</a>
 <h1><center>Add New Bus</center></h1>
 <div class="addContent">
@@ -42,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" name="busOwner" required>
     
     <label>Route:</label>
-    <input type="number" name="route" required>
+    <input type="number" name="route" id="route" required>
     
     <label>Price:</label>
-    <input type="number" name="price" required>
+    <input type="number" name="price" id="price" required>
     
     <label>Seat Count:</label>
-    <input type="number" name="seatCount" required>
+    <input type="number" name="seatCount" id="seatCount" required>
     
     <label>Status: </label>
     <select name="status" style="width:200px">

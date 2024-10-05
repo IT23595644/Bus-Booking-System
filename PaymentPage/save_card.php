@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $expMonth = $_POST['Month'];
     $expYear = $_POST['Year'];
     $cvv = $_POST['CVV'];
-    $uid= $_SESSION['ss'];
+    $uid= $_SESSION['userId'];
 
     // Insert card details into the database
     $query = "INSERT INTO `paymentdetails` (fullName, cardNum, month, year, cvv,userId ) 
@@ -111,7 +111,7 @@ if (isset($_POST['submit'])) {
 <div class="bg">
 <?php 
    
-    $_SESSION['ss']=5;
+
     
 
 ?>
