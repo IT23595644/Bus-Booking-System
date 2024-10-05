@@ -1,101 +1,78 @@
 .body1234 {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     background-color: #ccc;
-    background-image: url("../Seat Booking page/background.png");
+    background-image: url("../PaymentReciept/background2.png");
     background-repeat: no-repeat;
     background-size: cover;
     height:120vh;
 }
 .title{
-    background-color: #cccccc;
-    margin-right: 600px;
-    margin-left: 600px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding-bottom: 10px;
+    background-color: transparent;
+    margin-right: 420px;
+    margin-left: 390px;
+    margin-top: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid white;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 
 }
 h1{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 0%;
-    color: black;
+    color: white;
     margin-top: 10px;
 }
 .main-section {
     display: flex;
-    padding: 20px;
+    padding: 0px;
     border: 5px solid white;
-    margin-bottom: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 25px;
-    border-radius: 35px;
+    border-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 390px;
+    margin-right: 420px;
+    margin-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 0px;
   
-}
-.image-section {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0);
-    height: 300px;
-    margin-right: 20px;
-    margin-top: 20px;
-    
 }
 .booking-form {
     flex: 2;
     border: 1px solid #ccc;
     padding: 20px;
     margin-right: 20px;
-    background-color: #f9f9f9;
-    border-radius: 35px;
-    margin-right: 10px;
+    background-color: #f9f9f9c0;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    margin-right: 0px;
+    margin-left: 0px;
     
 }
-.tabs {
-    display: flex;
-    margin-bottom: 20px;   
+.info{
+    font-weight:bolder;
+    gap: 20px;
+    font-size: larger;
+    margin-top: 10px;
 }
-.tab {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    background-color: #eee;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-.tab.active {
-    background-color: #ccc;
 
-}
 .form {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+  
 }
 label {
     display: block;
     margin-bottom: 5px;
-}
-#id{
-    width: 100%
-}
-#from{
-    width: 100%;
-}
-#to{
-    width: 100%;
-}
-#d_date{
-    width: 100%;
-}
-#seat_no{
-    width: 100%;
-}
-.form-group {
-    flex: 1 1 45%;
+    width: 200px;
+    padding: 0px;  
+
 }
 
 .actions {
@@ -113,7 +90,5 @@ label {
     color: white;
 }
 .actions .back {
-    background-color: #ccc;
+    background-color: #aca9a9;
 }
-
-

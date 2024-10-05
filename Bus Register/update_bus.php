@@ -1,5 +1,5 @@
 <?php
-include '../config.php'; // Include your database connection
+include '../config.php';
 
 // Check if 'id' is present and valid in POST or GET
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -14,7 +14,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Prepare the statement to get bus details
     $stmt = $conn->prepare("SELECT * FROM bus WHERE busID = ?");
-    $stmt->bind_param("i", $id); // 'i' indicates the parameter is an integer
+    $stmt->bind_param("i", $id); 
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -30,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 // Handle the POST request (when the form is submitted)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate input fields (optional: more validation can be done here)
     $num = $_POST['num'];
     $busOwner = $_POST['busOwner'];
     $route = $_POST['route'];
@@ -45,11 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Execute the update query
     if ($stmt->execute()) {
-        // If successful, redirect to the index page
         header("Location: index.php");
         exit();
     } else {
-        // Handle the error if the query fails
         echo "Error updating the bus.";
     }
 }
@@ -82,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" name="price" value="<?php echo htmlspecialchars($bus['price']); ?>" required>
 
     <label>Seat Count:</label>
-    <input type="text" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
+    <input type="number" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
 
     <label>Status: </label>
     <select name="status" style="width:200px" required>

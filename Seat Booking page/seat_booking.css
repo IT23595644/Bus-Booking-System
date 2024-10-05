@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #ccc;
-    background-image: url("background.png");
+    background-image: url("background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height:90vh;
@@ -25,6 +25,8 @@ h1{
     color: black;
     margin-top: 10px;
 }
+
+
 .main-section {
     display: flex;
     padding: 20px;
@@ -33,43 +35,27 @@ h1{
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 25px;
-    border-radius: 35px;
   
 }
 .image-section {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0);
-    height: 300px;
-    margin-right: 20px;
-    margin-top: 20px;
+    height: 336px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: aqua;
+    
     
 }
 .booking-form {
     flex: 2;
     border: 1px solid #ccc;
     padding: 20px;
-    margin-right: 20px;
-    background-color: #f9f9f9;
-    border-radius: 35px;
     margin-right: 10px;
-    
+    background-color: rgb(255, 255, 255);
+   
 }
-.tabs {
-    display: flex;
-    margin-bottom: 20px;   
-}
-.tab {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    background-color: #eee;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-.tab.active {
-    background-color: #ccc;
 
-}
 form {
     display: flex;
     flex-wrap: wrap;
@@ -112,8 +98,23 @@ label {
     background-color: #333;
     color: white;
 }
+.actions .confirm:hover{
+    background-color: rgb(90, 88, 88);
+    
+}
 .actions .back {
     background-color: #ccc;
 }
+.actions .back:hover{
+    background-color: #5a6268;
+}
 
+input:focus {
+    border-color: black;
+    box-shadow: 0 0 50px black;
+}
 
+.title-sub{
+    background-color: #ccc;
+    margin-bottom: 10px;
+}

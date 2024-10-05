@@ -131,20 +131,6 @@ table tr:last-child td:last-child {
         color: black;
   }  
     </style> 
-    <script>
-    function deleteData() {
-        var response = confirm("Are you sure you want to delete this?");
-        if (response) {
-            // User clicked "Yes", proceed with deletion
-            alert("Data deleted");
-            // Place your actual deletion code here, e.g., an API call
-        } else {
-            // User clicked "No", cancel the action
-            alert("Deletion canceled");
-        } 
-    }
-</script>
-
 </head>
 <?php 
     session_start();
