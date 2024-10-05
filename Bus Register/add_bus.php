@@ -65,5 +65,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </form>
 
 </div>
-
+<br><br>
 <?php include("../Headers-Footers/footer.php"); ?>
