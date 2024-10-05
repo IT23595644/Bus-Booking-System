@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" name="busOwner" required>
     
     <label>Route:</label>
-    <input type="number" name="route" id="route" required>
+    <input type="text" name="route" id="route" required>
     
     <label>Price:</label>
     <input type="number" name="price" id="price" required>
