@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" name="price" value="<?php echo htmlspecialchars($bus['price']); ?>" required>
 
     <label>Seat Count:</label>
-    <input type="text" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
+    <input type="number" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
 
     <label>Status: </label>
     <select name="status" style="width:200px" required>
