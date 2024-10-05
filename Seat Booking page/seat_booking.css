@@ -48,11 +48,9 @@ h1{
     flex: 2;
     border: 1px solid #ccc;
     padding: 20px;
-    margin-right: 20px;
-    background-color: #f9f9f9;
-    border-radius: 35px;
     margin-right: 10px;
-    
+    background-color: white;
+    border-radius: 15px;
 }
 .tabs {
     display: flex;
@@ -112,8 +110,20 @@ label {
     background-color: #333;
     color: white;
 }
+.actions .confirm:hover{
+    background-color: rgb(90, 88, 88);
+    
+}
 .actions .back {
     background-color: #ccc;
+}
+.actions .back:hover{
+    background-color: #5a6268;
+}
+
+input:focus {
+    border-color: black;
+    box-shadow: 0 0 50px black;
 }
 
 
