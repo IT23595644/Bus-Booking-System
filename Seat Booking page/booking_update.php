@@ -3,6 +3,7 @@
         
         if(isset($_GET['updateid'])){   
             $id=$_GET['updateid'];
+            
         $sql="SELECT * FROM seatbooks where bookingId=$id";
         $result=mysqli_query($conn,$sql);
         $row=mysqli_fetch_assoc($result);
@@ -42,7 +43,7 @@
 
 
 <?php
-    include("../Headers-Footers/header.php");
+    include("header.php");
 ?>
 
     <link rel="stylesheet" href="booking_crud.css"> 

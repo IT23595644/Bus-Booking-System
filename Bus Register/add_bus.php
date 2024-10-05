@@ -8,24 +8,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $price = $_POST['price'];
     $seatCount = $_POST['seatCount'];
     $status = $_POST['status'];
+    $time = $_POST['time'];
 
-    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status]);
+    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status, time) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status, $time]);
+
+           
+
+    $sql1="INSERT INTO busPrice (price)
+           VALUES('$price')";
+    mysqli_query($conn,$sql1);
 
     header("Location: index.php");
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Bus</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php include("header.php"); ?>
 
-<h1>Add New Bus</h1>
+<link rel="stylesheet" href="style.css">
+    <style>
+        label{
+            font-size:15px;
+        }
+    </style>
+<a style="padding:0px;color:red; background-color:white;" href="index.php">◀ Return to Bus List</a>
+<h1><center>Add New Bus</center></h1>
+<div class="addContent">
 <form method="POST">
     <label>Bus Number:</label>
     <input type="text" name="busNum" required>
@@ -42,16 +50,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Seat Count:</label>
     <input type="number" name="seatCount" required>
     
-    <label>Status:</label>
-    <input type="text" name="status" required>
+    <label>Status: </label>
+    <select name="status" style="width:200px">
+        <option value="None"></option>
+        <option value="Available">Available</option>
+        <option value="Unavailable">Unavailable</option>
+    </select>
 
     <label>Time:</label>
     <input type="text" name="time" required>
 
-    <input type="submit" value="Add Bus">
+    <center><input type="submit" value="Add Bus" onclick="AddBus()"></center>
 </form>
 
-<a href="index.php">Back to Bus List</a>
+</div>
 
-</body>
-</html>
+<?php include("../Headers-Footers/footer.php"); ?>

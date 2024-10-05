@@ -1,5 +1,11 @@
 <?php
-    include("Headers-Footers/header.php");
+    session_start();
+    if(!isset($_SESSION["username"]))
+    {
+        header("location: Login page/index.php");
+        exit();
+    }
+    include("UserDashboard/header.php");
 ?>
 
     <link rel="stylesheet" href="./UserDashboard/userdashboard.css"> 
@@ -8,8 +14,8 @@
         <h1>User Dashboard</h1>
     </div>
     <div class="logdetails">
-        <h4>User Id:#PHPsession<h4>
-        <h4>User Name:#PHPsession<h4>
+        <h4>Hellow<h4>
+        <h4><?php echo"{$_SESSION['username']}";?><h4>
         
     </div>
 
@@ -23,22 +29,20 @@
     </div>
 
     <div class="box">
-        <h3>User Reviews<h3>
+        <h3>Crud2<h3>
         <hr><br>
-        <div class="button2">
-            <button type="button" class="button">Details</button>
-            <button type="button" class="button">Update</button>
-            <button type="button" class="button">Delete</button>
+        <div class="button1">
+            <button type="button" class="button" onclick="document.location='##givethepath'">Show Details</button>
+            <button type="button" class="button" onclick="document.location='index.php'">Back</button>
         </div>
     </div>
 
     <div class="box">
-        <h3>Payment Details<h3>
+        <h3>Crud3<h3>
         <hr><br>
-        <div class="button3">
-            <button type="button" class="button">Details</button>
-            <button type="button" class="button">Update</button>
-            <button type="button" class="button">Delete</button>
+        <div class="button1">
+            <button type="button" class="button" onclick="document.location='##givethepath'">Show Details</button>
+            <button type="button" class="button" onclick="document.location='index.php'">Back</button>
         </div>
     </div>
 

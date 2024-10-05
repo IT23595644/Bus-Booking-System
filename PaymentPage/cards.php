@@ -1,25 +1,5 @@
 <?php
-include 'connect.php'; 
-
-if (isset($_POST['submit'])) {
-    $fullName = $_POST['Full_Name'];
-    $cardNumber = $_POST['Card_Number'];
-    $expMonth = $_POST['Month'];
-    $expYear = $_POST['Year'];
-    $cvv = $_POST['CVV'];
-
-    // Insert card details into the database
-    $query = "INSERT INTO `card_details` (Full_Name, Card_Number, Month, Year, CVV) 
-              VALUES ('$fullName', '$cardNumber', '$expMonth', '$expYear', '$cvv')";
-
-    $result = mysqli_query($conn, $query);
-
-    if (!$result) {
-        echo "Card not saved successfully";
-    } 
-
-    mysqli_close($conn);
-}
+include '../config.php'; 
 ?>
 
 <html>
@@ -151,8 +131,148 @@ table tr:last-child td:last-child {
         color: black;
   }  
     </style> 
+    <script>
+    function deleteData() {
+        var response = confirm("Are you sure you want to delete this?");
+        if (response) {
+            // User clicked "Yes", proceed with deletion
+            alert("Data deleted");
+            // Place your actual deletion code here, e.g., an API call
+        } else {
+            // User clicked "No", cancel the action
+            alert("Deletion canceled");
+        } 
+    }
+</script>
+
 </head>
-<?php include '../Headers-Footers/header.php'; ?>
+<?php 
+    session_start();
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bus365</title>
+        <link rel="icon" href="../Headers-Footers/logo.png" type="image/jpg">
+        <script src="myScript.js"></script>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                /*header css*/
+                *{  
+                    font-family: 'poppins';
+                    box-sizing: border-box;
+                    margin:0px;
+                    padding:0px;
+                }
+
+                .contain{
+                    
+                    display:flex;
+                    background-color: #c4c4c4;
+                    justify-content:center;
+                    align-items: center;
+                    text-align: center;
+                }
+                .iconlogo{
+                    font-size: 4rem;
+                }
+                .nav{
+                    display:flex;
+                    justify-content: space-between;
+                    background-color: rgba(32, 32, 32, 0.852);
+                    padding:9px;
+                    align-items: center;
+                    
+                }
+                .left ul{
+                    display:flex;
+                    margin-left:-10px;
+                    list-style-type: none;
+                    
+                }
+
+                .nav .navigation{
+                    
+                    padding:18px 30px;
+                    text-decoration: none;   
+                    color:rgb(255, 255, 255);
+                }
+                .nav .navigation:hover{
+                    background-color: rgb(5, 5, 5);
+                    transition: 0.5s;
+                }
+
+                .btnin{
+                    margin-right:-1px;
+                    margin-left: 10px;
+                    padding:10px 15px;
+                    border: none;
+                    border-radius: 8px;
+                    font-weight: bold;
+                }
+                .btnin a{
+                    text-decoration: none;
+                }
+                .btnin:hover{
+                    background-color: #3787ff;
+                }
+
+                /*footer Css*/    
+                footer{
+                    font-family: 'poppins';
+                    color:rgb(255, 255, 255);
+                    position:fixed;
+                    bottom:0px;
+                    left:50%;
+                    transform: translateX(-50%); 
+                    text-align: center;
+                    background-color: hsl(0, 2%, 16%);
+                    width: 100%;
+                    padding: 1px;
+                }           
+        </style>
+    </head>
+
+    <body>
+        <div class="mainContainer"
+        <header>
+                <div class="contain">
+                    <div class="iconlogo">🚌</div>
+                    <div>
+                        <h1>Bus365</h1>
+                        <h6>Ride Easy, Ride with Bus365</h6>
+                    </div>    
+                </div>
+
+                <div class="nav">
+                    <div class="left">
+                        <ul>
+                            <li><a class="navigation" href="../index.php">Home</a></li>
+                            <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
+                            <li><a class="navigation" href="../aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
+                            <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <?php
+                            if(isset($_SESSION["username"]))
+                            {
+                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="userdashboard.php">Profile</a></button>';
+                            }
+                            else{
+                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
+                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
+                            }
+
+                        ?>
+                    </div>   
+                </div>  
+        </header>
+
 <div class="body12">
 <div class="card-box">
     <h2><a href="payment.php" style="text-decoration: none; color:black;">Choose an Option</a></h2>
@@ -168,16 +288,16 @@ table tr:last-child td:last-child {
           <td colspan="2"></td>
         </tr>
         <?php
-        $query = "SELECT * FROM card_details";
+        $query = "SELECT * FROM paymentdetails";
         $result = mysqli_query($conn, $query);
         if($result){
           while ($row = mysqli_fetch_assoc($result)) {
-            $ID = $row['Card_ID'];
-            $fullName = $row['Full_Name'];
-            $cardNumber = $row['Card_Number'];
-            $expMonth = $row['Month'];
-            $expYear = $row['Year'];
-            $cvv = $row['CVV'];
+            $ID = $row['payCardId'];
+            $fullName = $row['fullName'];
+            $cardNumber = $row['cardNum'];
+            $expMonth = $row['month'];
+            $expYear = $row['year'];
+            $cvv = $row['cvv'];
             
             echo '<tr class="row-click">
             
@@ -188,11 +308,12 @@ table tr:last-child td:last-child {
             <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'" onclick="deleteData()">DELETE</a></button></td>
              
             </tr>';
-        }
+        }      
       }
+      mysqli_close($conn);
         ?>   
       </table>
     </div>

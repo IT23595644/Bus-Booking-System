@@ -37,10 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $price = $_POST['price'];
     $seatCount = $_POST['seatCount'];
     $status = $_POST['status'];
+    $time = $_POST['time'];
 
     // Prepare the update statement
-    $stmt = $conn->prepare("UPDATE bus SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ? WHERE busID = ?");
-    $stmt->bind_param("sssdisi", $num, $busOwner, $route, $price, $seatCount, $status, $id); // Bind parameters
+    $stmt = $conn->prepare("UPDATE bus SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ?, time = ? WHERE busID = ?");
+    $stmt->bind_param("sssdissi", $num, $busOwner, $route, $price, $seatCount, $status, $time, $id); // Bind parameters
     
     // Execute the update query
     if ($stmt->execute()) {
@@ -52,21 +53,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error updating the bus.";
     }
 }
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Update Bus</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php include("header.php"); ?>
 
-<h1>Update Bus Details</h1>
+<link rel="stylesheet" href="style.css">
 
-<!-- Display form with the current bus details -->
+<a style="padding:0px;color:red; background-color:white;" href="index.php">◀ Return to Bus List</a>
+
+
+<h1><center>Update Bus Details<center></h1>
+
 <form method="POST">
+
+<div class="UpdateContent">
+
     <label>Bus Number:</label>
     <input type="text" name="num" value="<?php echo htmlspecialchars($bus['busNum']); ?>" required>
 
@@ -82,18 +84,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Seat Count:</label>
     <input type="text" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
 
-    <label>Status:</label>
-    <input type="text" name="status" value="<?php echo htmlspecialchars($bus['status']); ?>">
+    <label>Status: </label>
+    <select name="status" style="width:200px" required>
+        <option value="None"></option>
+        <option value="Available">Available</option>
+        <option value="Unavailable">Unavailable</option>
+    </select>
 
     <label>Time:</label>
-    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>">
+    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>" required>
     
     <input type="submit" value="Update Bus">
+</div>
 </form>
 
-<button style="margin:10px">
-    <a href="index.php" style="text-decoration:none;">Back to Bus List</a>
-<button>
-
-</body>
-</html>
+<?php include("../Headers-Footers/footer.php"); ?>
