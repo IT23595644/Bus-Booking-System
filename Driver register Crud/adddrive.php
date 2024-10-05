@@ -1,6 +1,6 @@
 <?php
     include_once("../config.php");
-    include("../Headers-Footers/header.php");
+    include("../Seat Booking page/header.php");
 ?>
 
     <link rel="stylesheet" href="./crud.css"> 
@@ -12,8 +12,8 @@
     
     <div class="box">      
         
-            <button type="button" class="button">
-                <a class="anchorBtn" style=" padding: 8px; margin-bottom: 10px; width:10px;"href="./create.php">Add Bus driver</a>
+            <button type="button" class="button"onclick="document.location='create.php'">
+                Add Bus driver
             </button><br>
             
             <table>
@@ -29,7 +29,9 @@
                {    
                     while($row=mysqli_fetch_assoc($result))
                     {
-                        echo "<tr><td>".$row['driverId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td>".$row['licenseId']."</td><td><button class='update-btn'><a href='./updrive.php?updateid=".$row['driverId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='deletedrive.php?deleteid=".$row['driverId']."'>DELETE</a></button></td></tr>";
+                        echo "<tr><td>".$row['driverId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td>".$row['licenseId']."</td><td>
+                        <button class='update-btn'><a href='./updrive.php?updateid=".$row['driverId']."'>UPDATE</a></button></td><td>
+                        <button class='delete-btn'><a href='deletedrive.php?deleteid=".$row['driverId']."'onclick=\"return confirm('Are you sure?')\">DELETE</a></button></td></tr>";
                     }
                }
                ?>
