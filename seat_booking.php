@@ -145,7 +145,7 @@
                     
                     <div class="form-group">
                         <label for="bus_id">Bus ID</label>
-                        <input type="bus_id" id="bus_id" name="bus_id" style="width:310px;">
+                        <input type="bus_id" id="bus_id" name="bus_id" style="width:315px;">
                     </div>
                    
                      <div class="actions">
