@@ -10,10 +10,9 @@
     height:120vh;
 }
 .title{
-    background-color: #cccccc;
+    background-color: transparent;
     margin-right: 600px;
     margin-left: 600px;
-    border: 1px solid #ccc;
     border-radius: 25px;
     padding-bottom: 10px;
 
@@ -35,14 +34,6 @@ h1{
     margin-top: 25px;
     border-radius: 35px;
   
-}
-.image-section {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0);
-    height: 300px;
-    margin-right: 20px;
-    margin-top: 20px;
-    
 }
 .booking-form {
     flex: 2;
@@ -78,21 +69,6 @@ h1{
 label {
     display: block;
     margin-bottom: 5px;
-}
-#id{
-    width: 100%
-}
-#from{
-    width: 100%;
-}
-#to{
-    width: 100%;
-}
-#d_date{
-    width: 100%;
-}
-#seat_no{
-    width: 100%;
 }
 .form-group {
     flex: 1 1 45%;
