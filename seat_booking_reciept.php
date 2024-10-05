@@ -10,18 +10,13 @@
 <div class="body1234">
     <br><br>
     <div class="title">
-        <h1>Payment Receipt</h1>
+        <h1 style="margin-bottom: 10px;">Payment Receipt</h1>
     </div>
     
     <div class="main-section">
         
             <div class="booking-form">
            
-            <div class="tabs">
-                <div class="tab active">Ticket Details</div>
-            </div>
-            
-            <div id="Customer Details" class="tabcontent">
                     <?php 
                     
                         $bid=$_SESSION["bookid"];
@@ -50,34 +45,35 @@
                     ?>
                 
                     <div class="form">
+                        
                     
                      <div class="form-group">
-                        <label for="from">From</label>
+                        <label for="from" class="info">From:</label>
                         <label for="bus_id"><?php echo $_SESSION['locate']?></label>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="to">To</label>
+                        <label for="to" class="info">To:</label>
                         <label for="bus_id"><?php echo $_SESSION['destine']?></label>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="d_date">Departure Date</label>
+                        <label for="d_date" class="info">Departure Date:</label>
                         <label for="bus_id"><?php echo $_SESSION['destine']?></label>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="seat_no">Seat No</label>
+                        <label for="seat_no" class="info">Seat No:</label>
                         <label for="bus_id"><?php echo $_SESSION['sNum']?></label>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="bus_id">Bus ID</label>
+                        <label for="bus_id" class="info">Bus ID:</label>
                         <label for="bus_id"><?php echo $_SESSION['bid']?></label>
                     </div>
                     <div class="form-group">
-                        <label for="bus_id">Price</label>
-                        <label for="bus_id"><?php echo"$price"?></label>
+                        <label for="bus_id" class="info">Price:</label>
+                        <label for="bus_id">Rs.<?php echo"$price"?>/=</label>
                     </div>
                     <br>
                      <div class="actions">
