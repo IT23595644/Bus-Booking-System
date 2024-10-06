@@ -1,10 +1,5 @@
 <?php
     include ('../config.php');
-    if(!isset($_SESSION['userId']))
-    {
-        header("location: ../Login page/index.php");
-    }
-    
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $supFname=$_POST["fname"];
