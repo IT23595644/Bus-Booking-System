@@ -23,7 +23,7 @@ include "./header.php";
             <th>Price(LKR)</th>
             <th>Capacity</th>
             <th>Status</th>
-            <th>Time</th>
+            <th>Time(24hr)</th>
             <th class="actions">Actions</th>
         </tr>
         <?php 
@@ -59,6 +59,6 @@ include "./header.php";
 </table>
 </center>
 </div>
-
+<br><br><br>
 <?php include "../Headers-Footers/footer.php"; ?>
 
