@@ -10,28 +10,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass = $_POST['password'];
     $repass = $_POST['confirm_password'];
 
-    
-    if ($pass !== $repass) {
-        echo "<script>alert('Passwords do not match!');</script>";
-    } else {
+
+    if($pass == $repass && !is_numeric($first_name) && !is_numeric($last_name)){
         
         $final_pass = $pass;
-
     
         $stmt = $conn->prepare("INSERT INTO users (firstName, lastName, UserName, email, password) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $first_name, $last_name, $user, $email, $final_pass);
 
-        
         if ($stmt->execute()) {
             echo "<script>alert('Registration successful! Please login using your credentials.'); window.location.href = '../Login page/index.php';</script>";
         } else {
             echo "Error: " . $stmt->error;
         }
 
-        
         $stmt->close();
+
     }
-}
 
 $conn->close();
+}
 ?>

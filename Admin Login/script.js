@@ -8,6 +8,10 @@ function validateForm() {
         return false;
     }
 
+    if(!isNaN(username)) {
+        errorMessage.innerHTML = "Username cannot be a number";
+    }
+    
     return true;
 
 }

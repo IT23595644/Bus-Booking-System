@@ -149,9 +149,7 @@
         <label>Confirm Password:</label><br>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
         
-        <input type="submit" value="Signup" class="subbtn" onclick="validateForm()">
-        
-        <div id="error"></div>
+        <input type="submit" value="Signup" class="subbtn" onclick="validateForm(event)">
 
     </form>
 

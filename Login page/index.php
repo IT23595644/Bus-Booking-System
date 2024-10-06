@@ -136,7 +136,7 @@
         
         <h1><big><big>Welcome</big></big> to Bus365!</h1>
         <br><br>
-        <p class="welcomeNote"><b>Your journey starts here.</b><br><b style="color:white;font-style:italic">Log in to access our seamless bus booking and scheduling system, designed to make your travel planning effortless. 
+        <p class="welcomeNote"><b>Your journey starts here.</b><br><b style="color:white;font-style:italic;font-size:15px">Log in to access our seamless bus booking and scheduling system, designed to make your travel planning effortless. 
         Whether you're commuting for work, planning a weekend getaway, or embarking on an adventure, 
         EasyBus ensures a smooth and convenient experience. Book your tickets, manage your schedules all in one place.</b>
         <br><br><b>Let's get you on the road!</b></p>

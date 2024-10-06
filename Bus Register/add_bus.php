@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="addContent">
 <form method="POST" id="addBusForm">
     <label>Bus Number:</label>
-    <input type="text" name="busNum" required>
+    <input type="text" name="busNum" id="busNum" placeholder="Like (LP-1234)"required>
     
     <label>Bus Owner:</label>
     <input type="text" name="busOwner" required>
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="number" name="price" id="price" required>
     
     <label>Seat Count:</label>
-    <input type="number" name="seatCount" id="seatCount" required>
+    <input type="number" name="seatCount" id="seatCount" placeholder="0-100" required>
     
     <label>Status: </label>
     <select name="status" style="width:200px">
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </select>
 
     <label>Time:</label>
-    <input type="text" name="time" id="time" required>
+    <input type="text" name="time" id="time" placeholder="0-24" required>
 
     <center><input type="submit" value="Add Bus" onclick="AddBus(event)"></center>
 </form>

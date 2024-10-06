@@ -147,5 +147,5 @@
 
         </nav>
     <script src="script.js"></script>
-
+<br>
 <?php include("../Headers-Footers/footer.php");?>
