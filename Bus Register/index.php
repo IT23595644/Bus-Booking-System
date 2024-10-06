@@ -43,7 +43,7 @@ include "./header.php";
             <td>".$bus['status']."</td>
             <td>".$bus['time']."</td>
             <td class='actions'>
-                <button class='edit-button'><a href='update_bus.php?id=".$bus['busID']."'>Edit</a></button>
+                <button class='edit-button'><a href='update_bus.php?id=".$bus['busID']."'>Edit</a></button><br><br>
                 <button class='delete-button'><a href='delete_bus.php?id=".$bus['busID']."'onclick=\"return confirm('Are you sure?')\">Delete</a></button>
             </td>
         </tr>";

@@ -1,6 +1,6 @@
 <?php
     include_once("../config.php");
-    include("../Headers-Footers/header.php");
+    include("../Seat Booking page/header.php");
 ?>
 
     <link rel="stylesheet" href="./crud.css"> 
@@ -13,13 +13,13 @@
 
     <div class="box">      
         
-            <button type="button" class="button">
-                <a class="anchorBtn" style=" padding: 8px; margin-bottom: 10px; width:10px;"href="./supadd.php">Add Supporter</a>
+            <button type="button" class="button" onclick="document.location='./supadd.php'">
+                Add Supporter
             </button><br>
             
             <table>
             <tr>
-                 <th>Customer Supporter ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>Phone Number</th><th>DOB</th><th colspan="2">Operation</th>
+                <th>CS_ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>Phone Number</th><th style="width:100px">DOB</th><th colspan="2">Operation</th>
             </tr>
             <?php
                $sql="SELECT * FROM customersupporter;";
@@ -41,7 +41,7 @@
 
     
 
-    <br>
+    <br><br><br>
     
 <?php
     include("../Headers-Footers/footer.php");

@@ -52,7 +52,6 @@ label {
 
 a{
     text-decoration: none;
-    color:white;
 }
 
 .add-button{
@@ -65,37 +64,35 @@ a{
     cursor: pointer;
 }
 
-.edit-button{
+.edit-button a{
     background-color: #00b81c;
     color:white;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 50px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
+    margin: 1px;
 }
 
-.delete-button{
+.edit-button a:hover{
+    background-color: #ffffff;
+    color:#00b81c;
+}
+
+.delete-button a{
     background-color: #ff0000;
     color:white;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 41px;
     border-radius:5px;
     cursor: pointer;
-    margin-left: 10px;
+    margin: 1px;
 }
 
-.delete-button:hover{
+.delete-button a:hover{
 
     background-color: #ffffff;
     color:rgb(255, 0, 0);
-
-}
-
-.edit-button:hover{
-
-    background-color: #ffffff;
-    color:#00b81c;
 
 }
 

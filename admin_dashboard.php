@@ -42,10 +42,10 @@
 </div>
 
 <div class="box">
-    <h3>Seat Booking Details<h3>
+    <h3>Seat Booking History<h3>
     <hr><br>
     <div class="button3">
-    <button type="button" class="button" onclick="document.location='###givethepath'">Show Details</button>
+    <button type="button" class="button" onclick="document.location='./Seat Booking page/booking_history.php'">Show Details</button>
     <button type="button" class="button" onclick="document.location='index.php'">Back</button>
     </div>
 </div>

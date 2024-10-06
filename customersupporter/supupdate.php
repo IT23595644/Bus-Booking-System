@@ -43,39 +43,47 @@
 
 
 <?php
-    include("../Headers-Footers/header.php");
+    include("./header.php");
 ?>
 
-    <link rel="stylesheet" href="crud.css"> 
-
+<div class="container">
+    
+    <link rel="stylesheet" href="form.css"> 
+    <br>
     <div class="title">
         <h1>Manage Customer Supporters</h1>
-    </div>
+    </div><br>
     
+    <div >
+        <div class="containerform">
+            <form method="post" id="form">
+                <div class="inpt">
+                    <label>First Name:</label><br>
+                    <input type="text" name="fname" id="f_name" value="<?php echo"$fname" ?>" >
+                    <div id="name_error1"></div><br>
+                </div>
+                <div class="inpt">
+                    <label>Last Name:</label><br>
+                    <input type="text" name="lname" id="l_name" value="<?php echo"$lname" ?>" >
+                    <div id="name_error2"></div><br>
+                </div>
+                <div class="inpt">
+                    <label>Address Name:</label><br>
+                    <input type="text" name="address" id="address" value="<?php echo"$address" ?>">
+                    <div id="address_error"></div><br>
+                </div>
+                <div class="inpt">
+                    <label>Phone Number:</label><br>
+                    <input type="tel" name="pnum" id="p_num" value="<?php echo"$pNum" ?>">
+                    <div id="num_error"></div><br>
+                </div> 
+                <div class="inpt">
+                    <label>Date Of Birth:</label><br>
+                    <input type="date" name="dob" id="dob" value="<?php echo"$dob" ?>">
+                    <div id="dob_error"></div><br><br>
+                </div>
 
-    <div class="box">      
-      <!--  <div class="button1">
-            
-            <button type="button" class="button"></button><br>
-        </div>-->
-        <div>
-            <form method="post" >
-                <label>First Name:</label><br>
-                <input type="text" name="fname" value="<?php echo"$fname" ?>"><br>
-
-                <label>Last Name:</label><br>
-                <input type="text" name="lname" value="<?php echo"$lname" ?>" ><br>
-
-                <label>Address Name:</label><br>
-                <input type="text" name="address" value="<?php echo"$address" ?>"><br>
-
-                <label>Phone Number:</label><br>
-                <input type="tel" name="pnum" value="<?php echo"$pNum" ?>"><br>
-
-                <label>Date Of Birth:</label><br>
-                <input type="date" name="dob" value="<?php echo"$dob" ?>"><br><br>
-
-                <input class="button" style="background-color:#24a0ed" type="submit" name="submit" value="Update">               
+                <input class="button"  type="submit" name="submit">               
 
             </form>
         </div>
@@ -84,10 +92,9 @@
     
 
     <br>
-    
+</div> 
+<script src="./crud.js"></script>
 <?php
     include("../Headers-Footers/footer.php");
 ?>
-
-
 

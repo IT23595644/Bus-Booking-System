@@ -71,17 +71,6 @@ h3{
 
             }*/
 
-.card-box {
-background-color: #ffffff;
-width: 80%;
-max-width: 1000px;
-margin: auto;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 table {
 width: 100%;
 border-collapse: separate;
@@ -96,6 +85,10 @@ overflow: hidden;
 th, td {
 padding: 10px;
 border: 1px solid #ddd;
+
+}
+td{
+    text-align:left;
 }
 
 th {
