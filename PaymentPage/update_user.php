@@ -151,8 +151,8 @@ if($result){
                         <?php
                             if(isset($_SESSION["username"]))
                             {
-                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
-                                echo'<button class="btnin"><a style="color:Black;" href="userdashboard.php">Profile</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="../Inc/logout.inc.php">Log Out</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="../userdashboard.php">Profile</a></button>';
                             }
                             else{
                                 echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>

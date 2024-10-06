@@ -60,7 +60,7 @@ function validateMonth(){
         return false;
     }
     else{
-        mError.style = "color: green; left: 1090px;";
+        mError.style = "color: green;";
         mError.innerHTML = "Valid";
         return true;
     }
@@ -84,7 +84,7 @@ function validateYear(){
         return false;
     }
     else{
-      yError.style = "color: green; left: 1230px;";
+        yError.style = "color: green;";
         yError.innerHTML = "Valid";
         return true;
     }
@@ -108,7 +108,7 @@ function validateCVV(){
         return false;
     }
     else{
-        cvvError.style = "color: green; left: 1070px;";
+        cvvError.style = "color: green;";
         cvvError.innerHTML = "Valid";
         return true;
     }

@@ -1,8 +1,8 @@
 <?php
-        include_once("../Headers-Footers/header.php");
+        include_once("Headers-Footers/header.php");
   ?>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="About US/styles.css">
 
 <div class="sec">
     <div class="cont">
@@ -30,11 +30,11 @@
             <br>
         </div>
         <div class="image-section">
-            <img src="about us.jpg">
+            <img src="About US/image.jpg">
         </div>
     </div>
 </div>
 
 <?php
-        include_once("../Headers-Footers/footer.php");
+        include_once("Headers-Footers/footer.php");
   ?>

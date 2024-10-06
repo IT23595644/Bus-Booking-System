@@ -45,43 +45,60 @@
     include("header.php");
 ?>
 
-    <link rel="stylesheet" href="booking_crud.css"> 
+    <link rel="stylesheet" href="./booking_update.css"> 
 
     <div class="title">
         <h1>Update Seat Booking Details</h1>
     </div>
     
 
-    <div class="box_update">      
+    <div class="form-container">      
         
         <div class="form">
-            <form method="post" style="gap:20px;" >
+            <form method="post" id="form">
                 
-                <label>From:</label><br>
-                <input type="text" name="from" ><br>
+                <div class="form-group">
+                    <label>From:</label><br>
+                    <input type="text" name="from" id="from"><br>
+                    <div id="location_error" class="require" style="margin-left:10px;"></div><br>
+                </div>
+               
 
-                <label>To:</label><br>
-                <input type="text" name="to" ><br>
+                <div class="form-group">
+                    <label>To:</label><br>
+                    <input type="text" name="to" id="to"><br>
+                    <div id="destination_error"></div><br>
+                </div>
+                
+                <div class="form-group">
+                    <label>Departure Date:</label><br>
+                    <input type="date" name="d_date" value="2018-07-22" id="d_date"><br>
+                    <div id="d_date_error"></div><br>
+                </div>
+                
+                <div class="form-group">
+                    <label>Seat No:</label><br>
+                    <input type="text" name="seatnum" id="seatnum"><br>
+                    <div id="seatnum_error"></div><br>
+                </div>
+                
+                <div class="form-group">
+                    <label>Bus ID:</label><br>
+                    <input type="text" name="busid" id="busid"><br><br>
+                    <div id="busid_error"></div><br>
+                </div>
+                
 
-                <label>Departure Date:</label><br>
-                <input type="date" name="d_date" value="2018-07-22"><br>
-
-                <label>Seat No:</label><br>
-                <input type="text" name="seatnum" ><br>
-
-                <label>Bus ID:</label><br>
-                <input type="text" name="busid" ><br><br>
-
-                <input class="button_update" type="submit" name="submit" value="Update">               
+                <input class="button" type="submit" name="submit" value="Update">               
 
             </form>
         </div>
 
     </div>
-
     
+    <script src="./booking_update.js"></script>
 
-    <br>
+    <br><br><br><br>
     
 <?php
     include("../Headers-Footers/footer.php");

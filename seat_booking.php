@@ -65,6 +65,7 @@
                     <?php 
                         include('Seat Booking page/booking_create.php')
                     ?>
+                    
                 </form>
             </div>
         </div>

@@ -101,7 +101,7 @@
                         <ul>
                             <li><a class="navigation" href="index.php">Home</a></li>
                             <li><a class="navigation" href="seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="about US.php">About Us</a></li>
                             <li><a class="navigation" href="schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
                         </ul>
@@ -110,12 +110,15 @@
                         <?php
                             if(isset($_SESSION["username"]))
                             {
-                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
-                                echo'<button class="btnin"><a style="color:Black;" href="userdashboard.php">Profile</a></button>';
+                                echo '<button class="btnin" onclick="document.location=\'Inc/logout.inc.php\'">Log Out</button>';
+
+
+                                echo '<button class="btnin" onclick="document.location=\'userdashboard.php\'">Profile</button>';
                             }
                             else{
-                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
-                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
+                               
+                                echo'<button class="btnin" onclick="document.location=\'Login page/index.php\'">Sign In</button>
+                                    <button class="btnin" onclick="document.location=\'SignUp/index.php\'">Sign Up</button>';
                             }
 
                         ?>
