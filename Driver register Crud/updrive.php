@@ -49,22 +49,22 @@
         <div>
             <form method="post" >
                 <label>First Name:</label><br>
-                <input type="text" name="firstName"><br>
+                <input type="text" name="firstName"value="<?php echo"$dFname" ?>"><br>
 
                 <label>Last Name:</label><br>
-                <input type="text" name="lastName"><br>
+                <input type="text" name="lastName"value="<?php echo"$dLname" ?>"><br>
 
                 <label>Address Name:</label><br>
-                <input type="text" name="address"><br>
+                <input type="text" name="address"value="<?php echo"$address" ?>"><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pnum"><br>
+                <input type="text" name="pnum"value="<?php echo"$pnum" ?>"><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="date" name="dob"><br><br>
+                <input type="date" name="dob"value="<?php echo"$dob" ?>"><br><br>
 
                 <label>license Id:</label><br>
-                <input type="text" name="licenseId"><br><br>
+                <input type="text" name="licenseId"value="<?php echo"$licen" ?>"><br><br>
 
                 <input class="button" type="submit" name="submit">               
 
