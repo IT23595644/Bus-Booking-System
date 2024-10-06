@@ -16,7 +16,7 @@
         
         <div class="main-section">
             <div class="image-section">
-                <img src="Seat Booking page/image.jpg" width="350px" height="340px">
+                <img src="Seat Booking page/image.jpg" width="370px" height="400px">
             
             </div>
 
@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label for="from">From</label>
                             <input type="text" id="from" name="from">
-                            <div id="location_error"></div>
+                            <span id="location_error" style="color: red; display: none;">required</span>
                         </div>
 
                         <div class="form-group">
@@ -55,7 +55,7 @@
                         
                         <div class="form-group">
                             <label for="bus_id">Bus ID</label>
-                            <input type="bus_id" id="busid" name="bus_id" style="width:330px;">
+                            <input type="bus_id" id="busid" name="bus_id" style="width:245px;">
                             <div id="busid_error"></div>
                         </div>
                     

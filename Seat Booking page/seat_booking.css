@@ -7,7 +7,7 @@
     background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:75vh;
+    height:100vh;
 }
 .title-main{
     background-color: rgba(255, 255, 255, 0.478);
@@ -35,17 +35,19 @@ h1{
     padding: 20px;
     border: 5px solid white;
     margin-bottom: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 250px;
+
   
 }
 .image-section {
     flex: 1;
-    height: 340px;
+    height: 400px;
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: aqua;
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
     
     
 }
@@ -54,6 +56,9 @@ h1{
     border: 1px solid #ccc;
     padding: 20px;
     background-color: rgb(255, 255, 255);
+    height: 400px;
+
+
 }
 form {
     display: flex;
@@ -64,6 +69,10 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+input{
+    width:100%;
+    border-radius: 5px;
 }
 
 .form-group {
