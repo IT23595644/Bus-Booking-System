@@ -165,8 +165,9 @@ if($result){
         </header>
     <style>
         body {
-        background: url('back.jpg'); 
-        
+        background: url('back.jpg');
+        background-size:cover; 
+        height:100vh;
         
          }
          form {
@@ -192,7 +193,7 @@ if($result){
             
             width: 50%;
             margin: 0 auto;
-            margin-top: 130px;
+            margin-top: 25px;
             padding: 20px;
             border: none ;
             background-color: #f9f9f9;
@@ -214,7 +215,7 @@ if($result){
             margin-top: -15px;
             padding: 10px;
             border-radius: 10px;
-            margin-left: 290px;
+            margin-left: 200px;
         }
         #cardholder-name{    
         margin-left: -2px;

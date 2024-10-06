@@ -14,14 +14,14 @@ include '../config.php';
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(bgimg.jpg);
+    background-image: url(back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-box {
-    background-color: #B0B1AF;
+    background-color:#ccc;
     width: 100%;
     max-width: 1000px;
     margin-top: -200px;
@@ -271,7 +271,7 @@ table tr:last-child td:last-child {
           <td> Month</td>
           <td> Year</td>
           <td>CVV</td>
-          <td colspan="2"></td>
+          <td colspan="2">Operations</td>
         </tr>
         <?php
         $query = "SELECT * FROM paymentdetails";

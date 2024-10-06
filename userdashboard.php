@@ -14,8 +14,8 @@
         <h1>User Dashboard</h1>
     </div>
     <div class="logdetails">
-        <h4>Welcome...!<h4>
-        <h4><?php echo"{$_SESSION['username']}";?><h4>
+        <h4><?php echo"User ID:{$_SESSION['userId']}";?><h4>
+        <h4><?php echo"Username:{$_SESSION['username']}";?><h4>
         
     </div>
 
@@ -29,7 +29,7 @@
     </div>
 
     <div class="box">
-        <h3>Payment Details<h3>
+        <h3>Payment Card Details<h3>
         <hr><br>
         <div class="button1">
             <button type="button" class="button" onclick="document.location='PaymentPage/paymentDetails.php'">Show Details</button>
