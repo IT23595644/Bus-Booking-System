@@ -8,7 +8,8 @@ document.getElementById('form').addEventListener('submit', function(event){
 
     //validate the location 
     if(from.trim()==''){
-        document.getElementById('location_error').style.display= 'inline';
+        document.getElementById('location_error').style="color:red";
+        document.getElementById('location_error').innerHTML="Location is required";
         event.preventDefault(); //prevent from submitting the form
         return;
     }

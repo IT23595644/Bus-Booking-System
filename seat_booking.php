@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label for="from">From</label>
                             <input type="text" id="from" name="from">
-                            <span id="location_error" style="color: red; display: none;">required</span>
+                            <div id="location_error"></div>
                         </div>
 
                         <div class="form-group">

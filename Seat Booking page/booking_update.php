@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label>From:</label><br>
                     <input type="text" name="from" id="from"><br>
-                    <div id="location_error" style="margin-left:10px;"></div><br>
+                    <div id="location_error"></div><br>
                 </div>
                
 
