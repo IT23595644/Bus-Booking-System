@@ -41,7 +41,7 @@
     <h1>Popular Route</h1>
     <div class="border"></div>
     <div class="card">
-        <div class="Route-card">
+        <div class="Route-card" id="blur">
             <img src="homepage/images/new-2.jpg">
             <div class="card-cont">
                 <h1>ND - 2256 </h1>
@@ -49,7 +49,7 @@
                 <a href="#" class="card-btn">read more</a>
             </div>
         </div>
-        <div class="Route-card">
+        <div class="Route-card"id="blur">
             <img src="../Bus-Booking-System/homepage/images/xx.png">
             <div class="card-cont">
                 <h1>NC - 0056 </h1>
@@ -57,7 +57,7 @@
                 <a href="#" class="card-btn">read more</a>
             </div>
         </div>
-        <div class="Route-card">
+        <div class="Route-card"id="blur">
             <img src="../Bus-Booking-System/homepage/images/bus1.jpg">
             <div class="card-cont">
                 <h1>NB - 1089 </h1>
