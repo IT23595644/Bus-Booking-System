@@ -28,11 +28,12 @@
             </div>
             
             <div>
-                <form name="booking_form" method="POST">
+                <form name="booking_form" method="POST" id="booking_form">
                     
                     <div class="form-group">
                         <label for="from">From</label>
                         <input type="text" id="text-box" name="from">
+                        <div id="location_error"></div>
                     </div>
 
                     <div class="form-group">
@@ -60,11 +61,33 @@
                         <button onclick="location.href='index.php'" type="button" class="back">Back</button>
                     </div>
 
-                    <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
+                    <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a> <br>
 
-                    <?php 
-                        include('Seat Booking page/booking_create.php')
+                    <script>
+                        document.getElementById('booking_form').addEventListener('submit', function(event){
+                        //prevent auto submitting
+                            var bfrom=document.getElementById('text-box').value;
+                        
+                            //validate the location 
+                            if(bfrom.trim()==''){
+                                document.getElementById('location_error').innerHTML="Location is required";
+                                document.getElementById('location_error').style="color:red";
+                                event.preventDefault(); //prevent from submitting the form
+                                return;
+                            }
+                        })
+
+                    </script>
+
+                    <?php
+                    include("Seat Booking page/booking_create.php");
                     ?>
+                    
+                
+
+
+                    
+                    
                     
                 </form>
             </div>
