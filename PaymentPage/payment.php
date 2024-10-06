@@ -90,6 +90,7 @@ $cvv = "";
   
   </head>
     <div class="body12">
+     
     <div class="checkout-container">
       <div class="left-side">
         <div class="text-box">
@@ -111,7 +112,7 @@ $cvv = "";
                   <div class="name1">
                     <label id="full-name">Full Name</label>
                     <input id="cardholder-name" name="full-name"  class="input-field" placeholder="Cardholder Name" type="text" onkeyup="validateName()" value="<?php echo $fullName;?>">
-                    <span id="name-error" class="error"></span>
+                    <div id="name-error" class="error"></div>
                   </div>
                     
                   <div class="card1">
@@ -122,12 +123,17 @@ $cvv = "";
                   <div class="monthyear">
                     <label id="exp-month" style="color: black; "> Month</label>
                     <input type="text" id="exp-m" class="exp" name="Month" onkeyup="validateMonth()" value="<?php echo $expMonth;?>">
-                    <div id="month-error" class="error"></div>
+                    
 
                     <label id="exp-year" style="color: black; "> Year</label>
                     <input type="text" id="exp-y" class="exp" name="Year" onkeyup="validateYear()" value="<?php echo $expYear;?>"><br><br>
-                    <div id="year-error" class="error"></div>
+                    
                   </div>  
+                  <div class="error1">
+                  <div id="month-error" ></div>
+                  
+                  <div id="year-error" ></div>
+                  </div>
 
                   <div class="cvv1">
                     <label for="cvv">CVV</label>
@@ -139,14 +145,11 @@ $cvv = "";
                   <br>
                     
                    <button class="btn" style="font-size: 20px;" type="submit">
-                    <style="text-decoration:none; color:white;" onclick="payNow()">Pay Now</a>
+                    <a href="../index.php" style="text-decoration: none; color:white;" onclick="payNow()">Pay Now</a>
 
                   </button></center>
                 </form>
-            
-                
-                  
-                  
+             
                 </p>
               </div>
 
@@ -155,6 +158,7 @@ $cvv = "";
 
         
       </div>
+      
     </div>
     <script src="myScript.js"></script>
 <?php include '../Headers-Footers/footer.php'; ?> 
