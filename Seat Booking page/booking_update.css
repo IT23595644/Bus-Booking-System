@@ -3,7 +3,7 @@ body{
     height:auto;
 }
 .form-container{
-    background-color:rgba(116, 116, 116, 0.575);
+    background-color:#ccccccc8;
     width:35%;
     height:auto;
     padding:20px;
@@ -13,11 +13,12 @@ body{
 
 }
 .title{
+    background-color:#ccccccc8;
     text-align:center;
     margin-top:30px;
     margin-left: 494px;
     margin-right: 494px;
-    border: 1px solid black;
+    border-bottom: 5px solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -32,15 +33,14 @@ input{
     border:none;
     border-radius:15px;
     padding:10px;
-    background-color:#24a0edc2;
+    background-color: #919191;
     width: 100px;
     margin-left: 180px;
     font-weight: bold;
 }
 .button:hover{
-    background-color:#019eff;
+    background-color: rgb(124, 120, 120);
     cursor: pointer;
-    border: 1px solid black;
     
 }
 .form-group{

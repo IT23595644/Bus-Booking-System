@@ -12,7 +12,7 @@
         $address=$row['address'];
         $pNum=$row['pNum'];
         $dob=$row['dob'];
-        $licenseId = $_POST["licenseId"];
+        $licenseId = $row["licenseId"];
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {   
@@ -38,7 +38,7 @@
 
 
 <?php
-    include("../Seat Booking page/header.php");
+    include("./header.php");
 ?>
 
     <link rel="stylesheet" href="crud.css"> 

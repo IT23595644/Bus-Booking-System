@@ -34,7 +34,7 @@
 
 }
 section{
-    background-color:#6b6b6b87;
+    background-color:#ffffff40;
     padding:25px;
 }
 
@@ -63,10 +63,10 @@ strong{
 }
 
 .welc h3{
-    color:rgb(44, 111, 255);
+    color:#000000;
     width:100%;
     font-size: 2rem;
-    text-shadow: 0 0 7px rgb(255, 255, 255);
+    text-shadow: 5px 0 7px rgb(255, 255, 255);
     text-align: center;
 }
 #bkk{

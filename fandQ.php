@@ -1,8 +1,8 @@
 
 <?php
-        include_once("../Headers-Footers/header.php");
+        include_once("Headers-Footers/header.php");
   ?>
-   <link rel="stylesheet" href="../F&Q/fq.css">
+   <link rel="stylesheet" href="./F&Q/fq.css">
    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -136,5 +136,5 @@
     </script>
 
 <?php
-        include_once("../Headers-Footers/footer.php");
+        include_once("Headers-Footers/footer.php");
  ?>

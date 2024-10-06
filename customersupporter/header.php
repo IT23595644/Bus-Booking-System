@@ -109,7 +109,7 @@
                     </div>
                     <div class="right">
                         <?php
-                            if(isset($_SESSION["username"]))
+                            if(isset($_SESSION["adminName"]))
                             {
                                 echo'<button class="btnin"><a style="color:Black;" href="../Inc/logout.inc.php">Log Out</a></button>';
                                 echo'<button class="btnin"><a style="color:Black;" href="../admin_dashboard.php">Profile</a></button>';
