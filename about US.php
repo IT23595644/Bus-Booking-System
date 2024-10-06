@@ -30,7 +30,7 @@
             <br>
         </div>
         <div class="image-section">
-            <img src="About US/about us.jpg">
+            <img src="About US/image.jpg">
         </div>
     </div>
 </div>
