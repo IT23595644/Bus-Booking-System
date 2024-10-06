@@ -37,16 +37,5 @@
   #cvv{
     width: 50px;  
   }
-  #expiration-month{
-    padding: 7px;
-    border-radius: 10px;
-    width:75px;
-  }
-  #experation-year{
-    padding: 7px;
-    border-radius: 10px;
-    width:750px;
-  }
-  #year{
-    margin-left: 20px;
-  }
+
+

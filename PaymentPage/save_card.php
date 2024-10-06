@@ -68,14 +68,19 @@ if (isset($_POST['submit'])) {
             background-color: #dfdfdf;
         } 
         #exp-m{
-            width: 50px;
-            margin-right: 10px;
             background-color: rgba(173, 181, 255, 0.2);
         }
         #exp-y{
-            width: 70px;
-            margin-right: 10px;
             background-color: rgba(173, 181, 255, 0.2);
+        } 
+        .exp-year{
+            margin-left: 20px;
+        }
+         .monthyear{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 80%;
         }
         .saveC{
             width: 100px;
@@ -97,14 +102,20 @@ if (isset($_POST['submit'])) {
         background-color:rgba(173, 181, 255, 0.2);
       }
         #cvv{
-            width: 50px;  
+            width: 100px;  
             padding: 7px;
             background-color: rgba(173, 181, 255, 0.2);
+        }
+        .cv{
+            margin-top: 35px;       
         }
         .back{
             margin-top: 0px;
             margin-left: -5px;
             width:20px
+        }
+        .namecard{
+            margin-top: 20px;
         }
     </style> 
 
@@ -120,7 +131,7 @@ if (isset($_POST['submit'])) {
     <head>
         <title>Bus365</title>
         <link rel="icon" href="../Headers-Footers/logo.png" type="image/jpg">
-        <script src="myScript.js"></script>
+        
         <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -196,7 +207,47 @@ if (isset($_POST['submit'])) {
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
                     padding: 1px;
-                }           
+                }  
+                #name-error{
+                        color: red;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 785px;
+                        top: 290px;
+                        font-weight: 600;
+                      }
+                      #card-error{
+                        color: red;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 785px;
+                        top: 395px;
+                        font-weight: 600;
+                      }
+                      #month-error{
+                        color: red;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 1020px;
+                        top: 496px;
+                        font-weight: 600;
+                      }
+                      #year-error{
+                        color: red;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 820px;
+                        top: 496px;
+                        font-weight: 600;
+                      }
+                      #cvv-error{
+                        color: red;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 1020px;
+                        top: 570px;
+                        font-weight: 600;
+                      }         
         </style>
     </head>
 
@@ -243,25 +294,37 @@ if (isset($_POST['submit'])) {
     <div class="box">
         <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
 
+        
         <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
-        <input id="cardholder-name" name="Full_Name" class="input-field" type="text" required><br>
+        <input id="cardholder-name" name="Full_Name" class="input-field" type="text"  onkeyup="validateName()" >
+        <span id="name-error" class="error"></span>
 
+        <div class="namecard">
         <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
-        <input id="card-number" name="Card_Number" class="input-field" type="number" required><br><br>
+        <input id="card-number" name="Card_Number" class="input-field" type="text" onkeyup="validateCard()">
+        <span id="card-error" class="error"></span>
+        </div>
 
+        <div class="monthyear">
         <label for="exp-month" style="color: black; font-size:large"> Month</label>
-        <input type="number" id="exp-m" name="Month">
+        <input type="text" id="exp-m" name="Month" onkeyup="validateMonth()">
+        <span id="month-error" class="error"></span>
 
-        <label for="exp-year" style="color: black; font-size:large"> Year</label>
-        <input type="number" id="exp-y" name="Year"><br><br><br>
+        <label class="exp-year" style="color: black; font-size:large"> Year</label>
+        <input type="text" id="exp-y" name="Year" onkeyup="validateYear()">
+        <span id="year-error" class="error"></span>
 
+        </div>
+        <div class="cv">                    
         <label for="cvv" style="color: black; font-size:large">CVV</label>
-        <input id="cvv" name="CVV" type="text"/><br>
+        <input id="cvv" name="CVV" type="text" onkeyup="validateCVV()" >
+        <span id="cvv-error" class="error"></span>
+        </div>  
 
         <button type="submit" name="submit" class="saveC">Save Card</button>
         </div>
     </form>
-    
+    <script src="myScript.js"></script>
 </div>
 <?php include '../Headers-Footers/footer.php'; ?> 
 </div>
