@@ -244,7 +244,7 @@ if($result){
 
     <form method="POST" action="update_user.php?updateid=<?php echo $ID; ?>">
     <div class="box">
-    <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
+    <div class="back"><a href="paymentDetails.php"><img src="back.png" class="back" alt="back"></a></div><br>
         <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
         <input id="cardholder-name" name="Full_Name" class="input-field" type="text" value=<?php echo $fullName;?>><br>
         <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
