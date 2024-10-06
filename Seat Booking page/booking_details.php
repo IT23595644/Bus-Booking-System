@@ -4,7 +4,8 @@
 ?>
 
     <link rel="stylesheet" href="./booking_crud.css"> 
-    <script>
+    
+    <script> //javascript for delete button
         function confirmDelete(bookingId) {
             if (confirm("Are you sure you want to delete this booking?")) {
                 window.location.href = './booking_delete.php?deleteid=' + bookingId;
