@@ -23,14 +23,6 @@
                   values('$name','$email','$message')";
                   echo"You are Registered";
         }
-        
-           
-
         }
-
-            
-        
-    
-    
     mysqli_close($conn);
 ?>

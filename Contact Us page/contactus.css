@@ -2,7 +2,7 @@
 .container{
     padding:50px;
     background-image: url('contactBack.jpg');
-    height:155vh;
+    height:170vh;
     width:100%;
     background-size: cover;
     background-position: center;
@@ -12,7 +12,7 @@
 
 .box {
 padding:50px 25px;
-background-color: rgba(219, 219, 219, 0.812);
+background-color: #ccccccea;
 border-radius: 10px;
 height:450px;
 margin-top:20px;
@@ -29,6 +29,7 @@ padding:10px;
 }
 .btn{
 border:solid;
+border-radius: 15px;;
 background-color: rgb(0, 255, 85);
 padding:10px 30px;
 }

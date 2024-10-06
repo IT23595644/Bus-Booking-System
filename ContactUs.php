@@ -28,7 +28,7 @@
                             <label>Your Name:</label><br>
                             <input type="text" name="name"><br>
                             <label>Your Email:</label><br>
-                            <input type="text" name="email"><br>
+                            <input type="email" name="email"><br>
                             <label>Your Message:</label><br>
                             <textarea name="msg"></textarea><br>
                             <input class="btn"type="submit" name="submit"><br>
@@ -66,14 +66,9 @@
         else{
             $sql="INSERT INTO questions(name,email,msg)
                   VALUES('$name','$email','$message')";
-                  echo"You are Registered";
+                  echo "<script>alert('Message Sent Successfully')</script>";
             mysqli_query($conn,$sql);
         }
-        
-           
-
-        }
-    
-    
+    }
     mysqli_close($conn);
 ?>
