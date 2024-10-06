@@ -46,6 +46,7 @@
 ?>
 
     <link rel="stylesheet" href="./booking_update.css"> 
+     
 
     <div class="title">
         <h1>Update Seat Booking Details</h1>
@@ -60,7 +61,7 @@
                 <div class="form-group">
                     <label>From:</label><br>
                     <input type="text" name="from" id="from"><br>
-                    <div id="location_error" class="require" style="margin-left:10px;"></div><br>
+                    <div id="location_error" style="margin-left:10px;"></div><br>
                 </div>
                
 
@@ -72,7 +73,7 @@
                 
                 <div class="form-group">
                     <label>Departure Date:</label><br>
-                    <input type="date" name="d_date" value="2018-07-22" id="d_date"><br>
+                    <input type="date" name="d_date" id="d_date"><br>
                     <div id="d_date_error"></div><br>
                 </div>
                 
@@ -88,16 +89,15 @@
                     <div id="busid_error"></div><br>
                 </div>
                 
-
-                <input class="button" type="submit" name="submit" value="Update">               
+                <input class="button" type="submit" name="submit" value="Update">    
+                
+                <script src="./form_validation.js"></script>           
 
             </form>
         </div>
 
     </div>
     
-    <script src="./booking_update.js"></script>
-
     <br><br><br><br>
     
 <?php
