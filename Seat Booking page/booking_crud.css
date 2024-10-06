@@ -60,18 +60,6 @@ input,label{
 h3{
     margin-left: 25px;
 }
-
-        /*This is TABLE CSS*/
-           /* body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-
-            }*/
-
 .card-box {
 background-color: #ffffff;
 width: 80%;
@@ -103,21 +91,6 @@ th {
 background-color: #f4f4f4;
 }
 
-table tr:first-child th:first-child {
-border-top-left-radius: 10px;
-}
-
-table tr:first-child th:last-child {
-border-top-right-radius: 10px;
-}
-
-table tr:last-child td:first-child {
-border-bottom-left-radius: 10px;
-}
-
-table tr:last-child td:last-child {
-border-bottom-right-radius: 10px;
-}
 td{
 background-color:#f4f4f4 ;
 }
