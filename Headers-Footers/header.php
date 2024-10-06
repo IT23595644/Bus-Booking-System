@@ -115,10 +115,14 @@
 
                                 echo '<button class="btnin" onclick="document.location=\'userdashboard.php\'">Profile</button>';
                             }
-                            else{
+                            else if(isset($_SESSION["adminName"])){
                                
+                                echo '<button class="btnin" onclick="document.location=\'Inc/logout.inc.php\'">Log Out</button>';
+                                echo '<button class="btnin" onclick="document.location=\'admin_dashboard.php\'">Profile</button>';
+                            }
+                            else{
                                 echo'<button class="btnin" onclick="document.location=\'Login page/index.php\'">Sign In</button>
-                                    <button class="btnin" onclick="document.location=\'SignUp/index.php\'">Sign Up</button>';
+                                <button class="btnin" onclick="document.location=\'SignUp/index.php\'">Sign Up</button>';
                             }
 
                         ?>

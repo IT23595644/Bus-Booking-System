@@ -23,9 +23,18 @@
                 mysqli_query( $conn, $sql);
                 echo"<script> location.replace('seat_booking_reciept.php'); </script>";
             }
-            catch (mysqli_sql_exception) {      
-                echo "<script>alert('Please log-in to proceed');</script>";    //if the user has not log in to the system this message will be displayed
-                echo"<script> location.replace('seat_booking.php'); </script>";
+            catch (mysqli_sql_exception) { 
+                if ($_SESSION['adminName']){
+                    echo "<script>alert('Please Log-in as a user');</script>";     // if you log-in as an admin, you have to re log-in as a user
+                    echo"<script> location.replace('Login page/index.php'); </script>";
+                }
+                else
+                {
+                    echo "<script>alert('Please log-in to proceed');</script>";    //if the user has not log in to the system this message will be displayed
+                    echo"<script> location.replace('Login page/index.php'); </script>";
+                }   
+                
+                
             }
 
             

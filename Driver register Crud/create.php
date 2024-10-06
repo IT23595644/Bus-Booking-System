@@ -25,7 +25,7 @@
     }
 ?>
 <?php
-     include("../Seat Booking page/header.php");
+     include("./header.php");
 ?>
 
     <link rel="stylesheet" href="crud.css"> 

@@ -23,7 +23,7 @@
     <section>
         <div class="welc">
             <h1>WELCOME</h1>
-            <h3>Your Safe Travel Our Main Goal</h3>
+            <h3>Your Safe Travel is Our Main Goal</h3>
             <h3>Ride Easy, Ride with Bus365.</h3><br>
            <center><?php if(isset($_SESSION['userId'])){
                             echo '<a href="seat_booking.php"class="book-btn">';
@@ -196,7 +196,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
                         <a href="../Bus-Booking-System/Terms and Condition/Term&condition.php">Terms & Conditions</a>
                         <a href="#">Privacy Policy</a>
                         <a href="../Bus-Booking-System/ContactUs.php">Help & Support</a>
-                        <a href="../Bus-Booking-System/F&Q/fandQ.php">FAQs</a>
+                        <a href="fandQ.php">FAQs</a>
                     </div>
                 </div>
 
