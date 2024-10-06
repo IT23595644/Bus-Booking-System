@@ -19,7 +19,7 @@
             
             <table>
             <tr>
-                <th>CS_ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>Phone Number</th><th style="width:100px">DOB</th><th colspan="2">Operation</th>
+                <th>CS_ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>Phone Number</th><th style="width:100px">D_O_B</th><th colspan="2">Operation</th>
             </tr>
             <?php
                $sql="SELECT * FROM customersupporter;";
