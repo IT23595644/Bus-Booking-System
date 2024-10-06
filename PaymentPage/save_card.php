@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     <style>
         .bg {
         background: url('bgimg.jpg');
-        height: 100vh;
+        height: 110vh;
          }
          form {
             display: flex;
