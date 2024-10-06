@@ -1,4 +1,4 @@
-.body1234 {
+.container {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     background-size: cover;
     height:75vh;
 }
-.title{
+.title-main{
     background-color: rgba(255, 255, 255, 0.478);
     margin-right: 600px;
     margin-left: 600px;
@@ -26,8 +26,10 @@ h1{
     color: black;
     margin-top: 10px;
 }
-
-
+.title-sub{
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
 .main-section {
     display: flex;
     padding: 20px;
@@ -63,9 +65,6 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-#text-box{
-    width:100%;
-}
 
 .form-group {
     flex: 1 1 45%;
@@ -94,8 +93,4 @@ label {
 }
 .actions .back:hover{
     background-color: #5a6268;
-}
-.title-sub{
-    background-color: #ccc;
-    margin-bottom: 10px;
 }
