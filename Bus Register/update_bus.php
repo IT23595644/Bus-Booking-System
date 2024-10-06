@@ -94,5 +94,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="submit" value="Update Bus">
 </div>
 </form>
-
+<br><br><br><br>
 <?php include("../Headers-Footers/footer.php"); ?>
