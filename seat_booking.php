@@ -7,6 +7,8 @@
 ?>
     
     <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
+    
+
     <div class="body1234"
     <br><br>
     <div class="title">
@@ -26,7 +28,7 @@
             </div>
             
             <div>
-                <form method="POST" >
+                <form name="booking_form" method="POST" onsubmit="return validateform()">
                     
                     <div class="form-group">
                         <label for="from">From</label>
@@ -59,15 +61,19 @@
                     </div>
 
                     <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
+                    
+                    <script src="Seat Booking page/seat_booking.js"></script> 
 
                     <?php
                         include("Seat Booking page/booking_create.php");
                     ?>
+                    
 
                 </form>
             </div>
         </div>
     </div>
+
 <?php
     include("Headers-Footers/footer.php");  //Footer file
 ?>
