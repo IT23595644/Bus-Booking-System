@@ -31,11 +31,11 @@
             }
 
             
-            $sql2="SELECT MAX(bookingId) as 'id' FROM seatbooks ";
+            $sql2="SELECT MAX(bookingId) as 'id' FROM seatbooks "; //selecets the highest value from bookingId column from table seatbooks as id
             
             $result=mysqli_query($conn,$sql2);
             $row=mysqli_fetch_assoc($result);
-            $_SESSION['bookid']=$row['id'];
+            $_SESSION['bookid']=$row['id']; 
 
             mysqli_close($conn);
                       

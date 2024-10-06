@@ -14,7 +14,7 @@
         <h1>User Dashboard</h1>
     </div>
     <div class="logdetails">
-        <h4>Hellow<h4>
+        <h4>Welcome...!<h4>
         <h4><?php echo"{$_SESSION['username']}";?><h4>
         
     </div>
