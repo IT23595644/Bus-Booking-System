@@ -208,7 +208,7 @@ if (isset($_POST['submit'])) {
                     width: 100%;
                     padding: 1px;
                 }  
-                #name-error{
+                /* #name-error{
                         color: red;
                         font-size: 12px;
                         position: absolute;
@@ -247,7 +247,38 @@ if (isset($_POST['submit'])) {
                         right: 1020px;
                         top: 570px;
                         font-weight: 600;
-                      }         
+                      }         */ 
+                      #name-error{
+                        color: red;
+                        font-size: 12px;
+                        font-weight: 600;
+                      }
+                      #card-error{
+                        color: red;
+                        font-size: 12px;
+                        font-weight: 600;
+                      }
+                      #month-error{
+                        color: red;
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin-left: 70px;
+                      }
+                      #year-error{
+                        color: red;
+                        font-size: 12px;  
+                        font-weight: 600;
+                        margin-left: 100px;
+                      }
+                      #cvv-error{
+                        color: red;
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin-top: 20px;
+                      }
+                      .error1{
+                        display: flex;
+                      }                    
         </style>
     </head>
 
@@ -302,23 +333,28 @@ if (isset($_POST['submit'])) {
         <div class="namecard">
         <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
         <input id="card-number" name="Card_Number" class="input-field" type="text" onkeyup="validateCard()">
-        <span id="card-error" class="error"></span>
+        <div id="card-error" class="error"></div>
         </div>
 
         <div class="monthyear">
         <label for="exp-month" style="color: black; font-size:large"> Month</label>
         <input type="text" id="exp-m" name="Month" onkeyup="validateMonth()">
-        <span id="month-error" class="error"></span>
+        
 
         <label class="exp-year" style="color: black; font-size:large"> Year</label>
         <input type="text" id="exp-y" name="Year" onkeyup="validateYear()">
-        <span id="year-error" class="error"></span>
-
+       
+        </div>  
+                  <div class="error1">
+                  <div id="month-error" ></div>
+                  
+                  <div id="year-error" ></div>
         </div>
+
         <div class="cv">                    
         <label for="cvv" style="color: black; font-size:large">CVV</label>
         <input id="cvv" name="CVV" type="text" onkeyup="validateCVV()" >
-        <span id="cvv-error" class="error"></span>
+        <div id="cvv-error" class="error"></div>
         </div>  
 
         <button type="submit" name="submit" class="saveC">Save Card</button>
