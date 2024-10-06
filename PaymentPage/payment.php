@@ -144,10 +144,17 @@ $cvv = "";
                   <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Use Card</a></button>
                   <br>
                     
-                   <button class="btn" style="font-size: 20px;" type="submit">
-                    <a href="../index.php" style="text-decoration: none; color:white;" onclick="payNow()">Pay Now</a>
-
-                  </button></center>
+                  <button class="btn" style="font-size: 20px; color: white; background-color: #5d5d5d;" type="button" 
+                          onclick="
+                              if (validateName() && validateCard() && validateMonth() && validateYear() && validateCVV()) {
+                                  alert('Payment Successful!');
+                                  location.replace('../index.php');
+                                } else {
+                                  alert('Payment Failed!');
+                                }
+    ">
+        Pay Now
+    </button></center>
                 </form>
              
                 </p>

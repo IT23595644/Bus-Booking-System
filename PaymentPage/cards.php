@@ -294,7 +294,7 @@ table tr:last-child td:last-child {
             <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button class="delete-btn" onclick=\"return confirm(\'Are you sure?\')\"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+            <td><button class="delete-btn" onclick="return confirm(\'Are you sure?\')"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
             
             </tr>';
         }      

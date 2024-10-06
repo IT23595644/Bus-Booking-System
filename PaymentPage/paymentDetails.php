@@ -45,7 +45,7 @@
             <td>'.$cvv.'</td>
             
             <td><button class="update-btn"><a href="update_user.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button class="delete-btn"><a href="delete_user.php?deleteid='.$ID.'">DELETE</a></button></td>
+            <td><button class="delete-btn" onclick="return confirm(\'Are you sure?\')"><a href="delete_user.php?deleteid='.$ID.'">DELETE</a></button></td>
              
             </tr>';
                     }

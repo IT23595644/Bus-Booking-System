@@ -114,11 +114,3 @@ function validateCVV(){
     }
 }
 
-function payNow(){
-    if(validateName() && validateCard() && validateMonth() && validateYear() && validateCVV()){
-        alert("Payment Successful!");
-    }
-    else{
-        alert("Payment Failed!");
-    }
-}
