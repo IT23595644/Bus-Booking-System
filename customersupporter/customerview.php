@@ -1,6 +1,5 @@
 <?php
     include_once("../config.php");
- 
     include("../Seat Booking page/header.php");
 ?>
 

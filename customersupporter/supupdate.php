@@ -1,10 +1,5 @@
 <?php 
-    include ('../config.php');
-    if(!isset($_SESSION['userId']))
-    {
-        header("location: ../Login page/index.php");
-    }
-        
+    include ('../config.php');  
         if(isset($_GET['updateid'])){   
             $id=$_GET['updateid'];
 
