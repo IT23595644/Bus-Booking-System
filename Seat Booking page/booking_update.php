@@ -25,10 +25,9 @@
             $bookd_date=$_POST["d_date"];
             $bookSeatnum=$_POST["seatnum"];
             $bookBusid=$_POST["busid"];
-            /* echo $bookFrom ; */
+
             $sql="UPDATE seatbooks  SET Location='$bookFrom',Destination='$bookTo',d_date='$bookd_date',seatNum='$bookSeatnum',busId='$bookBusid' WHERE bookingId='$id';";
 
-            
             $result=mysqli_query($conn,$sql);
             if($result)
             {
