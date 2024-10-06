@@ -1,6 +1,6 @@
 <?php
-
-   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if (isset($_POST['from'], $_POST['to'], $_POST['d_date'], $_POST['seat_no'], $_POST['bus_id'])) {
             $location = $_POST['from'];
@@ -18,8 +18,6 @@
             
             $sql = "INSERT INTO seatbooks (seatNum, busId,userId, Location, Destination, d_date)
                     VALUES ('$seat_no', '$bus_id','$uid', '$location', '$destination', '$d_date')";
-           
-           
            
             try {
                 mysqli_query( $conn, $sql);

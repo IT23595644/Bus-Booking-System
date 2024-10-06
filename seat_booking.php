@@ -28,7 +28,7 @@
             </div>
             
             <div>
-                <form name="booking_form" method="POST" onsubmit="return validateform()">
+                <form name="booking_form" method="POST">
                     
                     <div class="form-group">
                         <label for="from">From</label>
@@ -61,14 +61,10 @@
                     </div>
 
                     <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a>
-                    
-                    <script src="Seat Booking page/seat_booking.js"></script> 
 
-                    <?php
-                        include("Seat Booking page/booking_create.php");
+                    <?php 
+                        include('Seat Booking page/booking_create.php')
                     ?>
-                    
-
                 </form>
             </div>
         </div>
