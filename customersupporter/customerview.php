@@ -1,5 +1,9 @@
 <?php
     include_once("../config.php");
+    if(!isset($_SESSION['userId']))
+    {
+        header("location: ../Login page/index.php");
+    }
     include("../Seat Booking page/header.php");
 ?>
 
