@@ -142,7 +142,7 @@ if($result){
                         <ul>
                             <li><a class="navigation" href="../index.php">Home</a></li>
                             <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="../aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="../about US.php">About Us</a></li>
                             <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
                         </ul>
@@ -192,7 +192,7 @@ if($result){
             
             width: 50%;
             margin: 0 auto;
-            margin-top: 25px;
+            margin-top: 130px;
             padding: 20px;
             border: none ;
             background-color: #f9f9f9;
@@ -210,11 +210,11 @@ if($result){
             background-color: rgba(173, 181, 255, 0.2);
         }
         .saveC{
-            width: 100px;
-            margin-top: 10px;
+            width: 120px;
+            margin-top: -15px;
             padding: 10px;
             border-radius: 10px;
-            margin-left: 250px;
+            margin-left: 290px;
         }
         #cardholder-name{    
         margin-left: -2px;
@@ -238,11 +238,48 @@ if($result){
             margin-left: -5px;
             width:20px
         }
+        #name-error{
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        #card-error{
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        #month-error{
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 70px;
+        }
+        #year-error{
+            color: red;
+            font-size: 12px;  
+            font-weight: 600;
+            margin-left: 100px;
+        }
+        #cvv-error{
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .monthyear{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 80%;
+        }
+        .cv{
+            margin-top: 35px;       
+        }
     </style> 
 </head>
 <body>
 
-    <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
+    <!-- <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
     <div class="box">
     <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
         <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
@@ -257,7 +294,47 @@ if($result){
         <input id="cvv" name="CVV" type="text" value=<?php echo $cvv;?>><br>
         <button type="submit" name="submit" class="saveC">Update Card</button>
         </div>
+    </form> -->
+    <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
+    <div class="box">
+        <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
+
+        
+        <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
+        <input id="cardholder-name" name="Full_Name" class="input-field" type="text"  onkeyup="validateName()" value=<?php echo $fullName;?>>
+        <div id="name-error" class="error"></div>
+
+        <div class="namecard">
+        <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
+        <input id="card-number" name="Card_Number" class="input-field" type="text" onkeyup="validateCard()" value=<?php echo $cardNumber;?>>
+        <div id="card-error" class="error"></div>
+        </div>
+
+        <div class="monthyear">
+        <label for="exp-month" style="color: black; font-size:large"> Month</label>
+        <input type="text" id="exp-m" name="Month" onkeyup="validateMonth()" value=<?php echo $expMonth;?>>
+        
+
+        <label class="exp-year" style="color: black; font-size:large"> Year</label>
+        <input type="text" id="exp-y" name="Year" onkeyup="validateYear()" value=<?php echo $expYear;?>>
+       
+        </div>  
+                  <div class="error1">
+                  <div id="month-error" ></div>
+                  
+                  <div id="year-error" ></div>
+                  </div>
+
+        <div class="cv">                    
+        <label for="cvv" style="color: black; font-size:large">CVV</label>
+        <input id="cvv" name="CVV" type="text" onkeyup="validateCVV()" value=<?php echo $cvv;?> >
+        <div id="cvv-error" class="error"></div>
+        </div>  
+
+        <button type="submit" name="submit" class="saveC">Update Card</button>
+        </div>
     </form>
+    <script src="myScript.js"></script>
 
 </body>
     <?php include '../Headers-Footers/footer.php'; ?> 

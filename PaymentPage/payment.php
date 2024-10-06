@@ -54,7 +54,7 @@ $cvv = "";
                         <ul>
                             <li><a class="navigation" href="../index.php">Home</a></li>
                             <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="../aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="../about US.php">About Us</a></li>
                             <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
                         </ul>

@@ -14,14 +14,14 @@ include '../config.php';
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(back.jpg);
+    background-image: url(bgimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-box {
-    background-color: #c0c0c0;
+    background-color: #B0B1AF;
     width: 100%;
     max-width: 1000px;
     margin-top: -200px;
@@ -237,7 +237,7 @@ table tr:last-child td:last-child {
                         <ul>
                             <li><a class="navigation" href="../index.php">Home</a></li>
                             <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="../aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="../about US.php">About Us</a></li>
                             <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
                         </ul>
@@ -294,8 +294,8 @@ table tr:last-child td:last-child {
             <td><a href="payment.php?cardid='.$ID.'" class="card-click" name="cSave">'.$cvv.'</a></td>
             
             <td><button class="update-btn"><a href="update.php?updateid='.$ID.'">UPDATE</a></button></td>
-            <td><button class="delete-btn"><a href="delete.php?deleteid='.$ID.'" onclick="deleteData()">DELETE</a></button></td>
-             
+            <td><button class="delete-btn" onclick=\"return confirm(\'Are you sure?\')\"><a href="delete.php?deleteid='.$ID.'">DELETE</a></button></td>
+            
             </tr>';
         }      
       }
@@ -311,3 +311,6 @@ table tr:last-child td:last-child {
 </div>
 <?php include '../Headers-Footers/footer.php'; ?> 
 </html>
+<button class="delete-btn" onclick="return confirm('Are you sure?')">
+    Delete
+</button>
