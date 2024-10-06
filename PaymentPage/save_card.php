@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="style_save.css">
     <style>
         .bg {
-        background: url('back.jpg');
+        background: url('bgimg.jpg');
         height: 100vh;
          }
          form {
@@ -297,7 +297,7 @@ if (isset($_POST['submit'])) {
         
         <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
         <input id="cardholder-name" name="Full_Name" class="input-field" type="text"  onkeyup="validateName()" >
-        <span id="name-error" class="error"></span>
+        <div id="name-error" class="error"></div>
 
         <div class="namecard">
         <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>

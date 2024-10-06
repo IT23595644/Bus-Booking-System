@@ -126,7 +126,7 @@
                   
                   .body12 {
                     font-size: 62.5%;
-                    background: url('back.jpg');
+                    background: url('bgimg.jpg');
                     background-position: center;
                     background-size: cover;
                     backdrop-filter: blur(8px);
@@ -151,11 +151,9 @@
                   }
          
                   .left-side {
-                    background: url('bus00.png');
+                    background: url('payimg.jpg');
                     background-position: center;
-                    background-position: 0px 1000px ;
-                    background-size: 100%;
-                    background-position: 30px;
+                    background-size: cover;
                     position: relative;
                     margin-bottom: 150px;
                     margin-top: 87px;
@@ -359,41 +357,41 @@
                       #name-error{
                         color: red;
                         font-size: 12px;
-                        position: absolute;
+                        position: fixed;
                         right: 600px;
-                        bottom: 660px;
+                        bottom: 690px;
                         font-weight: 600;
                       }
                       #card-error{
                         color: red;
                         font-size: 12px;
-                        position: absolute;
+                        position: fixed;
                         right: 600px;
-                        bottom: 572px;
+                        bottom: 600px;
                         font-weight: 600;
                       }
                       #month-error{
                         color: red;
                         font-size: 12px;
-                        position: absolute;
-                        right: 740px;
-                        bottom: 470px;
                         font-weight: 600;
+                        position: fixed;
+                        right: 720px;
+                        bottom: 495px;
                       }
                       #year-error{
                         color: red;
                         font-size: 12px;
-                        position: absolute;
-                        right: 590px;
-                        bottom: 470px;
+                        position: fixed;
+                        right: 600px;
+                        bottom: 495px;
                         font-weight: 600;
                       }
                       #cvv-error{
                         color: red;
                         font-size: 12px;
-                        position: absolute;
-                        right: 790px;
-                        bottom: 390px;
+                        position: fixed;
+                        top: 517px;
+                        right: 800px;
                         font-weight: 600;
                       }
                       

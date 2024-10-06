@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <a style="padding:0px;color:red; background-color:white;" href="index.php">◀ Return to Bus List</a>
 <h1><center>Add New Bus</center></h1>
 <div class="addContent">
-<form method="POST">
+<form method="POST" id="addBusForm">
     <label>Bus Number:</label>
     <input type="text" name="busNum" required>
     
@@ -63,9 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </select>
 
     <label>Time:</label>
-    <input type="text" name="time" required>
+    <input type="text" name="time" id="time" required>
 
-    <center><input type="submit" value="Add Bus" onclick="AddBus()"></center>
+    <center><input type="submit" value="Add Bus" onclick="AddBus(event)"></center>
 </form>
 
 </div>

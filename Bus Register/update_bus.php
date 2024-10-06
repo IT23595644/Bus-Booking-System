@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 
-// Check if 'id' is present and valid in POST or GET
+// Check if 'id' is present and valid in GET
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 } else {
@@ -12,23 +12,22 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 // Fetch bus details if GET request (initial load)
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // Prepare the statement to get bus details
-    $stmt = $conn->prepare("SELECT * FROM bus WHERE busID = ?");
-    $stmt->bind_param("i", $id); 
-    $stmt->execute();
-    $result = $stmt->get_result();
 
-    // Fetch bus details
-    $bus = $result->fetch_assoc();
-    
-    // If no bus is found, handle error
-    if (!$bus) {
-        echo "Bus not found.";
+    // Prepare the statement to get bus details
+
+    $sql = "SELECT * FROM bus WHERE busID = '$id'";
+    $result = mysqli_query($conn,$sql);
+    $bus = mysqli_fetch_assoc($result);
+
+    if(!$bus){
+        echo "<script>
+                alert('Bus not found!');
+                </script>";
         exit();
     }
 }
 
-// Handle the POST request (when the form is submitted)
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $num = $_POST['num'];
     $busOwner = $_POST['busOwner'];
@@ -38,17 +37,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = $_POST['status'];
     $time = $_POST['time'];
 
-    // Prepare the update statement
-    $stmt = $conn->prepare("UPDATE bus SET busNum = ?, busOwner = ?, route = ?, price = ?, seatCount = ?, status = ?, time = ? WHERE busID = ?");
-    $stmt->bind_param("sssdissi", $num, $busOwner, $route, $price, $seatCount, $status, $time, $id); // Bind parameters
-    
+    $sql = "UPDATE bus SET busNum = '$num', busOwner = '$busOwner', route = '$route', price = '$price', seatCount = '$seatCount', status = '$status', time = '$time' WHERE busID = '$id'";
+
+    $result = mysqli_query($conn,$sql);
+
     // Execute the update query
-    if ($stmt->execute()) {
+    if ($result) {
         header("Location: index.php");
-        exit();
     } else {
         echo "Error updating the bus.";
     }
+
+    mysqli_close($conn);
+
 }
 
 ?>
@@ -65,31 +66,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="POST">
 
 <div class="UpdateContent">
+        
+        <label>Bus Number:</label>
+        <input type='text' name='num' value='<?php echo htmlspecialchars($bus['busNum']); ?>' required>
 
-    <label>Bus Number:</label>
-    <input type="text" name="num" value="<?php echo htmlspecialchars($bus['busNum']); ?>" required>
+        <label>Bus Owner:</label>
+        <input type='text' name='busOwner' value='<?php echo htmlspecialchars($bus['busOwner']); ?>' required>
 
-    <label>Bus Owner:</label>
-    <input type="text" name="busOwner" value="<?php echo htmlspecialchars($bus['busOwner']); ?>" required>
+        <label>Route:</label>
+        <input type='text' name='route' value='<?php echo htmlspecialchars($bus['route']); ?>' required>
 
-    <label>Route:</label>
-    <input type="text" name="route" value="<?php echo htmlspecialchars($bus['route']); ?>" required>
+        <label>Price:</label>
+        <input type='text' name='price' value='<?php echo htmlspecialchars($bus['price']); ?>' required>
 
-    <label>Price:</label>
-    <input type="text" name="price" value="<?php echo htmlspecialchars($bus['price']); ?>" required>
+        <label>Seat Count:</label>
+        <input type='number' name='seatCount' value='<?php echo htmlspecialchars($bus['seatCount']); ?>' required>
 
-    <label>Seat Count:</label>
-    <input type="number" name="seatCount" value="<?php echo htmlspecialchars($bus['seatCount']); ?>" required>
+        <label>Status:</label>
+        <select name='status' style='width:200px' required>
+            <option value='Available' <?php if ($bus['status'] == 'Available') echo 'selected'; ?>>Available</option>
+            <option value='Unavailable' <?php if ($bus['status'] == 'Unavailable') echo 'selected'; ?>>Unavailable</option>
+        </select>
 
-    <label>Status: </label>
-    <select name="status" style="width:200px" required>
-        <option value="None"></option>
-        <option value="Available">Available</option>
-        <option value="Unavailable">Unavailable</option>
-    </select>
-
-    <label>Time:</label>
-    <input type="text" name="time" value="<?php echo htmlspecialchars($bus['time']); ?>" required>
+        <label>Time:</label>
+        <input type='text' name='time' value='<?php echo htmlspecialchars($bus['time']); ?>' required>
     
     <input type="submit" value="Update Bus">
 </div>

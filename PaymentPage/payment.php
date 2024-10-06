@@ -117,22 +117,22 @@ $cvv = "";
                   <div class="card1">
                     <label id="credit-card-num">Card Number</label>
                     <input id="card-number" name="credit-card-num"  class="input-field" placeholder="Card Number" type="text" onkeyup="validateCard()" value="<?php echo $cardNumber;?>">
-                    <span id="card-error" class="error"></span>
+                    <div id="card-error" class="error"></div>
                   </div>
                   <div class="monthyear">
                     <label id="exp-month" style="color: black; "> Month</label>
                     <input type="text" id="exp-m" class="exp" name="Month" onkeyup="validateMonth()" value="<?php echo $expMonth;?>">
-                    <span id="month-error" class="error"></span>
+                    <div id="month-error" class="error"></div>
 
                     <label id="exp-year" style="color: black; "> Year</label>
                     <input type="text" id="exp-y" class="exp" name="Year" onkeyup="validateYear()" value="<?php echo $expYear;?>"><br><br>
-                    <span id="year-error" class="error"></span>
+                    <div id="year-error" class="error"></div>
                   </div>  
 
                   <div class="cvv1">
                     <label for="cvv">CVV</label>
                     <input id="cvv" name="cvv" placeholder="CVV" type="text" onkeyup="validateCVV()" value="<?php echo $cvv;?>">
-                    <span id="cvv-error" class="error"></span>
+                    <div id="cvv-error" class="error"></div>
 
                   </div><br><br>
                   <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Use Card</a></button>
