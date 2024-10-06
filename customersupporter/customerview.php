@@ -30,7 +30,8 @@
                {    
                     while($row=mysqli_fetch_assoc($result))
                     {
-                        echo "<tr><td>".$row['supId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td><button class='update-btn'><a href='./supupdate.php?updateid=".$row['supId']."'>UPDATE</a></button></td><td><button class='delete-btn'><a href='supdelete.php?deleteid=".$row['supId']."'>DELETE</a></button></td></tr>";
+                        echo "<tr><td>".$row['supId']."<td>". $row['firstName']."</td><td>".$row['lastName']."</td><td>".$row['address']."</td><td>".$row['pNum']."</td><td>".$row['dob']."</td><td><button class='update-btn'><a href='./supupdate.php?updateid=".$row['supId']."'>UPDATE</a></button></td>
+                              <td><button class='delete-btn'><a href='supdelete.php?deleteid=".$row['supId']."'>DELETE</a></button></td></tr>";
                     }
                }
                ?>
