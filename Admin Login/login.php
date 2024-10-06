@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if($row["password"]==$pass){
             session_start();
-            $_SESSION["username"]=$row["userName"];
+            $_SESSION["adminName"]=$row["userName"];
             $_SESSION["password"]=$row["password"];
 
             

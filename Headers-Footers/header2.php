@@ -99,14 +99,14 @@
                         <ul>
                             <li><a class="navigation" href="index.php">Home</a></li>
                             <li><a class="navigation" href="seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="about US.php">About Us</a></li>
                             <li><a class="navigation" href="schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="ContactUs.php">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="right">
                         <?php
-                            if(isset($_SESSION["username"]))
+                            if(isset($_SESSION["adminName"]))
                             {
                                 echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
                                 

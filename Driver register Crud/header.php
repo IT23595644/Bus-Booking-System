@@ -102,7 +102,7 @@
                         <ul>
                             <li><a class="navigation" href="../index.php">Home</a></li>
                             <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="../about Us.php">About Us</a></li>
+                            <li><a class="navigation" href="../about US.php">About Us</a></li>
                             <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
                         </ul>
@@ -115,8 +115,8 @@
                                 echo'<button class="btnin"><a style="color:Black;" href="../admin_dashboard.php">Profile</a></button>';
                             }
                             else{
-                                echo'<button class="btnin"><a style="color:Black;" href="../Login page/index.php">Sign In</a></button>';
-                                    
+                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
+                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
                             }
 
                         ?>
