@@ -165,6 +165,9 @@
 </div>
 
 </nav>
+
+<br><br>
+
     <script src="script.js"></script>
 
 <?php include("../Headers-Footers/footer.php");

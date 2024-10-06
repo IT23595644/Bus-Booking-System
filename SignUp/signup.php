@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($pass !== $repass) {
         echo "<script>alert('Passwords do not match!');</script>";
     } else {
-        // Hash the password
+        
         $final_pass = $pass;
 
     
