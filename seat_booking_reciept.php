@@ -78,7 +78,7 @@
                     <br>
                      <div class="actions">
                         <button type="submit" class="confirm" onclick="document.location='./PaymentPage/payment.php'">Checkout</button>
-                        <button onclick="location.href='index.php'" type="button" class="back">Back</button>
+                        <button onclick="location.href='seat_booking.php'" type="button" class="back">Back</button>
                     </div>
                     
                 </div>
