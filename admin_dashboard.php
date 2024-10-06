@@ -50,6 +50,15 @@
     </div>
 </div>
 
+<div class="box">
+    <h3>User Messages<h3> 
+    <hr><br>
+    <div class="button3">
+    <button type="button" class="button" onclick="document.location='userMessages/messagesview.php'">Show Details</button>
+    <button type="button" class="button" onclick="document.location='index.php'">Back</button>
+    </div>
+</div>
+
 
 
 <br>

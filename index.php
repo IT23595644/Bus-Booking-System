@@ -184,17 +184,16 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
                 <div class="foot-er" id="services"> 
                     <h3>Services</h3>
                     <div class="links">
-                        <a href="#">Booking Ticket</a>
-                        <a href="#">Show Bus Sheduling</a>
-                        <a href="#">Customer Support Service</a>
-                        <a href="#">Available Buses Monitoring </a>
+                        <a href="seat_booking.php">Booking Ticket</a>
+                        <a href="./schedule.php">Show Bus Sheduling</a>
+                        <a href="../Bus-Booking-System/ContactUs.php">Customer Support Service</a>
+                        
                     </div>
                 </div>
                 <div class="foot-er" id="link">
                     <h3>Links</h3>
                     <div class="links">
                         <a href="../Bus-Booking-System/Terms and Condition/Term&condition.php">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
                         <a href="../Bus-Booking-System/ContactUs.php">Help & Support</a>
                         <a href="fandQ.php">FAQs</a>
                     </div>

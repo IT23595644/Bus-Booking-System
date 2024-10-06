@@ -1,6 +1,6 @@
 <?php
 
-    include('connection.php');
+    include('../config.php');
 ?>
 <!DOCTYPE html>
 <html>
