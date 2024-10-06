@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Bus365</title>
+        <script src="script.js"></script>
         <link rel="icon" href="../Headers-Footers/logo.png" type="image/jpg">
         <link rel="stylesheet" href="styles.css">
         <style>
@@ -148,7 +149,10 @@
         <label>Confirm Password:</label><br>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
         
-        <input type="submit" value="Signup" class="subbtn">
+        <input type="submit" value="Signup" class="subbtn" onclick="validateForm()">
+        
+        <div id="error"></div>
+
     </form>
 
     <br><br><br>

@@ -2,8 +2,9 @@
 include '../config.php';
 
 $id = $_GET['id'];
-$stmt = $conn->prepare("DELETE FROM bus WHERE busID = ?");
-$stmt->execute([$id]);
+$sql = "DELETE FROM bus WHERE busID = '$id'";
+$result = mysqli_query($conn, $sql);
 
-header("Location: index.php");
+header("location: index.php");
+
 ?>
