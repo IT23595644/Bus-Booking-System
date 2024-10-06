@@ -41,24 +41,30 @@
             <button type="button" class="button"></button><br>
         </div>-->
         <div>
-            <form method="post" >
+            <form method="post"id="valid" >
                 <label>First Name:</label><br>
-                <input type="text" name="firstName"><br>
+                <input type="text" name="firstName" id="f_name"><br>
+                <div id="name_error1"></div><br>
 
                 <label>Last Name:</label><br>
-                <input type="text" name="lastName"><br>
+                <input type="text" name="lastName" id="l_name"><br>
+                <div id="name_error2"></div><br>
 
                 <label>Address Name:</label><br>
-                <input type="text" name="address"><br>
+                <input type="text" name="address" id="address"><br>
+                <div id="address_error"></div><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pNum"><br>
+                <input type="text" name="pNum" id="p_num"><br>
+                <div id="num_error"></div><br>
 
                 <label>Date Of Birth:</label><br>
-                <input type="date" name="dob"><br><br>
+                <input type="date" name="dob" id="dob"><br><br>
+                <div id="dob_error"></div><br>
 
                 <label>license Id:</label><br>
-                <input type="text" name="licenseId"><br><br>
+                <input type="text" name="licenseId" id="licen"><br><br>
+                <div id="licen_error"></div><br>
 
                 <input class="button" type="submit" name="submit">               
 
@@ -66,7 +72,7 @@
         </div>
     </div>
 
-    
+    <script src="./crud.js"></script>
 
     <br>
     

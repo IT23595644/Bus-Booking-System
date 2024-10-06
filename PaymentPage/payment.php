@@ -145,14 +145,11 @@ $cvv = "";
                   <br>
                     
                    <button class="btn" style="font-size: 20px;" type="submit">
-                    <style="text-decoration:none; color:white;" onclick="payNow()">Pay Now</a>
+                    <a href="../index.php" style="text-decoration: none; color:white;" onclick="payNow()">Pay Now</a>
 
                   </button></center>
                 </form>
-            
-                
-                  
-                  
+             
                 </p>
               </div>
 
