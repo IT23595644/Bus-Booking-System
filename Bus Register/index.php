@@ -28,26 +28,31 @@ include "./header.php";
         </tr>
         <?php 
         
-        $stmt = $conn->query("SELECT * FROM bus");
-
-        while ($bus = $stmt->fetch_assoc())
-        {
-            echo
-            "<tr>
-            <td>".$bus['busID']."</td>
-            <td>".$bus['busNum']."</td>
-            <td>".$bus['busOwner']."</td>
-            <td>".$bus['route']."</td>
-            <td>".$bus['price']."</td>
-            <td>".$bus['seatCount']."</td>
-            <td>".$bus['status']."</td>
-            <td>".$bus['time']."</td>
-            <td class='actions'>
-                <button class='edit-button'><a href='update_bus.php?id=".$bus['busID']."'>Edit</a></button><br><br>
-                <button class='delete-button'><a href='delete_bus.php?id=".$bus['busID']."'onclick=\"return confirm('Are you sure?')\">Delete</a></button>
-            </td>
-        </tr>";
+        $sql="SELECT * FROM bus;";
         
+        $result=mysqli_query($conn,$sql);
+
+        if(mysqli_num_rows($result)>0){
+
+            while ($bus = mysqli_fetch_assoc($result))
+            {
+                echo
+                "<tr>
+                <td>".$bus['busID']."</td>
+                <td>".$bus['busNum']."</td>
+                <td>".$bus['busOwner']."</td>
+                <td>".$bus['route']."</td>
+                <td>".$bus['price']."</td>
+                <td>".$bus['seatCount']."</td>
+                <td>".$bus['status']."</td>
+                <td>".$bus['time']."</td>
+                <td class='actions'>
+                    <button class='edit-button'><a href='update_bus.php?id=".$bus['busID']."'>Edit</a></button><br><br>
+                    <button class='delete-button'><a href='delete_bus.php?id=".$bus['busID']."'onclick=\"return confirm('Are you sure?')\">Delete</a></button>
+                </td>
+            </tr>";
+            
+            }
         }
         ?>
 

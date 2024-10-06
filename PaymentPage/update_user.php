@@ -27,7 +27,7 @@ $result = mysqli_query($conn, $sql);
 
 if($result){
     //echo "Card updated successfully";
-    header('location:cards.php');
+    header('location:paymentDetails.php');
 }
 }
 ?>
@@ -242,7 +242,7 @@ if($result){
 </head>
 <body>
 
-    <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
+    <form method="POST" action="update_user.php?updateid=<?php echo $ID; ?>">
     <div class="box">
     <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
         <label for="full-name" style="color: black; font-size:large">Full Name</label><br>

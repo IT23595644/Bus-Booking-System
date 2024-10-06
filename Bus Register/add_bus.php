@@ -10,16 +10,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = $_POST['status'];
     $time = $_POST['time'];
 
-    $stmt = $conn->prepare("INSERT INTO bus (busNum, busOwner, route, price, seatCount, status, time) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->execute([$num, $busOwner, $route, $price, $seatCount, $status, $time]);
+    $sql = "INSERT INTO bus (busNum, busOwner, route, price, seatCount, status, time) 
+    VALUES ('$num', '$busOwner', '$route', '$price', '$seatCount', '$status', '$time')";
+    
+    $result=mysqli_query($conn,$sql);       
 
-           
 
     $sql1="INSERT INTO busPrice (price)
            VALUES('$price')";
     mysqli_query($conn,$sql1);
 
     header("Location: index.php");
+
+    mysqli_close($conn);
+
 }
 ?>
 
