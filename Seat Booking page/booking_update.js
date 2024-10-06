@@ -13,12 +13,18 @@ document.getElementById('form').addEventListener('submit', function(event){
         event.preventDefault(); //prevent from submitting the form
         return;
     }
+    else{
+        document.getElementById('location_error').innerHTML=" ";  //this will replace the error message with white space
+    }
     //validate destination
     if(to.trim()==''){
         document.getElementById('destination_error').innerHTML="Destination is required";
         document.getElementById('destination_error').style="color:red";
         event.preventDefault();
         return;
+    }
+    else{
+        document.getElementById('location_error').innerHTML=" ";
     }
     //validate departure_date
     if(d_date.trim()==''){
@@ -27,6 +33,9 @@ document.getElementById('form').addEventListener('submit', function(event){
         event.preventDefault();
         return;
     }
+    else{
+        document.getElementById('location_error').innerHTML=" ";
+    }
     //validate seatnum
     if(seatnum.trim()==''){
         document.getElementById('seatnum_error').innerHTML="Seat_No is required";
@@ -34,11 +43,17 @@ document.getElementById('form').addEventListener('submit', function(event){
         event.preventDefault();
         return;
     }
+    else{
+        document.getElementById('location_error').innerHTML=" ";
+    }
     //validate busid
     if(busid.trim()==''){
         document.getElementById('busid_error').innerHTML="Bus_id is required";
         document.getElementById('seatnum_error').style="color:red";
         event.preventDefault();
         return;
+    }
+    else{
+        document.getElementById('location_error').innerHTML=" ";
     }
 })

@@ -95,12 +95,6 @@ label {
 .actions .back:hover{
     background-color: #5a6268;
 }
-
-input:focus {
-    border-color: black;
-    box-shadow: 0 0 50px black;
-}
-
 .title-sub{
     background-color: #ccc;
     margin-bottom: 10px;
