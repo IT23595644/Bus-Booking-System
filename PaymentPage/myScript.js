@@ -1,77 +1,124 @@
-// Validate the entire form
-function validateForm(event) {
-    const fullName = document.getElementById('cardholder-name').value;
-    const cardNumber = document.getElementById('card-number').value;
-    const expMonth = document.getElementById('exp-m').value;
-    const expYear = document.getElementById('exp-y').value;
-    const cvv = document.getElementById('cvv').value;
-  
-    // Prevent form submission if any field is empty
-    if (fullName === "" || cardNumber === "" || expMonth === "" || expYear === "" || cvv === "") {
-      alert("Please fill in all the fields.");
-      event.preventDefault(); // Prevent form submission
-      return false;
+nError = document.getElementById('name-error');
+cError = document.getElementById('card-error');
+mError = document.getElementById('month-error');
+yError = document.getElementById('year-error');
+cvvError = document.getElementById('cvv-error');  
+
+function validateName(){
+    var name = document.getElementById('cardholder-name').value;
+    if(name.length == 0){
+        nError.style = "color: red;";
+        nError.innerHTML = "Name is required";
+        return false;
     }
-  
-    // Validate each field
-    if (!validateName() || !validateCard() || !validateMonth() || !validateYear() || !validateCVV()) {
-      event.preventDefault(); // Prevent form submission if any validation fails
-      return false;
+    else{
+        nError.style = "color: green;";
+        nError.innerHTML = "Valid";
+        return true;
     }
-  
-    return true; // Proceed if all fields are valid
-  }
-  
-  // Validate Cardholder Name
-  function validateName() {
-    const nameField = document.getElementById('cardholder-name').value;
-    if (nameField === "") {
-      alert("Name cannot be empty.");
-      return false;
+}
+
+function validateCard(){
+    var card = document.getElementById('card-number').value;
+    if(card.length == 0){
+        cError.style = "color: red;";
+        cError.innerHTML = "Card number is required";
+        return false;
     }
-    return true;
-  }
-  
-  // Validate Card Number (basic check for length)
-  function validateCard() {
-    const cardNumber = document.getElementById('card-number').value;
-    const regex = /^[0-9]{16}$/; // Basic check for a 16-digit number
-    if (!regex.test(cardNumber)) {
-      alert("Please enter a valid 16-digit card number.");
-      return false;
+    if(isNaN(card)){
+        cError.style = "color: red;";
+        cError.innerHTML = "Must be a number";
+        return false;
     }
-    return true;
-  }
-  
-  // Validate Expiry Month (should be between 1 and 12)
-  function validateMonth() {
-    const month = document.getElementById('exp-m').value;
-    if (month < 1 || month > 12) {
-      alert("Please enter a valid expiration month (1-12).");
-      return false;
+    else if(card.length != 16){
+        cError.style = "color: red;";
+        cError.innerHTML = "Must be 16 digits";
+        return false;
     }
-    return true;
-  }
-  
-  // Validate Expiry Year (should not be in the past)
-  function validateYear() {
-    const year = document.getElementById('exp-y').value;
-    const currentYear = new Date().getFullYear();
-    if (year < currentYear) {
-      alert("Expiration year cannot be in the past.");
-      return false;
+    else{
+        cError.style = "color: green;";
+        cError.innerHTML = "Valid";
+        return true;
     }
-    return true;
-  }
-  
-  // Validate CVV (basic check for 3-digit number)
-  function validateCVV() {
-    const cvv = document.getElementById('cvv').value;
-    const regex = /^[0-9]{3}$/; // Basic check for 3-digit CVV
-    if (!regex.test(cvv)) {
-      alert("Please enter a valid 3-digit CVV.");
-      return false;
+}
+
+function validateMonth(){
+    var month = document.getElementById('exp-m').value;
+    if(month.length == 0){
+        mError.style = "color: red;";
+        mError.innerHTML = "Month is required";
+        return false;
     }
-    return true;
-  }
-  
+    if(isNaN(month)){
+        mError.style = "color: red;";
+        mError.innerHTML = "Must be a number";
+        return false;
+    }
+    else if(month < 1 || month > 12){
+        mError.style = "color: red;";
+        mError.innerHTML = "Invalid month";
+        return false;
+    }
+    else{
+        mError.style = "color: green; left: 1090px;";
+        mError.innerHTML = "Valid";
+        return true;
+    }
+}
+
+function validateYear(){
+    var year = document.getElementById('exp-y').value;
+    if(year.length == 0){
+        yError.style = "color: red;";
+        yError.innerHTML = "Year is required";
+        return false;
+    }
+    if(isNaN(year)){
+        yError.style = "color: red;";
+        yError.innerHTML = "Must be a number";
+        return false;
+    }
+    else if(year < 2024){
+        yError.style = "color: red;";
+        yError.innerHTML = "Invalid year";
+        return false;
+    }
+    else{
+      yError.style = "color: green; left: 1230px;";
+        yError.innerHTML = "Valid";
+        return true;
+    }
+}  
+
+function validateCVV(){
+    var cvv = document.getElementById('cvv').value;
+    if(cvv.length == 0){
+        cvvError.style = "color: red;";
+        cvvError.innerHTML = "CVV is required";
+        return false;
+    }
+    if(isNaN(cvv)){
+        cvvError.style = "color: red;";
+        cvvError.innerHTML = "Must be a number";
+        return false;
+    }
+    else if(cvv.length != 3){
+        cvvError.style = "color: red;";
+        cvvError.innerHTML = "Invalid CVV ";
+        return false;
+    }
+    else{
+        cvvError.style = "color: green; left: 1070px;";
+        cvvError.innerHTML = "Valid";
+        return true;
+    }
+}
+
+function payNow(){
+    if(validateName() && validateCard() && validateMonth() && validateYear() && validateCVV()){
+        alert("Payment Successful!");
+    }
+    else{
+        alert("Payment Failed!");
+    }
+}
