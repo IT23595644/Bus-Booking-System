@@ -167,7 +167,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top"><i class="ri-arrow-up-circle-line"></i></button> <!--Botttom to top scroll js part-->
   <div class=fooot>
         <div class="const">
-            <div class="Creat">                      <!-- Home page footer
+            <div class="Creat">                      <!-- Home page footer-->
                 <div class="foot-er" id="company"> 
                     <img src="../Bus-Booking-System/Headers-Footers/logo.png" alt="" class="logo">
                     <p> Ride Easy, Ride with Bus365.</p>
