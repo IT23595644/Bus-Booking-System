@@ -1,13 +1,12 @@
-<?php
+<?php 
+    session_start();
 
-    include("../config.php");
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Bus365</title>
         <link rel="icon" href="../Headers-Footers/logo.png" type="image/jpg">
-        <link rel="stylesheet" href="styles.css">
         <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -34,7 +33,7 @@
                     display:flex;
                     justify-content: space-between;
                     background-color: rgba(32, 32, 32, 0.852);
-                    padding:18px;
+                    padding:9px;
                     align-items: center;
                     
                 }
@@ -75,10 +74,7 @@
                 footer{
                     font-family: 'poppins';
                     color:rgb(255, 255, 255);
-                    position:fixed;
-                    bottom:0px;
-                    left:50%;
-                    transform: translateX(-50%); 
+                    
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;
@@ -103,50 +99,32 @@
                         <ul>
                             <li><a class="navigation" href="../index.php">Home</a></li>
                             <li><a class="navigation" href="../seat_booking.php">Booking</a></li>
-                            <li><a class="navigation" href="../aboutus.php">About Us</a></li>
+                            <li><a class="navigation" href="../about US.php">About Us</a></li>
                             <li><a class="navigation" href="../schedule.php">Scheduling</a></li>
                             <li><a class="navigation" href="../ContactUs.php">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="right">
                         <?php
-                            if(isset($_SESSION["username"]))
+                            if(isset($_SESSION["adminName"]))
                             {
-                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Log Out</a></button>';
-                                echo'<button class="btnin"><a style="color:Black;" href="Inc/logout.inc.php">Profile</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="../Inc/logout.inc.php">Log Out</a></button>';
+                                echo'<button class="btnin"><a style="color:Black;" href="../admin_dashboard.php">Profile</a></button>';
                             }
-                            
+                            else{
+                                echo'<button class="btnin"><a style="color:Black;" href="Login page/index.php">Sign In</a></button>
+                                    <button class="btnin"><a style="color:Black;" href="SignUp/index.php">Sign Up</a></button>';
+                            }
 
                         ?>
                     </div>   
                 </div>  
         </header>
 
-        <nav>
-        <div class="combination">
 
-            <div class="login-container">
-                <!-- to get user inputs -->
-                <h2>Admin Login</h2>
-                <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
-                    <div class="input-group">
-                        <label for="username"><strong>Username</strong></label>
-                        <input type="text" id="username" name="username" placeholder="Enter your username">
-                    </div>
-                    <div class="input-group">
-                        <label for="password"><strong>Password</strong></label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
-                    </div>
-                    <button class="submit-btn" type="submit">Login</button>
-                    <div id="errorMessage" class="error-message"></div>
-                </form>
-                <button class="user-btn"><a href="../Login page/index.php">Login as User</a></h6>
-            </div>
 
-        </div>
 
-        </nav>
-        <!-- add js file-->
-    <script src="script.js"></script>
-<br>
-<?php include("../Headers-Footers/footer.php");?>
+
+
+
+    

@@ -294,96 +294,97 @@
                 .saveCard{
                     background-color: #0b7dbd;
                     color: white;
-                        border: none;
-                        cursor: pointer;
-                        border-radius: 10px;
-                        margin-left: 200px;
-                        padding: 10px;
-                        margin-top: -66px;  
-                      }
-                      .saveCard:hover{
-                        background-color: #34aff4;
-                      }
-                      .input-field {
-                            margin-bottom: 10px;
-                            padding: 5px;
-                        }
-                
-                        .saveC{
-                            width: 100px;
-                            margin-top: 10px;
-                            padding: 10px;
-                            border-radius: 10px;
-                            margin-left: 355px;
-                        }
-                        #cardholder-name{    
-                        margin-left: -2px;
-                        margin-top: 10px;
-                        padding: 7px;
-                        background-color: rgba(173, 181, 255, 0.2);
-                        }
-                        #card-number{
-                        margin-left: -2px;
-                        margin-top: 10px;
-                        padding: 7px;
-                        background-color:rgba(173, 181, 255, 0.2);
-                        }
-                        #cvv{
-                            width: 50px;  
-                            padding: 7px;
-                            background-color: rgba(173, 181, 255, 0.2);
-                            margin-bottom: -100px;
-                        }
-                       #exp-year{
-                            margin-left: 20px;
-                        } 
-                        .card1{
-                            margin-top: -10px;
-                        }
-                        .cvv1{
-                            margin-top: 27px;
-                        }
-                        .name1{
-                            margin-top: 10px;
-                        }
-                        .monthyear{
-                            margin-top: 10px;
-                            display: flex;
-                            width: 80%;
-                        }
-                      .wBox{
-                        width: 450px;
-                      }
-                      #name-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #card-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #month-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-left: 70px;
-                      }
-                      #year-error{
-                        color: red;
-                        font-size: 12px;  
-                        font-weight: 600;
-                        margin-left: 100px;
-                      }
-                      #cvv-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-top: 20px;
-                      }
-                      .error1{
-                        display: flex;
-                      }
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    margin-left: 200px;
+                    padding: 10px;
+                    margin-top: -66px;  
+                }
+                .saveCard:hover{
+                    background-color: #34aff4;
+                }
+                .input-field {
+                    margin-bottom: 10px;
+                    padding: 5px;
+                }               
+                .saveC{
+                    width: 100px;
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-left: 355px;
+                }
+                #cardholder-name{    
+                    margin-left: -2px;
+                    margin-top: 10px;
+                    padding: 7px;
+                    background-color: rgba(173, 181, 255, 0.2);
+                }
+                #card-number{
+                    margin-left: -2px;
+                    margin-top: 10px;
+                    padding: 7px;
+                    background-color:rgba(173, 181, 255, 0.2);
+                }
+                #cvv{
+                    width: 50px;  
+                    padding: 7px;
+                    background-color: rgba(173, 181, 255, 0.2);
+                    margin-bottom: -100px;
+                }
+                #exp-year{
+                    margin-left: 20px;
+                } 
+                .card1{
+                    margin-top: -10px;
+                }
+                .cvv1{
+                    margin-top: 27px;
+                }
+                .name1{
+                    margin-top: 10px;
+                }
+                .monthyear{
+                    margin-top: 10px;
+                    display: flex;
+                    width: 80%;
+                }
+                .wBox{
+                  width: 450px;
+                }
+
+               /* java script */
+                #name-error{
+                  color: red;
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+                #card-error{
+                  color: red;
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+                #month-error{
+                  color: red;
+                  font-size: 12px;
+                  font-weight: 600;
+                  margin-left: 70px;
+                }
+                #year-error{
+                  color: red;
+                  font-size: 12px;  
+                  font-weight: 600;
+                  margin-left: 100px;
+                }
+                #cvv-error{
+                  color: red;
+                  font-size: 12px;
+                  font-weight: 600;
+                  margin-top: 20px;
+                }
+                .error1{
+                   display: flex;
+                }
                       
                       

@@ -9,12 +9,31 @@ function validateForm(event) {
         event.preventDefault();
     }
 
-    else if (!isNaN(fName) || !isNaN(lName)) {
-        alert ('Name cannot be a number');
+    else if (fName.trim() === "") {
+
+        alert('First Name cannot be empty!');
         event.preventDefault();
-    } else {
+
+    } 
+    
+    else if (lName.trim() === "") {
+
+        alert('Last Name cannot be empty!');
+        event.preventDefault();
+
+    } 
+    
+    else if (!isNaN(fName.trim()) || !isNaN(lName.trim())) {
+
+        alert('Name cannot be a number');
+        event.preventDefault();
+
+    } 
+    
+    else {
 
         return true;
 
     }
+    
 }

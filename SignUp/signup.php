@@ -1,7 +1,7 @@
 <?php
 include('../config.php');
 
-
+//
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -15,19 +15,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $final_pass = $pass;
     
-        $stmt = $conn->prepare("INSERT INTO users (firstName, lastName, UserName, email, password) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $first_name, $last_name, $user, $email, $final_pass);
+        //add data to database
+        $sql = "INSERT INTO users (firstName, lastName, UserName, email, password) VALUES ('$first_name', '$last_name', '$user', '$email', '$final_pass')";
 
-        if ($stmt->execute()) {
+        $result = mysqli_query($conn, $sql);
+
+        // if data pass to database successfully
+        if ($result) {
             echo "<script>alert('Registration successful! Please login using your credentials.'); window.location.href = '../Login page/index.php';</script>";
         } else {
-            echo "Error: " . $stmt->error;
+            echo "Error";
         }
-
-        $stmt->close();
 
     }
 
-$conn->close();
+    mysqli_close($conn);
+
 }
 ?>

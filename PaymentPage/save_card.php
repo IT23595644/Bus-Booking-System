@@ -32,91 +32,91 @@ if (isset($_POST['submit'])) {
     
     <link rel="stylesheet" href="style_save.css">
     <style>
-        .bg {
+    .bg {
         background: url('bgimg.jpg');
         height: 110vh;
-         }
-         form {
-            display: flex;
-            flex-direction: column;
-            width: 45%;
-            margin: 0 auto;
-        }
+     }
+     form {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: 0 auto;
+    }
 
-        .input-field {
-            margin-bottom: 10px;
-            padding: 5px;
-            width: 90%;
-        }
+    .input-field {
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 90%;
+    }
 
-        button {
-            padding: 10px;
-            background-color: #999b98;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .box{
-            
-            width: 60%;
-            margin: 0 auto;
-            margin-top: 25px;
-            padding: 20px;
-            border: none ;
-            background-color: #f9f9f9;
-            border-radius: 20px;
-            background-color: #dfdfdf;
-        } 
-        #exp-m{
-            background-color: rgba(173, 181, 255, 0.2);
-        }
-        #exp-y{
-            background-color: rgba(173, 181, 255, 0.2);
-        } 
-        .exp-year{
-            margin-left: 20px;
-        }
-         .monthyear{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            width: 80%;
-        }
-        .saveC{
-            width: 100px;
-            margin-top: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            margin-left: 270px;
-        }
-        #cardholder-name{    
+    button {
+        padding: 10px;
+        background-color: #999b98;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .box{
+        
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding: 20px;
+        border: none ;
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        background-color: #dfdfdf;
+    } 
+    #exp-m{
+        background-color: rgba(173, 181, 255, 0.2);
+    }
+    #exp-y{
+        background-color: rgba(173, 181, 255, 0.2);
+    } 
+    .exp-year{
+        margin-left: 20px;
+    }
+     .monthyear{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 80%;
+    }
+    .saveC{
+        width: 100px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 270px;
+    }
+    #cardholder-name{    
         margin-left: -2px;
         margin-top: 10px;
         padding: 7px;
         background-color: rgba(173, 181, 255, 0.2);
-      }
-      #card-number{
+    }
+    #card-number{
         margin-left: -2px;
         margin-top: 10px;
         padding: 7px;
         background-color:rgba(173, 181, 255, 0.2);
-      }
-        #cvv{
-            width: 100px;  
-            padding: 7px;
-            background-color: rgba(173, 181, 255, 0.2);
-        }
-        .cv{
-            margin-top: 35px;       
-        }
-        .back{
-            margin-top: 0px;
-            margin-left: -5px;
-            width:20px
-        }
-        .namecard{
-            margin-top: 20px;
-        }
+    }
+    #cvv{
+        width: 100px;  
+        padding: 7px;
+        background-color: rgba(173, 181, 255, 0.2);
+    }
+    .cv{
+        margin-top: 35px;       
+    }
+    .back{
+        margin-top: 0px;
+         margin-left: -5px;
+        width:20px
+    }
+    .namecard{
+        margin-top: 20px;
+    }
     </style> 
 
 <div class="bg">
@@ -208,77 +208,39 @@ if (isset($_POST['submit'])) {
                     width: 100%;
                     padding: 1px;
                 }  
-                /* #name-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 785px;
-                        top: 290px;
-                        font-weight: 600;
-                      }
-                      #card-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 785px;
-                        top: 395px;
-                        font-weight: 600;
-                      }
-                      #month-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 1020px;
-                        top: 496px;
-                        font-weight: 600;
-                      }
-                      #year-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 820px;
-                        top: 496px;
-                        font-weight: 600;
-                      }
-                      #cvv-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 1020px;
-                        top: 570px;
-                        font-weight: 600;
-                      }         */ 
-                      #name-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #card-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #month-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-left: 70px;
-                      }
-                      #year-error{
-                        color: red;
-                        font-size: 12px;  
-                        font-weight: 600;
-                        margin-left: 100px;
-                      }
-                      #cvv-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-top: 20px;
-                      }
-                      .error1{
-                        display: flex;
-                      }                    
+                 
+                /* java Script */
+                #name-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                #card-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                #month-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-left: 70px;
+                }
+                #year-error{
+                    color: red;
+                    font-size: 12px;  
+                    font-weight: 600;
+                    margin-left: 100px;
+                }
+                #cvv-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                }
+                .error1{
+                    display: flex;
+                }                    
         </style>
     </head>
 

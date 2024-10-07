@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 }
 
-
+//get the  bus details to updata database
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $num = $_POST['num'];
     $busOwner = $_POST['busOwner'];
