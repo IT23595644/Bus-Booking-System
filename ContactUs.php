@@ -1,8 +1,8 @@
 <?php 
-    include('config.php')
+    include('config.php')    //database connection
 ?>
         <?php
-        include_once("Headers-Footers/header.php");
+        include_once("Headers-Footers/header.php");    //header file
         ?>
         <link rel="stylesheet" href="Contact Us page/contactus.css">
         <div class="container">
@@ -24,51 +24,41 @@
                     If You Have Anything to ask!!!
                     <fieldset>
                         <legend>Fill This</legend>
-                        <form action="ContactUs.php" method="get">
-                            <label>Your Name:</label><br>
-                            <input type="text" name="name"><br>
-                            <label>Your Email:</label><br>
-                            <input type="email" name="email"><br>
-                            <label>Your Message:</label><br>
-                            <textarea name="msg"></textarea><br>
-                            <input class="btn"type="submit" name="submit"><br>
+                        <form action="ContactUs.php" method="post">      <!--messages form-->
+                            
+                                <label>Your Name:</label><br>
+                                <input class="fdata" type="text" name="name"  required><br>
+                                <label>Your Email:</label><br>
+                                <input class="fdata" type="email" name="email"  required><br>
+                                <label>Your Message:</label><br>
+                                <textarea class="fdata" name="msg" style="width:30%;padding:10px;border-radius:10px;" required></textarea><br>
+                                <input class="btn"type="submit" name="submit"><br>
+                            
                         </form>
                     </fieldset>
                 </div>   
             <div>
-            
         </div>
         
-         
     <?php
-        include_once("Headers-Footers/footer.php");
+        include_once("Headers-Footers/footer.php");     //footerfile
     
     ?>
     
 </body>
 </html>
-<?php
-    if(isset($_GET["submit"])){
-        $name=$_GET["name"];
-        $email=$_GET["email"];
-        $message=$_GET["msg"];
+<?php                                                //insert to a table of database
+    if(isset($_POST["submit"])){
+        $name=$_POST["name"];
+        $email=$_POST["email"];
+        $message=$_POST["msg"];
 
-        if(empty($name)){
-            echo'<script>confirm("Name missing")</script>';
-            
-        }
-        elseif(empty($email)){
-            echo'<script>confirm("email missing")</script>';
-        }
-        elseif(empty($message)){
-            echo'<script>confirm("message missing")</script>';
-        }
-        else{
-            $sql="INSERT INTO questions(name,email,msg)
-                  VALUES('$name','$email','$message')";
-                  echo "<script>alert('Message Sent Successfully')</script>";
-            mysqli_query($conn,$sql);
-        }
+        $sql="INSERT INTO questions(name,email,msg)
+               VALUES('$name','$email','$message')";
+               
+                  
+        mysqli_query($conn,$sql);
+      
     }
     mysqli_close($conn);
 ?>
