@@ -9,7 +9,7 @@ include "./header.php";
 <div class="content">
 <br>
 <center><h1>Bus Management System</h1></center>
-
+<!-- to add new bus details to database-->
 <button class="add-button"><a href="add_bus.php" style="color:white;">Add New Bus</a></button>
 
 <center>
@@ -32,9 +32,13 @@ include "./header.php";
         
         $result=mysqli_query($conn,$sql);
 
+        //if there any pass data from the database
         if(mysqli_num_rows($result)>0){
 
-            while ($bus = mysqli_fetch_assoc($result))
+            /*fetches a single row from the result set $result as an associative array. 
+            Each call to this function returns the next row in the result set, or NULL if there are no more rows*/
+
+            while ($bus = mysqli_fetch_assoc($result))//assigns the fetched row to the variable $bus. If there are no more rows, $bus will be NULL
             {
                 echo
                 "<tr>

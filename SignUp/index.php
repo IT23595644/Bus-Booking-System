@@ -129,7 +129,7 @@
     <br>
     <div class="title"><h2>Register Form</h2></div>
     <br>
- 
+    <!-- get user details-->
     <form action="signup.php" method="POST">
         <label>First Name:</label><br>
         <input type="text" id="first_name" name="first_name" required ><br><br>
@@ -149,7 +149,7 @@
         <label>Confirm Password:</label><br>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
         
-        <input type="submit" value="Signup" class="subbtn" onclick="validateForm(event)">
+        <input type="submit" value="Signup" class="subbtn" onclick="validateForm(event)"> <!--validate function in JS-->
 
     </form>
 

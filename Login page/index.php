@@ -133,7 +133,7 @@
 <div class="combination">
     
     <div class="welcome">
-        
+        <!-- Welcome Note-->
         <h1>Welcome to<big><big> Bus365!</big></big></h1>
         <br><br>
         <p class="welcomeNote"><b>Your journey starts here.</b><br><b style="color:black;font-style:italic;font-size:15px">Log in to access our seamless bus booking and scheduling system, designed to make your travel planning effortless. 
@@ -145,9 +145,9 @@
     </div>
 
     <div class="login-container">
-        
+        <!-- get username and password from user-->
         <h2>Login</h2>
-        <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
+        <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()"><!-- if click the submit button then execute the function-->
             <div class="input-group">
                 <label for="username"><strong>Username</strong></label>
                 <input type="text" id="username" name="username" placeholder="Enter your username">
