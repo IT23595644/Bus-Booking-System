@@ -208,77 +208,39 @@ if (isset($_POST['submit'])) {
                     width: 100%;
                     padding: 1px;
                 }  
-                /* #name-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 785px;
-                        top: 290px;
-                        font-weight: 600;
-                      }
-                      #card-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 785px;
-                        top: 395px;
-                        font-weight: 600;
-                      }
-                      #month-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 1020px;
-                        top: 496px;
-                        font-weight: 600;
-                      }
-                      #year-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 820px;
-                        top: 496px;
-                        font-weight: 600;
-                      }
-                      #cvv-error{
-                        color: red;
-                        font-size: 12px;
-                        position: absolute;
-                        right: 1020px;
-                        top: 570px;
-                        font-weight: 600;
-                      }         */ 
-                      #name-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #card-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                      }
-                      #month-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-left: 70px;
-                      }
-                      #year-error{
-                        color: red;
-                        font-size: 12px;  
-                        font-weight: 600;
-                        margin-left: 100px;
-                      }
-                      #cvv-error{
-                        color: red;
-                        font-size: 12px;
-                        font-weight: 600;
-                        margin-top: 20px;
-                      }
-                      .error1{
-                        display: flex;
-                      }                    
+                 
+                /* java Script */
+                #name-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                #card-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                #month-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-left: 70px;
+                }
+                #year-error{
+                    color: red;
+                    font-size: 12px;  
+                    font-weight: 600;
+                    margin-left: 100px;
+                }
+                #cvv-error{
+                    color: red;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                }
+                .error1{
+                    display: flex;
+                }                    
         </style>
     </head>
 

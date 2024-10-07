@@ -26,8 +26,9 @@
                             {
                                 echo "<tr><td>".$row['bookingId']."<td>". $row['seatNum']."</td><td>".$row['date']."</td><td>".$row['busId']."</td><td>".$row['Location']."</td><td>".$row['Destination']."</td><td>".$row['d_date']."</td>";
                             }
-                            
                     }
+
+                    mysqli_close($conn);
                 ?>
                 </table>
             </div>
