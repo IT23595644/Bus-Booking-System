@@ -6,21 +6,21 @@
     include("Headers-Footers/header.php"); //Header file
 ?>
     
-    <link rel="stylesheet" href="Seat Booking page/seat_booking.css">
+    <link rel="stylesheet" href="Seat Booking page/seat_booking.css"> 
 
-    <div class="container">
+    <div class="container"> 
         <br><br>
         <div class="title-main">
             <h1>Book Your Seats</h1>
         </div>
         
-        <div class="main-section">
+        <div class="main-section">     
             <div class="image-section">
                 <img src="Seat Booking page/image.jpg" width="370px" height="400px">
             
             </div>
 
-            <div class="booking-form">
+            <div class="booking-form">    
             
                 <div class="title-sub">
                 <center> <h3>Booking Details</h3> </center>
@@ -66,10 +66,10 @@
 
                         <a href="schedule.php" style="margin-left:5px;">Click here for scheduling details(Bus Id etc.)</a> <br>
 
-                        <script src="Seat Booking Page/form_validation.js"></script> 
+                        <script src="Seat Booking Page/form_validation.js"></script>  <!--form validation-->
 
-                        <?php
-                            include("Seat Booking page/booking_create.php");
+                        <?php 
+                            include("Seat Booking page/booking_create.php");    
                         ?>
 
                     

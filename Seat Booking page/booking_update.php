@@ -1,15 +1,14 @@
 <?php 
     include ('../config.php');
         
-        if(isset($_GET['updateid'])){   
-            $id=$_GET['updateid'];
+        if(isset($_GET['updateid'])){   //Auto fill details of the update form
+            $id=$_GET['updateid'];  
             
         $sql="SELECT * FROM seatbooks where bookingId=$id";
         $result=mysqli_query($conn,$sql);
         $row=mysqli_fetch_assoc($result);
 
         $seatNum=$row['seatNum'];
-        $date=$row['date'];
         $busId=$row['busId'];
         $location=$row['Location'];
         $destination=$row['Destination'];
@@ -17,7 +16,7 @@
         
         }   
         
-        if($_SERVER["REQUEST_METHOD"]=="POST")
+        if($_SERVER["REQUEST_METHOD"]=="POST")  //update the details of the seatbooks table after user enters an input
         {   
             
             $bookFrom=$_POST["from"];
@@ -60,32 +59,32 @@
                 
                 <div class="form-group">
                     <label>From:</label><br>
-                    <input type="text" name="from" id="from"><br>
+                    <input type="text" name="from" id="from" value="<?php echo $location?>"><br>
                     <div id="location_error"></div><br>
                 </div>
                
 
                 <div class="form-group">
                     <label>To:</label><br>
-                    <input type="text" name="to" id="to"><br>
+                    <input type="text" name="to" id="to" value="<?php echo $destination?>"><br>
                     <div id="destination_error"></div><br>
                 </div>
                 
                 <div class="form-group">
                     <label>Departure Date:</label><br>
-                    <input type="date" name="d_date" id="d_date"><br>
+                    <input type="date" name="d_date" id="d_date" value="<?php echo $d_date?>"><br>
                     <div id="d_date_error"></div><br>
                 </div>
                 
                 <div class="form-group">
                     <label>Seat No:</label><br>
-                    <input type="text" name="seatnum" id="seatnum"><br>
+                    <input type="text" name="seatnum" id="seatnum" value="<?php echo $seatNum?>"><br>
                     <div id="seatnum_error"></div><br>
                 </div>
                 
                 <div class="form-group">
                     <label>Bus ID:</label><br>
-                    <input type="text" name="busid" id="busid"><br><br>
+                    <input type="text" name="busid" id="busid" value="<?php echo $busId?>"><br><br>
                     <div id="busid_error"></div><br>
                 </div>
                 
