@@ -14,6 +14,12 @@
     <h1>Admin Dashboard</h1>
 </div>
 
+<div class="logdetails">
+        <h4><?php echo"Admin : {$_SESSION['adminName']}";?><h4>
+        
+        
+</div>
+
 <div class="box">
     <h3>Bus driver Details<h3>
     <hr><br>

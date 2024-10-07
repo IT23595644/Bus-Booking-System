@@ -51,7 +51,7 @@
                 <div id="address_error"></div><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pNum" id="p_num"><br>
+                <input type="tel" name="pNum" id="p_num"><br>
                 <div id="num_error"></div><br>
 
                 <label>Date Of Birth:</label><br>

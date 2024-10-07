@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_start();
             $_SESSION["adminName"]=$row["userName"];
             $_SESSION["password"]=$row["password"];
+            
 
             echo "<script>
                     alert(Login successfull!);

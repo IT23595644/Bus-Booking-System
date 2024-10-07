@@ -164,11 +164,13 @@ if($result){
                 </div>  
         </header>
     <style>
+        
         body {
         background: url('back.jpg'); 
-        
-        
+        background-size:cover;
+        background-position: center;
          }
+
          form {
             display: flex;
             flex-direction: column;

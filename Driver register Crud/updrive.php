@@ -20,7 +20,7 @@
         $dFname = $_POST["firstName"];
         $dLname = $_POST["lastName"];
         $address = $_POST["address"];
-        $pnum = $_POST["pnum"];
+        $pnum = $_POST["pNum"];
         $dob = $_POST["dob"];
         $licen = $_POST["licenseId"];
 
@@ -68,7 +68,7 @@
                 <div id="address_error"></div><br>
 
                 <label>Phone Number:</label><br>
-                <input type="text" name="pNum" id="p_num"value="<?php echo"$pNum" ?>"><br>
+                <input type="tel" name="pNum" id="p_num"value="<?php echo"$pNum" ?>"><br>
                 <div id="num_error"></div><br>
 
                 <label>Date Of Birth:</label><br>

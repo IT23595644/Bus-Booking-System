@@ -56,7 +56,7 @@
         $sql="INSERT INTO questions(name,email,msg)
                VALUES('$name','$email','$message')";
                
-                  
+        echo "<script>alert('Inquiry Recorded Successfully!')</script>";    
         mysqli_query($conn,$sql);
       
     }

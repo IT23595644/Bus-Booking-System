@@ -14,8 +14,8 @@
         <h1>User Dashboard</h1>
     </div>
     <div class="logdetails">
-        <h4><?php echo"User ID:{$_SESSION['userId']}";?><h4>
-        <h4><?php echo"Username:{$_SESSION['username']}";?><h4>
+        <h4><?php echo"User ID : {$_SESSION['userId']}";?><h4>
+        <h4><?php echo"Username : {$_SESSION['username']}";?><h4>
         
     </div>
 

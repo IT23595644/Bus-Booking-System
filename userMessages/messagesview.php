@@ -18,10 +18,11 @@
             margin-bottom:20px;
         }
         table {
-        margin:auto;
-        width: 50%;
-        border-collapse: collapse;
-        background-color: #fff;
+            
+            margin:auto;
+            width: 75%;
+            border-collapse: collapse;
+            background-color: #fff;
         
         }
 

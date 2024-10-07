@@ -23,7 +23,7 @@ include "./header.php";
             <th>Price(LKR)</th>
             <th>Capacity</th>
             <th>Status</th>
-            <th>Time(24hr)</th>
+            <th>Time</th>
             <th class="actions">Actions</th>
         </tr>
         <?php 

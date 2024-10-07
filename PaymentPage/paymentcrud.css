@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background: url('../UserDashboard/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    padding: 30px;
+}
+
+hr{
+    margin-right: 25px;
+    
+}
+.logdetails{
+    padding:8px;
+    background-color: #c8c8c8b8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+input,label{  
+    margin-left:175px;
+    width:50%;
+}
+
+
+.box{
+    border-radius: 15px;
+    border: 3px solid rgb(145, 141, 141);
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0%;
+    background-color: #c8c8c8b8;
+    padding:25px;
+
+}
+
+.button:hover{
+    background-color: rgb(221, 218, 218);
+    cursor:pointer;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    
+}
+
+h3{
+    margin-left: 25px;
+}
+.card-box {
+background-color: #ffffff;
+width: 80%;
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 0;
+margin: 20px 0;
+text-align: center;
+border: 1px solid #ddd;
+border-radius: 10px;
+overflow: hidden;
+}
+
+th, td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+
+th {
+background-color: #f4f4f4;
+}
+
+td{
+background-color:#f4f4f4 ;
+}
+
+.exp-month {
+width: 50px;
+}
+
+.update-btn {
+background-color: green;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.delete-btn {
+background-color: red;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.update-btn a, .delete-btn a {
+color: white;
+text-decoration: none;
+}
+
+.update-btn:hover, .delete-btn:hover {
+opacity: 0.8;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.form{
+    margin-left: -70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+

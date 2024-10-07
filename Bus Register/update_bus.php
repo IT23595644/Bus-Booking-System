@@ -42,6 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($conn,$sql);
 
     // Execute the update query
+    
+    $sql2 = "UPDATE busprice SET price = '$price' WHERE busID = '$id'";
+    $result2=mysqli_query($conn,$sql2);
+
     if ($result) {
         header("Location: index.php");
     } else {

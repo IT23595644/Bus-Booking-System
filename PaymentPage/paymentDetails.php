@@ -3,7 +3,7 @@
     include("header.php");
 ?>
 
-    <link rel="stylesheet" href="./booking_crud.css"> 
+    <link rel="stylesheet" href="./paymentcrud.css"> 
     <script>
         function confirmDelete(bookingId) {
             if (confirm("Are you sure you want to delete this booking?")) {
@@ -20,9 +20,10 @@
     <div class="box">      
 
             <div>
+                <a href="./save_card.php" class="button">Add another card</a>
                 <table>
                 <tr>
-                    <th>Full Name</th><th>Card Number</th><th>Month</th><th>Year</th><th>CVV</th><th colspan="2"></th>
+                    <th>Full Name</th><th>Card Number</th><th>Month</th><th>Year</th><th>CVV</th><th colspan="2">Operation</th>
                 </tr>
                 <?php        
                 $query = "SELECT * FROM paymentdetails";
