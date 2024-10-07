@@ -31,13 +31,13 @@
                         
                         <div class="form-group">
                             <label for="from">From</label>
-                            <input type="text" id="from" name="from">
+                            <input type="text" id="from" name="from" placeholder="  Location">
                             <div id="location_error"></div>
                         </div>
 
                         <div class="form-group">
                             <label for="to">To</label>
-                            <input type="text" id="to" name="to">
+                            <input type="text" id="to" name="to" placeholder="  Destination">
                             <div id="destination_error"></div>
                         </div>
 
@@ -49,13 +49,13 @@
 
                         <div class="form-group">
                             <label for="seat_no">Seat No</label>
-                            <input type="seat_no" id="seatnum" name="seat_no">
+                            <input type="seat_no" id="seatnum" name="seat_no" placeholder="  Like-E01">
                             <div id="seatnum_error"></div>
                         </div>
                         
                         <div class="form-group">
                             <label for="bus_id">Bus ID</label>
-                            <input type="bus_id" id="busid" name="bus_id" style="width:245px;">
+                            <input type="bus_id" id="busid" name="bus_id" style="width:245px;" placeholder="  Like-001">
                             <div id="busid_error"></div>
                         </div>
                     
