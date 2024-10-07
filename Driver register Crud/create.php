@@ -1,6 +1,6 @@
 <?php
-    include ('../config.php');
-    if($_SERVER["REQUEST_METHOD"]=="POST")
+    include ('../config.php');  //include database connection
+    if($_SERVER["REQUEST_METHOD"]=="POST")  //database values stores variable
     {
         $dFname=$_POST["firstName"];
         $dLname=$_POST["lastName"];
@@ -11,7 +11,7 @@
 
 
 
-        $sql="INSERT INTO busdriver (firstName,lastName,address,pNum,dob,licenseId)
+        $sql="INSERT INTO busdriver (firstName,lastName,address,pNum,dob,licenseId)  
               VALUES('$dFname','$dLname','$address','$pnum','$dob','$licen')";
 
         $result=mysqli_query($conn,$sql);
@@ -36,10 +36,6 @@
     
 
     <div class="box">      
-      <!--  <div class="button1">
-            
-            <button type="button" class="button"></button><br>
-        </div>-->
         <div>
             <form method="post"id="valid" >
                 <label>First Name:</label><br>

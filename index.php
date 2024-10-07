@@ -1,15 +1,15 @@
 <?php
-        include_once("Headers-Footers/header.php");
+        include_once("Headers-Footers/header.php");  //include header file
   ?>
-    <link rel="stylesheet" href="../Bus-Booking-System/homepage/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../Bus-Booking-System/homepage/style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="icon" href="../Bus-Booking-System/Headers-Footers/logo.png" type="image/png">
+    <link rel="icon" href="../Bus-Booking-System/Headers-Footers/logo.png" type="image/png">  <!-- include icon and linking stylesheet file-->
     
-<div class="content">
+<div class="content">  
     <div class="location">
         <div class="locat">
-            <p>Travel To</p>
+            <p>Travel To</p>     <!--Travel location animation added-->
             <div class="places">
                 <span>Matara</span>
                 <span>Kataragama</span>
@@ -21,22 +21,22 @@
     </div>
 
     <section>
-        <div class="welc">
-            <h1>WELCOME</h1>
+        <div class="welc">  
+            <h1>WELCOME</h1>  <!--Welcome Display-->
             <h3>Your Safe Travel is Our Main Goal</h3>
             <h3>Ride Easy, Ride with Bus365.</h3><br>
            <center><?php if(isset($_SESSION['userId'])){
                             echo '<a href="seat_booking.php"class="book-btn">';
-                          }
+                          }                                                           //Booking with user only restricted for visitor
                           else{
                             echo '<a href="Login page/index.php"class="book-btn">';
                           }             
            ?>
-           Book Ticket</a></center>
+           Book Ticket</a></center> <!--Booking button -->
         </div>
     </section>
 </div>
-<div class="testimonials">
+<div class="testimonials">         <!--Rout card diplay-->
   <div class="inner">
     <h1>Popular Route</h1>
     <div class="border"></div>
@@ -75,7 +75,7 @@
       <div class="border"></div>
 
       <div class="row">
-        <div class="col">
+        <div class="col">    <!--Dipaly details and icon-->
                     <ul class="Icon-type">
                         <li><div class="icon">🔍</div>More Choices</li>
                         <li><div class="icon">🙂‍↔️</div>Customer Support</li>
@@ -89,7 +89,7 @@
   <div class="testimonials">
     <div class="inner">
       <h1>User Reviews</h1>
-      <div class="border"></div>
+      <div class="border"></div>   <!--User review card-->
 
       <div class="row">
         <div class="col">
@@ -164,10 +164,10 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
     </div>
   </div>
   <br><br>
-  <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top"><i class="ri-arrow-up-circle-line"></i></button>
+  <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top"><i class="ri-arrow-up-circle-line"></i></button> <!--Botttom to top scroll js part-->
   <div class=fooot>
         <div class="const">
-            <div class="Creat">
+            <div class="Creat">                      <!-- Home page footer
                 <div class="foot-er" id="company"> 
                     <img src="../Bus-Booking-System/Headers-Footers/logo.png" alt="" class="logo">
                     <p> Ride Easy, Ride with Bus365.</p>
