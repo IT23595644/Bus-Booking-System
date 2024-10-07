@@ -279,23 +279,6 @@ if($result){
     </style> 
 </head>
 <body>
-
-    <!-- <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
-    <div class="box">
-    <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
-        <label for="full-name" style="color: black; font-size:large">Full Name</label><br>
-        <input id="cardholder-name" name="Full_Name" class="input-field" type="text" value=<?php echo $fullName;?>><br>
-        <label for="credit-card-num" style="color: black; font-size:large">Card Number</label><br>
-        <input id="card-number" name="Card_Number" class="input-field" type="number" value=<?php echo $cardNumber;?>><br><br>
-        <label for="exp-month" style="color: black; font-size:large"> Month</label>
-        <input type="number" id="exp-m" name="Month" value=<?php echo $expMonth;?>>
-        <label for="exp-year" style="color: black; font-size:large"> Year</label>
-        <input type="number" id="exp-y" name="Year" value=<?php echo $expYear;?>><br><br><br>
-        <label for="cvv" style="color: black; font-size:large">CVV</label>
-        <input id="cvv" name="CVV" type="text" value=<?php echo $cvv;?>><br>
-        <button type="submit" name="submit" class="saveC">Update Card</button>
-        </div>
-    </form> -->
     <form method="POST" action="update.php?updateid=<?php echo $ID; ?>">
     <div class="box">
         <div class="back"><a href="cards.php"><img src="back.png" class="back" alt="back"></a></div><br>
