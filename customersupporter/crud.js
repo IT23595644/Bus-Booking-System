@@ -10,20 +10,20 @@ document.getElementById('form').addEventListener('submit', function(event){
     //validate first name
     if(firstname.trim()=='')
     {
-        document.getElementById('name_error1').style='color:#ff0000';
-        document.getElementById('name_error1').innerHTML="First Name is required";
-        event.preventDefault();
+        document.getElementById('name_error1').style='color:#ff0000';                 // Set error color
+        document.getElementById('name_error1').innerHTML="First Name is required";   // Set error message
+        event.preventDefault();                                                      // Prevent form submission
         return;
     }
     else{
-        document.getElementById('name_error1').style='color:rgb(0, 255, 51);';
-        document.getElementById('name_error1').innerHTML="Checked✅";
+        document.getElementById('name_error1').style='color:rgb(0, 255, 51);';   // Set success color
+        document.getElementById('name_error1').innerHTML="Checked✅";           // Set success message
         
     }
     //validate last name
     if(lastname.trim()=='')
     {
-        document.getElementById('name_error2').style='color:#ff0000';
+        document.getElementById('name_error2').style='color:#ff0000';    
         document.getElementById('name_error2').innerHTML="Last Name is required";
         event.preventDefault();
         return;
@@ -68,13 +68,13 @@ document.getElementById('form').addEventListener('submit', function(event){
     
  // Validate Date of Birth
     if (dob == '') {
-        document.getElementById('dob_error').style.color = '#ff0000'; // Set error color
-        document.getElementById('dob_error').innerHTML = "Date is required"; // Set error message
-        event.preventDefault(); // Prevent form submission
+        document.getElementById('dob_error').style.color = '#ff0000'; 
+        document.getElementById('dob_error').innerHTML = "Date is required"; 
+        event.preventDefault(); 
         return;
     } else {
-        document.getElementById('dob_error').style.color = 'rgb(0, 255, 51)'; // Set success color
-        document.getElementById('dob_error').innerHTML = "Checked✅"; // Set success message
+        document.getElementById('dob_error').style.color = 'rgb(0, 255, 51)'; 
+        document.getElementById('dob_error').innerHTML = "Checked✅"; 
     }
     return;
 })

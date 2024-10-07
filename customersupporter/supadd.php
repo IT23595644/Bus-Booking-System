@@ -23,7 +23,7 @@
     }
 ?>
 <?php
-    include("./header2.php");
+    include("./header2.php");   //header file included
 ?>
 <div class="container">
     
@@ -34,7 +34,7 @@
     </div><br>
     
     <div >
-        <div class="containerform">
+        <div class="containerform">        <!--form for adding customer supporters-->
             <form method="post" id="form">
                 <div class="inpt">
                     <label>First Name:</label><br>
@@ -72,9 +72,9 @@
 
     <br>
 </div> 
-<script src="./crud.js"></script>
+<script src="./crud.js"></script>     <!--linking java script file-->
 <?php
-    include("../Headers-Footers/footer.php");
+    include("../Headers-Footers/footer.php");  //include footer file
 ?>
 
 
