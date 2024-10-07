@@ -1,48 +1,49 @@
 <?php 
-    include ('../config.php');  
-        if(isset($_GET['updateid'])){   
-            $id=$_GET['updateid'];
+    include ('../config.php');     //connection to the database
 
-            $sql="SELECT * FROM customersupporter where supId=$id";
-            $result=mysqli_query($conn,$sql);
-            $row=mysqli_fetch_assoc($result);
+    if(isset($_GET['updateid'])){          //get the past values from customersupporter table and auto fill the data in update form
+        $id=$_GET['updateid'];
 
-            $fname=$row['firstName'];
-            $lname=$row['lastName'];
-            $address=$row['address'];
-            $pNum=$row['pNum'];
-            $dob=$row['dob'];
+        $sql="SELECT * FROM customersupporter where supId=$id";   
+        $result=mysqli_query($conn,$sql);
+        $row=mysqli_fetch_assoc($result);
+
+        $fname=$row['firstName'];           
+        $lname=$row['lastName'];
+        $address=$row['address'];
+        $pNum=$row['pNum'];
+        $dob=$row['dob'];
         
-        }   
+    }   
         
-        if($_SERVER["REQUEST_METHOD"]=="POST")
-        {   
+    if($_SERVER["REQUEST_METHOD"]=="POST")      //update the form with new values
+    {   
             
-            $supFname=$_POST["fname"];
-            $supLname=$_POST["lname"];
-            $address=$_POST["address"];
-            $pnum=$_POST["pnum"];
-            $dob=$_POST["dob"];
-            echo $supFname ;
-            $sql="UPDATE customersupporter  SET firstName='$supFname',lastName='$supLname',address='$address',pNum='$pnum',dob='$dob' 
-                  WHERE supId='$id';";
+        $supFname=$_POST["fname"];
+        $supLname=$_POST["lname"];
+        $address=$_POST["address"];
+        $pnum=$_POST["pnum"];
+        $dob=$_POST["dob"];
+        echo $supFname ;
+        $sql="UPDATE customersupporter  SET firstName='$supFname',lastName='$supLname',address='$address',pNum='$pnum',dob='$dob' 
+              WHERE supId='$id';";
 
             
-            $result=mysqli_query($conn,$sql);
-            if($result)
-            {
-                header("location: customerview.php");
-            }
+        $result=mysqli_query($conn,$sql);
+        if($result)
+        {
+            header("location: customerview.php");
+        }
 
             mysqli_close($conn);
 
-        }
+    }
 
 ?>
 
 
 <?php
-    include("./header.php");
+    include("./header2.php");     //header file
 ?>
 
 <div class="container">
@@ -54,7 +55,7 @@
     </div><br>
     
     <div >
-        <div class="containerform">
+        <div class="containerform">      <!--Update form-->
             <form method="post" id="form">
                 <div class="inpt">
                     <label>First Name:</label><br>
@@ -92,8 +93,8 @@
 
     <br>
 </div> 
-<script src="./crud.js"></script>
+<script src="./crud.js"></script>      <!--connecting java script file-->
 <?php
-    include("../Headers-Footers/footer.php");
+    include("../Headers-Footers/footer.php");   //include the footer
 ?>
 

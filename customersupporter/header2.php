@@ -74,8 +74,7 @@
                 footer{
                     font-family: 'poppins';
                     color:rgb(255, 255, 255);
-                    position:fixed;
-                    bottom:0px;
+                    
                     text-align: center;
                     background-color: hsl(0, 2%, 16%);
                     width: 100%;

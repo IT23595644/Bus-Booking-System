@@ -1,5 +1,4 @@
 document.getElementById('form').addEventListener('submit', function(event){
-        //prevent auto submitting
 
     var firstname=document.getElementById('f_name').value;
     var lastname=document.getElementById('l_name').value;

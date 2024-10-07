@@ -1,4 +1,4 @@
-body{
+body{                       /*background Styling*/
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
@@ -10,26 +10,7 @@ body{
     text-align: center;
     padding: 30px;
 }
-
-hr{
-    margin-right: 25px;
-    
-}
-.logdetails{
-    padding:8px;
-    background-color: #c8c8c8b8;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-input,label{  
-    margin-left:70px;
-    width:100%;
-    margin-right:175px;
-    width:50%;
-}
-
-
+/*Table css*/
 
 .box{
     border-radius: 15px;
@@ -43,48 +24,24 @@ input,label{
 
 }
 
-.button:hover{
-    background-color: gray;
-    cursor:pointer;
-}
-
-.button{
-    border-radius: 15px;
-    border: 1px solid rgb(141, 143, 145);
-    padding: 8px;
-    background-color: rgb(30, 161, 255);
-    margin-bottom: 10px;
-}
-
 h3{
     margin-left: 25px;
 }
 
-        /*This is TABLE CSS*/
-           /* body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-
-            }*/
-
 table {
-width: 100%;
-border-collapse: separate;
-border-spacing: 0;
-margin: 20px 0;
-text-align: center;
-border: 1px solid #ddd;
-border-radius: 10px;
-overflow: hidden;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-padding: 10px;
-border: 1px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ddd;
 
 }
 td{
@@ -92,14 +49,14 @@ td{
 }
 
 th {
-background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 td{
-background-color:#f4f4f4 ;
+    background-color:#f4f4f4 ;
 }
 
-.box .add-btn {
+.add-btn{
     background-color: rgb(12, 134, 255);
     color: white;
     border: none;
@@ -107,41 +64,38 @@ background-color:#f4f4f4 ;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.add-btn:hover{
+    background-color: rgb(0, 8, 255);
+    cursor:pointer;
+}
 .update-btn {
-background-color: green;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .delete-btn {
-background-color: red;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.update-btn a, .delete-btn a {
-color: white;
-text-decoration: none;
+.update-btn a, .delete-btn a {     /*styling anchor tag*/
+    color: white;
+    text-decoration: none;
 }
 
-.update-btn:hover, .delete-btn:hover,.add-btn{
-opacity: 0.8;
+.update-btn:hover, .delete-btn:hover{
+    opacity: 0.8;
 }
 
-.button-container {
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-.anchorBtn{
-    
-}
+
+
 
 
