@@ -2,7 +2,7 @@
 .container{
     padding:50px;
     background-image: url('contactBack.jpg');
-    height:170vh;
+    height:150vh;
     width:100%;
     background-size: cover;
     background-position: center;
@@ -26,6 +26,7 @@ font-family: sans-serif;
 }
 fieldset{
 padding:10px;
+
 }
 .btn{
 border:solid;
@@ -52,6 +53,13 @@ background-color: rgba(112, 112, 112, 0.84);
 .icon{
 font-size: 1.8rem;
 }
+input{
+    width:30%;
+    padding:5px;
+    border-radius:10px;
+}
+
+
 
 
 
