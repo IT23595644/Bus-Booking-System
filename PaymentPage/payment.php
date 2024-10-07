@@ -77,12 +77,7 @@ $cvv = "";
         </header>
 
 
-
-
-
-
-
-    
+                           <!--  Payment Box -->
 
 <div class="body1234">
 

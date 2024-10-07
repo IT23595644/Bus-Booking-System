@@ -354,6 +354,8 @@
                       .wBox{
                         width: 450px;
                       }
+
+                      /* java script */
                       #name-error{
                         color: red;
                         font-size: 12px;
