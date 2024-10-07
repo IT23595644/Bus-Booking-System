@@ -193,7 +193,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
                 <div class="foot-er" id="link">
                     <h3>Links</h3>
                     <div class="links">
-                        <a href="../Bus-Booking-System/Terms and Condition/Term&condition.php">Terms & Conditions</a>
+                        <a href="Term&condition.php">Terms & Conditions</a>
                         <a href="../Bus-Booking-System/ContactUs.php">Help & Support</a>
                         <a href="fandQ.php">FAQs</a>
                     </div>

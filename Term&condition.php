@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="terms.css">
+<link rel="stylesheet" href="../Bus-Booking-System/Terms and Condition/terms.css">
 <?php
-        include_once("../Headers-Footers/header.php");
+        include_once("./Headers-Footers/header.php");
   ?>
 <div class="cont">
 <div class="term-box">
@@ -40,5 +40,5 @@
         
         
         <?php
-        include_once("../Headers-Footers/footer.php");
+        include_once("./Headers-Footers/footer.php");
         ?>
