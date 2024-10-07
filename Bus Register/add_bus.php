@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = $_POST['status'];
     $time = $_POST['time'];
 
+    //add data to database
     $sql = "INSERT INTO bus (busNum, busOwner, route, price, seatCount, status, time) 
     VALUES ('$num', '$busOwner', '$route', '$price', '$seatCount', '$status', '$time')";
     
@@ -40,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h1><center>Add New Bus</center></h1>
 <div class="addContent">
 <form method="POST" id="addBusForm">
+    <!-- to get bus details-->
     <label>Bus Number:</label>
     <input type="text" name="busNum" id="busNum" placeholder="Like (LP-1234)"required>
     

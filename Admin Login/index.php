@@ -126,7 +126,7 @@
         <div class="combination">
 
             <div class="login-container">
-                
+                <!-- to get user inputs -->
                 <h2>Admin Login</h2>
                 <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
                     <div class="input-group">
@@ -146,6 +146,7 @@
         </div>
 
         </nav>
+        <!-- add js file-->
     <script src="script.js"></script>
 <br>
 <?php include("../Headers-Footers/footer.php");?>
