@@ -5,56 +5,57 @@
 
 
 ?>
-<style>
-    body{
-        background:url('back1.jpg');
-        background-size: cover;
-        background-position:center;
-    }
-    .bkgig{
-        height:auto;
-    }
-    .bkgig h1{
-        margin-bottom:20px;
-    }
-    table {
-    margin:auto;
-    width: 50%;
-    border-collapse: collapse;
-    background-color: #fff;
-    
-    }
-
-    th, td {
-        padding: 15px;
-        text-align: center;
-        border: 1px solid #ddd;
-        font-size: 16px;
-    }
-
-    th {
-        background-color: #333;
-        color: white;
-        text-transform: uppercase;
-    }
-
-    td {
-        color: #333;
-    }
-
-    table tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    table tr:hover {
-        background-color: #ddd;
-    }
-    footer{
-        position:fixed;
-        bottom:0;
+    <style>
+        body{
+            background:url('back1.jpg');
+            background-size: cover;
+            background-position:center;
+        }
+        .bkgig{
+            height:auto;
+        }
+        .bkgig h1{
+            margin-bottom:20px;
+        }
+        table {
+        margin:auto;
+        width: 50%;
+        border-collapse: collapse;
+        background-color: #fff;
         
-    }
-</style>
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        td {
+            color: #333;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+        footer{
+            position:fixed;
+            bottom:0;
+            
+        }
+    </style>
+    
 <div class="bkgig">
     <h1><center>Messages</center></h1>
     <table border=1>

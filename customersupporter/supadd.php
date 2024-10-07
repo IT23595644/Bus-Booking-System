@@ -1,14 +1,15 @@
 <?php
-    include ('../config.php');
-    if($_SERVER["REQUEST_METHOD"]=="POST")
+    include ('../config.php');        //database connection
+
+    if($_SERVER["REQUEST_METHOD"]=="POST")     //adding form data into the database
     {
         $supFname=$_POST["fname"];
         $supLname=$_POST["lname"];
         $address=$_POST["address"];
         $pnum=$_POST["pnum"];
         $dob=$_POST["dob"];
-
-        $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)
+                                            
+        $sql="INSERT INTO customersupporter (firstName,lastName,address,pNum,dob)    
               VALUES('$supFname','$supLname','$address','$pnum','$dob')";
 
         $result=mysqli_query($conn,$sql);
@@ -22,7 +23,7 @@
     }
 ?>
 <?php
-    include("./header.php");
+    include("./header2.php");   //header file included
 ?>
 <div class="container">
     
@@ -33,7 +34,7 @@
     </div><br>
     
     <div >
-        <div class="containerform">
+        <div class="containerform">        <!--form for adding customer supporters-->
             <form method="post" id="form">
                 <div class="inpt">
                     <label>First Name:</label><br>
@@ -71,9 +72,9 @@
 
     <br>
 </div> 
-<script src="./crud.js"></script>
+<script src="./crud.js"></script>     <!--linking java script file-->
 <?php
-    include("../Headers-Footers/footer.php");
+    include("../Headers-Footers/footer.php");  //include footer file
 ?>
 
 
