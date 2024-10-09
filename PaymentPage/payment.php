@@ -136,7 +136,7 @@ $cvv = "";
                     <div id="cvv-error" class="error"></div>
 
                   </div><br><br>
-                  <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;" onclick="validateForm()">Use Card</a></button>
+                  <button class="saveCard" type="submit" style="font-size: 15px;" ><a href="cards.php" style="text-decoration:none; color:black;">Use Card</a></button>
                   <br>
                     
                   <button class="btn" style="font-size: 20px; color: white; background-color: #5d5d5d;" type="button" 
