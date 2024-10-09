@@ -259,7 +259,7 @@ if($result){
             color: red;
             font-size: 12px;  
             font-weight: 600;
-            margin-left: 100px;
+            margin-left: 260px;
         }
         #cvv-error{
             color: red;
