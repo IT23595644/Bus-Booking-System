@@ -6,15 +6,6 @@ document.getElementById('form').addEventListener('submit', function(event){
     var seatnum=document.getElementById('seatnum').value;
     var busid=document.getElementById('busid').value;
 
-
-    if(from.trim()=='' && to.trim()=='' && d_date.trim()=='' && seatnum.trim()=='' && busid.trim()=='' ){
-        document.getElementById('location_error').innerHTML="Location is required";
-        document.getElementById('destination_error').innerHTML="Destination is required";
-        document.getElementById('d_date_error').innerHTML="Departure date is required";
-        document.getElementById('seatnum_error').innerHTML="Seat_No is required";
-        document.getElementById('busid_error').innerHTML="Bus_id is required";
-    }
-    else{
         //validate the location 
         if(from.trim()==''){
             document.getElementById('location_error').style="color:red";
