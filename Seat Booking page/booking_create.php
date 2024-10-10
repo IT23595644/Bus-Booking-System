@@ -42,7 +42,7 @@
             
             $result=mysqli_query($conn,$sql2);
             $row=mysqli_fetch_assoc($result);
-            $_SESSION['bookid']=$row['id']; 
+            $_SESSION['bookid']=$row['id'];   //starting a session to get the book id
 
             mysqli_close($conn);
                       
