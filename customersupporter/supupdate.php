@@ -14,7 +14,7 @@
         $pNum=$row['pNum'];
         $dob=$row['dob'];
 
-        mysqli_close($conn);
+        
         
     }   
         
