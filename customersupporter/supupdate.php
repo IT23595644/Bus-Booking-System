@@ -13,6 +13,8 @@
         $address=$row['address'];
         $pNum=$row['pNum'];
         $dob=$row['dob'];
+
+        mysqli_close($conn);
         
     }   
         
@@ -35,7 +37,7 @@
             header("location: customerview.php");
         }
 
-            mysqli_close($conn);
+        mysqli_close($conn);
 
     }
 

@@ -10,7 +10,7 @@
 <div class="body1234">
     <br><br>
     <div class="title">
-        <h1 style="margin-bottom: 10px;">Payment Receipt</h1>
+        <h1 class="reciept_title" style="margin-bottom: 10px;">Payment Receipt</h1>
     </div>
     
     <div class="main-section">
