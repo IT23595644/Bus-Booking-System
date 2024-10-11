@@ -1,10 +1,10 @@
 <?php
         include_once("Headers-Footers/header.php");  //include header file
   ?>
-    <link rel="stylesheet" href="../Bus-Booking-System/homepage/style.css"> 
+    <link rel="stylesheet" href="./homepage/style.css"> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="icon" href="../Bus-Booking-System/Headers-Footers/logo.png" type="image/png">  <!-- include icon and linking stylesheet file-->
+    <link rel="icon" href="./Headers-Footers/logo.png" type="image/png">  <!-- include icon and linking stylesheet file-->
     
 <div class="content">  
     <div class="location">
