@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="Route-card"id="blur">
-            <img src="../Bus-Booking-System/homepage/images/xx.png">
+            <img src="./homepage/images/xx.png">
             <div class="card-cont">
                 <h1>NC - 0056 </h1>
                 <p>Badulla to Ampara</p>
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="Route-card"id="blur">
-            <img src="../Bus-Booking-System/homepage/images/bus1.jpg">
+            <img src="./homepage/images/bus1.jpg">
             <div class="card-cont">
                 <h1>NB - 1089 </h1>
                 <p>Tangalle to Jaffna</p>
@@ -94,7 +94,7 @@
       <div class="row">
         <div class="col">
           <div class="testimonial">
-            <img src="../Bus-Booking-System/homepage/images/p1.png" alt="">
+            <img src="./homepage/images/p1.png" alt="">
             <div class="name">Wasika</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -116,7 +116,7 @@
 
         <div class="col">
           <div class="testimonial">
-            <img src="../Bus-Booking-System/homepage/images/p2.png" alt="">
+            <img src="./homepage/images/p2.png" alt="">
             <div class="name">Nethmi</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -139,7 +139,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
 
         <div class="col">
           <div class="testimonial">
-            <img src="../Bus-Booking-System/homepage/images/p3.png" alt="">
+            <img src="./homepage/images/p3.png" alt="">
             <div class="name">Supuni</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -169,7 +169,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
         <div class="const">
             <div class="Creat">                      <!-- Home page footer-->
                 <div class="foot-er" id="company"> 
-                    <img src="../Bus-Booking-System/Headers-Footers/logo.png" alt="" class="logo">
+                    <img src="./Headers-Footers/logo.png" alt="" class="logo">
                     <p> Ride Easy, Ride with Bus365.</p>
                     
                     <div class="social">
@@ -186,7 +186,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
                     <div class="links">
                         <a href="seat_booking.php">Booking Ticket</a>
                         <a href="./schedule.php">Show Bus Sheduling</a>
-                        <a href="../Bus-Booking-System/ContactUs.php">Customer Support Service</a>
+                        <a href="./ContactUs.php">Customer Support Service</a>
                         
                     </div>
                 </div>
@@ -194,7 +194,7 @@ Some of the companies do not have admin charge, which is good. Keep it up guys!
                     <h3>Links</h3>
                     <div class="links">
                         <a href="Term&condition.php">Terms & Conditions</a>
-                        <a href="../Bus-Booking-System/ContactUs.php">Help & Support</a>
+                        <a href="ContactUs.php">Help & Support</a>
                         <a href="fandQ.php">FAQs</a>
                     </div>
                 </div>

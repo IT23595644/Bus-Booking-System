@@ -31,14 +31,6 @@
 
 </div>  
         
-        
-        
-        
-        
-        
-        
-        
-        
         <?php
         include_once("./Headers-Footers/footer.php");
         ?>
